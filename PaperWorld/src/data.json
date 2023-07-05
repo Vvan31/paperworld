@@ -1,0 +1,40 @@
+{
+    "esp":{
+       "navBar":{
+            "register":"Registro",
+            "shcedule":"Programa",
+            "map":"Mapa",
+            "contact": "Contactanos"
+         },
+         "footer":{
+            "description": "Expo Santa Fe México Av. Santa Fe 270. Santa Fe. Zedec Sta Fé. Álvaro Obregón. 01210 Ciudad de México, CDMX"
+         },
+         "home":{
+            "about": "Sobre nosotros",
+            "about-content": "America's Paper World nace de la necesidad de crear un espacio en donde se puedan encontrar el STATE OF THE ART tecnológico con gente visionaria que desea estar a la vanguardia con sus procesos productivos, permitiendo así una optimización y salvaguarda de sus activos, un lugar en donde el conocimiento de estos desarrollos pueda encontrar los canales adecuados de promoción, comercialización, distribución y representación, coadyuvando así al fortalecimiento de la Industria Papelera nivel mundial.",
+            "why":"¿Por qué asistir a America's Paper World?",
+            "why-content": "Esta cumbre es un espacio y tiempo compartido para nuestra familia papelera, es el punto de encuentro con profesionales de la industria, Ingenieros, Científicos, Diseñadores industriales, Directores, Ejecutivos y Gerentes que asistirán con la idea de encontrar los elementos que les permitan ser más productivos, así como conocer los nuevos avances tecnológicos disponibles, las tendencias y las expectativas para lograr una planeación estratégica que les lleve a la vanguardia en la producción de papel así como en la optimización de los recursos.",
+            "what":"¿Qué me ofrece America's Paper World?",
+            "what-content": "America's Paper World es una exhibición que ofrece una interacción presencial de expertos y profesionales en el medio papelero con todo el público que busca adquirir nuevos conocimientos y mantenerse actualizados con los más importantes desarrollos a nivel mundial así como crear nuevos vínculos y contactos en nuestra gran Industria Papelera."
+         }
+       },
+    "eng":{
+        "navBar":{
+            "register":"Register",
+            "shcedule":"Schedule",
+            "map":"Map",
+            "contact": "Contact us"
+         },
+         "footer":{
+            "description": "Expo Santa Fe México Av. Santa Fe 270. Santa Fe. Zedec Sta Fé. Álvaro Obregón. 01210 Ciudad de México, CDMX"
+         },
+         "home":{
+            "about": "About us",
+            "about-content": "America's Paper World responds to the need to create a space where the technological STATE-OF-THE-ART meets visionary people who want to be at the forefront of their production stages thus allowing optimization and safeguarding of its assets. A place where knowledge of these developments can find the right channels of promotion, marketing, distribution, and representation, thus contributing to the strengthening of the Paper Industry worldwide.",
+            "why":"Why attend America's Paper World?",
+            "why-content": "This summit is a shared space for our paper family. It is the meeting point between industry professionals, engineers, scientists, industrial designers, directors, executives, and managers who will attend with the idea of finding the elements that allow them to be more productive. The summit is also a space for getting to know new technological advances, trends, and expectations to achieve strategic planning that places them at the leading edge in paper production as well as in the optimization of resources.",
+            "what":"What does America's Paper World offer me?",
+            "what-content": "America's Paper World is an exhibition that offers face-to-face interaction between experts and professionals in the paper industry with the public that seeks to acquire new knowledge and stay updated with the most important developments worldwide, as well as create new links and contacts in our great Paper Industry."
+         }
+    }
+}

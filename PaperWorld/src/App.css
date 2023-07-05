@@ -1,0 +1,39 @@
+:root {
+  margin: 0;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.main {
+  background-color: #f2f2f2;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+.language {
+  position: fixed !important;
+  bottom: 25px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
