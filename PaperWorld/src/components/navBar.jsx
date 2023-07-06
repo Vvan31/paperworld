@@ -55,7 +55,7 @@ const Navbar = ({ language, onLanguageChange, onPageChange }) => {
       <a className="menuItem" href="#about">
         {content.contact}
       </a>
-      <a className="icon" onClick={toggleResponsive}>
+      <a className="burgericon" onClick={toggleResponsive}>
         <img className="menuIcon" src={menu} alt="menu icon" />
       </a>
     </div>

@@ -41,8 +41,12 @@ body {
   color: f2f2f2;
 }
 
-.topnav .icon {
+.topnav .burgericon {
   display: none;
+}
+.burgericon:hover{
+  background-color: rgba(221, 221, 221, 0);
+  color: f2f2f2;
 }
 
 .logo {
@@ -54,7 +58,7 @@ body {
   .topnav a:not(:first-child) {
     display: none;
   }
-  .topnav a.icon {
+  .topnav a.burgericon {
     float: right;
     display: block;
     padding: 0;
@@ -74,7 +78,7 @@ body {
   .topnav.responsive {
     position: relative;
   }
-  .topnav.responsive .icon {
+  .topnav.responsive .burgericon {
     position: absolute;
     right: 0;
     top: 0;
