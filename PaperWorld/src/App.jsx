@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from './components/navBar';
 import Home from './components/home';
 import Register from './components/register';
+import Map from './components/map';
 
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
