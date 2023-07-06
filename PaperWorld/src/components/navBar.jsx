@@ -43,13 +43,13 @@ const Navbar = ({ language, onLanguageChange, onPageChange }) => {
       <a href="#home" className="menuItemLogo" onClick={() => handlePageChange('home')}>
         <img src={logo} alt="APW Logo" width={'70px'} />
       </a>
-      <a className="menuItem" href="#register" onClick={() => handlePageChange('register')}>
+      <a className="menuItem" href="#" onClick={() => handlePageChange('register')}>
         {content.register}
       </a>
-      <a className="menuItem" href="#contact">
+      <a className="menuItem" href="#">
         {content.shcedule}
       </a>
-      <a className="menuItem" href="#about">
+      <a className="menuItem" href="#" onClick={() => handlePageChange('map')}>
         {content.map}
       </a>
       <a className="menuItem" href="#about">
