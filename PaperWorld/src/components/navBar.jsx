@@ -7,7 +7,7 @@ import data from '../data.json';
 const Navbar = ({ language, onLanguageChange, onPageChange }) => {
   const [isResponsive, setIsResponsive] = useState(false);
   const [content, setContent] = useState(data.esp.navBar);
-  
+
   useEffect(() => {
     if (language === 'eng') {
       setContent(data.eng.navBar);
@@ -15,6 +15,20 @@ const Navbar = ({ language, onLanguageChange, onPageChange }) => {
       setContent(data.esp.navBar);
     }
   }, [language]);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (isResponsive && event.target.closest('.topnav') === null) {
+        setIsResponsive(false);
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [isResponsive]);
 
   const toggleResponsive = () => {
     setIsResponsive(!isResponsive);
