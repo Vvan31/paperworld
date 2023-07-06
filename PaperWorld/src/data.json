@@ -16,6 +16,27 @@
             "why-content": "Esta cumbre es un espacio y tiempo compartido para nuestra familia papelera, es el punto de encuentro con profesionales de la industria, Ingenieros, Científicos, Diseñadores industriales, Directores, Ejecutivos y Gerentes que asistirán con la idea de encontrar los elementos que les permitan ser más productivos, así como conocer los nuevos avances tecnológicos disponibles, las tendencias y las expectativas para lograr una planeación estratégica que les lleve a la vanguardia en la producción de papel así como en la optimización de los recursos.",
             "what":"¿Qué me ofrece America's Paper World?",
             "what-content": "America's Paper World es una exhibición que ofrece una interacción presencial de expertos y profesionales en el medio papelero con todo el público que busca adquirir nuevos conocimientos y mantenerse actualizados con los más importantes desarrollos a nivel mundial así como crear nuevos vínculos y contactos en nuestra gran Industria Papelera."
+         },
+         "register":{
+            "title":"Selecciona el tipo de acceso al que deseas registrarte",
+            "visitor": "Visitante",
+            "exhibitor": "Expositor",
+            "required": "Todos los campos marcados con un asterisco (*) son obligatorios",
+            "personal": "Información Personal",
+            "name": "Nombre", 
+            "lastName": "Apellido(s)",
+            "company": "Empresa",
+            "position": "Puesto",
+            "addressInfo":"Dirección",
+            "country": "País",
+            "state": "Estado",
+            "city": "Ciudad",
+            "address": "Dirección",
+            "zip": "Código Postal",
+            "email": "Correo electrónico",
+            "phone": "Teléfono",
+            "privacy": "Acepto el Aviso de Privacidad *",
+            "register" : "Registrarse"
          }
        },
     "eng":{
@@ -35,6 +56,59 @@
             "why-content": "This summit is a shared space for our paper family. It is the meeting point between industry professionals, engineers, scientists, industrial designers, directors, executives, and managers who will attend with the idea of finding the elements that allow them to be more productive. The summit is also a space for getting to know new technological advances, trends, and expectations to achieve strategic planning that places them at the leading edge in paper production as well as in the optimization of resources.",
             "what":"What does America's Paper World offer me?",
             "what-content": "America's Paper World is an exhibition that offers face-to-face interaction between experts and professionals in the paper industry with the public that seeks to acquire new knowledge and stay updated with the most important developments worldwide, as well as create new links and contacts in our great Paper Industry."
+         },
+         "register":{
+            "title":"Select the type of access you want to register for",
+            "visitor": "Visitor",
+            "exhibitor": "Exhibitor",
+            "required": "All fields marked with an asterisk (*) are required",
+            "personal": "Personal Information",
+            "name": "Name", 
+            "lastName": "Last Name",
+            "company": "Company",
+            "position": "Position",
+            "addressInfo":"Address",
+            "country": "Country",
+            "state": "State",
+            "city": "City",
+            "address": "Address",
+            "zip": "Postal Code",
+            "email": "Email",
+            "phone": "Phone",
+            "privacy": "I accept the Privacy Notice *",
+            "privacyNoticeTitle": "Privacy Notice",
+            "privacyNoticeDescription1": "In compliance with the provisions of the Federal Law on Protection of Personal Data in Possession of the Individuals, America's Paper World, domiciled in Mexico City, Mexico and internet portal www.americaspaperworld.com , informs that it is responsible for the use and protection of the Owner's personal data, and states that it has taken measures to security necessary to guarantee the protection of personal data against any violation of their security and privacy, always ensuring that all data collected are:",
+            "privacyNoticeData":{
+               "1.":"Processed fairly and legally.",
+               "2.":"Obtained and used for specific and clearly stated purposes.",
+               "3.":"Adequate, relevant and not excessive, as well as accurate and up-to-date.",
+               "4.":"Not kept for longer than necessary.",
+               "5.":"Treated in accordance with the rights of the Holder."
+            },
+            "privacyNoticeDescription2": "America's Paper World may collect from the Owner identification and contact data provided by the same, which will be necessary to fulfill the purpose of carrying out the provision of the specific service requested by the Holder. Similarly, America's Paper World is undertakes to observe the principles of legality, consent, information, quality, purpose, loyalty, proportionality and responsibility regarding the handling of personal data provided by the Owner.",
+            "privacyNoticeDescription3": "America's Paper World may collect from the Owner identification and contact data provided by the same at the time of registration to the event provided by America's Paper Company. During the registration process, the Holder provides personal data that includes contact information, demographic data relating to your trade and payment information. America 's Paper World uses the information you provide in the following ways:",
+            "privacyNoticeUseOfInfo":{
+               "1.":"Sending emails about prior notices and/or invitations to events.",
+               "2.":"Sending emails for registration confirmation.",
+               "3.":"Personalization of the experience, that is, being able to offer the type of content in which you aremore interested.",
+               "4.":"Follow-up of the attendance to the courses or sessions of the event.",
+               "5.":"Processing of payment transactions.",
+               "6.":"Request for ratings and reviews regarding the event."
+            },
+            "privacyNoticeDescription4": "Regarding the handling of the data provided, America's Paper World undertakes to observe the principles of legality, consent, information, quality, purpose, loyalty, proportionality and responsibility.",
+            "privacyNoticeDescription5":"The Holder has the right to oppose before America's Paper World the ARCO rights, which consist of: (i) Accessing the personal data held by America's Paper World, as well as information about the treatment and conditions of use; (ii) request the Rectification of your personal data in case it is outdated or incomplete, or inaccurate; (iii) request the Cancellation of your personal data so that they are eliminated from the registry or the database of America's Paper World when you consider that it is not being used properly; and (iv) Oppose the use of your personal data for specific purposes.",
+            "privacyNoticeDescription6":"To exercise any of the ARCO rights, the Owner must send a request via email to contacto@thepeoplescompany.mx under the matter \"ARCO Rights\" that must contain:",
+            "privacyNoticeRequest":{
+               "1.":"Full name of the Holder and address, as well as telephone number and email used on the website.",
+               "2.":"Copy of an official identification attached to prove the identity of the Holder or, where appropriate, the legal representation thereof.",
+               "3.":"The clear and precise description of the personal data with respect to which it is sought to exercise any of the ARCO rights, as well as any element or document that facilitates the location of personal data."
+            },
+            "privacyNoticeDescription7":"The request will be answered within 5 business days by the same means where the request was sent. petition. Likewise, the Holder must consider that for certain purposes, the revocation of his consent will imply that America's Paper World will not be able to continue providing the service that has requested, resulting in the conclusion of the legal relationship.",
+            "privacyNoticeDescription8":"It is reported that this website uses Cookies, Web Beacons and other technologies, through of which it is possible to monitor the behavior of the Owner as an Internet user, as well as how to provide you with a better service and experience when browsing the America's Paper World page. These technologies can be disabled. To find out how to do it, the Owner must consult the help menu of your browser, and take into account that, in case of deactivating them, it is possible you may not be able to access certain personalized features of the website.",
+            "privacyNoticeDescription9":"It is understood that the Holder has given his consent for the processing of his data personal information in accordance with the terms and conditions of this Notice, when: (i) it is stated expressly; or (ii) does not express any opposition at the time this Notice is made available to you.",
+            "privacyNoticeDescription10":"This privacy notice may undergo modifications, changes or updates derived of new legal requirements; as well as for the needs of America's Paper World for the products or services we offer; of our privacy practices; of changes in our business model, or for other reasons. America's Paper World is committed to keep this privacy notice updated on any changes it may undergo, and likewise In this way, the Holder will always be able to consult the updates that exist on the website www.americaspaperworld.com.",
+            "privacyNoticeDescription11":"America's Paper World, Mexico City",
+            "register" : "Register"
          }
     }
 }

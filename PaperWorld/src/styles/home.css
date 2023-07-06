@@ -27,11 +27,14 @@
   width: 49%;
   height: 100%;
 }
-
+.fachada{
+  display: block;
+}
 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   margin: 10px 35px 0px 35px;
 }
 
@@ -49,9 +52,8 @@
   text-justify: inter-word;
 }
 
-.about,
-.attend {
-  width: 60vw;
+.about {
+  width: 70vw;
   height: auto;
   margin-top: 2%;
   padding: 2%;
@@ -63,18 +65,34 @@
 }
 
 @media screen and (max-width: 600px) {
+  .imageContainer{
+    height: auto;
+  }
   .hero {
     width: 100%;
     height: auto;
   }
-  .content{
-  margin: 10px 10px 10px 10px;
-    
+  .fachada{
+    display: none;
   }
+  .content{
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px; 
+  }
+  .content p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-justify:newspaper;
+}
   .about,
   .attend {
-    width: 90vw;
+    width: 85vw;
     height: auto;
     margin-top: 3%;
+    padding: 5%;
+
   }
 }

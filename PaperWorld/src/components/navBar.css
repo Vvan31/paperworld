@@ -58,6 +58,7 @@ body {
     float: right;
     display: block;
     padding: 0;
+    margin:5px 15px 0px 0px;
   }
   .menuIcon {
     width: 40px;

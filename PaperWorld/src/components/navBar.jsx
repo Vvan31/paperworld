@@ -1,53 +1,13 @@
-/* import React, { useEffect, useState } from "react";
-import "./navBar.css";
-import logo from "../assets/apwLogo.svg";
-import menu from "../assets/menu.svg";
-import data from "../data.json"
-
-const Navbar = (language = "") => {
-  const [isResponsive, setIsResponsive] = useState(false);
-  const [content, setContent] = useState(data["esp"])
-  useEffect(() => {
-    if (language === "ENG") {
-      setContent(data.eng.navBar)
-    } else {
-      setContent(data.esp.navBar)
-    }
-  }, [language])
-
-
-  const toggleResponsive = () => {
-    setIsResponsive(!isResponsive);
-  };
-
-  return (
-    <div className={`topnav ${isResponsive ? "responsive" : ""}`} id="myTopnav">
-      <a href="#home" className="menuItemLogo">
-        <img src={logo} alt="APW Logo" width={'70px'} />
-      </a>
-      <a className="menuItem" href="#news">Registration</a>
-      <a className="menuItem" href="#contact">Schedule</a>
-      <a className="menuItem" href="#about">Event Map</a>
-      <a className="menuItem" href="#about">Contact us</a>
-      <a className="icon" onClick={toggleResponsive}>
-        <img className="menuIcon" src={menu}></img>
-      </a>
-    </div>
-  );
-};
-
-export default Navbar;
- */
 import React, { useEffect, useState } from 'react';
 import './navBar.css';
 import logo from '../assets/apwLogo.svg';
 import menu from '../assets/menu.svg';
 import data from '../data.json';
 
-const Navbar = ({ language, onLanguageChange }) => {
+const Navbar = ({ language, onLanguageChange, onPageChange }) => {
   const [isResponsive, setIsResponsive] = useState(false);
   const [content, setContent] = useState(data.esp.navBar);
-
+  
   useEffect(() => {
     if (language === 'eng') {
       setContent(data.eng.navBar);
@@ -60,12 +20,16 @@ const Navbar = ({ language, onLanguageChange }) => {
     setIsResponsive(!isResponsive);
   };
 
+  const handlePageChange = (selectedPage) => {
+    onPageChange(selectedPage);
+  };
+
   return (
     <div className={`topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
-      <a href="#home" className="menuItemLogo">
+      <a href="#home" className="menuItemLogo" onClick={() => handlePageChange('home')}>
         <img src={logo} alt="APW Logo" width={'70px'} />
       </a>
-      <a className="menuItem" href="#news">
+      <a className="menuItem" href="#register" onClick={() => handlePageChange('register')}>
         {content.register}
       </a>
       <a className="menuItem" href="#contact">

@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import fachada from "../assets/Fachada.png";
-import eventLogo from "../assets/logoAPWMobile.svg";
+import eventLogoESP from "../assets/heroEsp.svg";
+import eventLogoENG from "../assets/heroENG.svg";
 import "../styles/home.css";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import data from "../data.json";
 
 const Home = ({ language }) => {
-  const { home } = data[language]; // Access the corresponding language data
+    const { home } = data[language]; // Access the corresponding language data
+    const [eventLogo, setEventLogo] = React.useState(eventLogoESP);
 
-  return (
+    useEffect(() => {
+        if (language === "eng") {
+            setEventLogo(eventLogoENG);
+        } else {
+            setEventLogo(eventLogoESP);
+        }
+    }, [language]);
+
+
+    return (
     <div className="main">
       <div className="heroContainer">
         <div className="imageContainer">
-          <img className="hero" src={fachada} alt="fachada" />
+          <img className="hero fachada" src={fachada} alt="fachada" />
           <img className="hero" src={eventLogo} alt="America's paper world" />
         </div>
       </div>
@@ -22,7 +33,7 @@ const Home = ({ language }) => {
           <h2>{home.about}</h2>
           <p>{home["about-content"]}</p>
         </Paper>
-        <Paper elevation={4} className="attend">
+        <Paper elevation={4} className="about">
           <h2>{home.why}</h2>
           <p>{home["why-content"]}</p>
         </Paper>
