@@ -10,6 +10,7 @@ import "./register.css";
 
 //components 
 import RegisterForm from "./registerForm";
+import ExhibitorForm from "./exhibitor";
 
 const Register = ({ language }) => {
     const { register } = data[language]; // Access the corresponding language data
@@ -32,7 +33,7 @@ const Register = ({ language }) => {
                 <RegisterForm language={language}/>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-              {register.exhibitor}
+              <ExhibitorForm language={language} />
             </CustomTabPanel>
    
           </div>
