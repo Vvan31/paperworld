@@ -6,6 +6,9 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import data from "../data.json";
+
+import "./exhibitor.css";
+
 export default function ExhibitorForm({ language }) {
     const { exhibitor } = data[language]; 
 
@@ -391,7 +394,7 @@ export default function ExhibitorForm({ language }) {
         </Typography> 
         <div className='payment'>
             <Typography variant="h10" gutterBottom >
-            {exhibitor.paymentSchedule.first}
+            {exhibitor.paymentSchedule.second}
             </Typography>
             <Typography variant="h10" gutterBottom >
             {exhibitor.paymentSchedule.second}
@@ -411,34 +414,58 @@ export default function ExhibitorForm({ language }) {
         <Typography variant="h10" gutterBottom className='sub'>
         {exhibitor.packageInfo}
         </Typography> 
-        <div className='payment'>
-            <Typography variant="h10" gutterBottom className='stand' >
+        <div className='stands'>
+        <div className='stand'>
+        <div className='standSquare white' />
+            <Typography variant="h10" gutterBottom className='standName'>
             {exhibitor.whiteStand}
             </Typography>
-            <Typography variant="h10" gutterBottom className='standSize' >
+            <Typography variant="h10" gutterBottom className='standPrice'>
+            {exhibitor.whiteStandPrice}
+            </Typography>
+            <Typography variant="h10" gutterBottom className='standSize'>
             {exhibitor.whiteStandSize}
             </Typography>
-
-            <Typography variant="h10" gutterBottom className='stand' >
+        </div>
+        <div className='stand'>
+        <div className='standSquare blue' />
+            <Typography variant="h10" gutterBottom className='standName'>
             {exhibitor.blueStand}
             </Typography>
-            <Typography variant="h10" gutterBottom className='standSize' >
-            {exhibitor.blueStandSize}
+            <Typography variant="h10" gutterBottom className='standPrice'>
+            {exhibitor.blueStandPrice}
             </Typography>
-
-            <Typography variant="h10" gutterBottom className='stand' >
+            <Typography variant="h10" gutterBottom className='standSize'>
+            {exhibitor.blueStandSize}   
+            </Typography>
+        </div>
+        <div className='stand'>
+        <div className='standSquare pink' />
+            <Typography variant="h10" gutterBottom className='standName'>
             {exhibitor.pinkStand}
             </Typography>
-            <Typography variant="h10" gutterBottom className='standSize' >
+            <Typography variant="h10" gutterBottom className='standPrice'>
+            {exhibitor.pinkStandPrice}
+            </Typography>
+            <Typography variant="h10" gutterBottom className='standSize'>
             {exhibitor.pinkStandSize}
             </Typography>
-
-            <Typography variant="h10" gutterBottom className='stand' >
+        </div>
+        <div className='stand'>
+        <div className='standSquare green' />
+            <Typography variant="h10" gutterBottom className='standName'>
             {exhibitor.greenStand}
             </Typography>
-            <Typography variant="h10" gutterBottom className='standSize' >
+            <Typography variant="h10" gutterBottom className='standPrice'>
+            {exhibitor.greenStandPrice}
+            </Typography>
+            <Typography variant="h10" gutterBottom className='standSize'>
+
+
             {exhibitor.greenStandSize}
             </Typography>
+        </div>
+        
         </div>
 
         <Typography variant="h10" gutterBottom className='sub'>

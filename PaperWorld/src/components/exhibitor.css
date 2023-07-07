@@ -1,0 +1,98 @@
+.title {
+    /* CSS styles for the title */
+  }
+  
+  .sub {
+    /* CSS styles for the sub-heading */
+  }
+  
+  .payment {
+    /* CSS styles for the payment section */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .payment h10 {
+    /* CSS styles for the payment items */
+    margin-bottom: 0.5rem;
+  }
+  
+  .stands {
+    /* CSS styles for the stands section */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .stands .stand {
+    /* CSS styles for the stand item */
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stands .standSquare {
+    /* CSS styles for the colored square */
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    border-radius: 4px;
+    border: 1px;
+    border-color: black;
+  }
+  
+  .stands .white {
+    background-color: white;
+  }
+  .stands .blue {
+    background-color: #00ADEF;
+  }
+  .stands .pink {
+    background-color: pink;
+  }
+    .stands .green {
+        background-color: green;
+    }
+  
+  .stands .standName {
+    /* CSS styles for the stand name */
+    margin-right: 1rem;
+  }
+  
+  .stands .standPrice {
+    /* CSS styles for the stand price */
+    margin-right: 1rem;
+  }
+  
+  .stands .standSize {
+    /* CSS styles for the stand size */
+  }
+  
+  .map {
+    /* CSS styles for the map section */
+  }
+  
+  .mapTitle {
+    /* CSS styles for the map title */
+    display: flex;
+  }
+  
+  .mapTitle .tag {
+    /* CSS styles for the map tags */
+    margin-right: 0.5rem;
+  }
+  
+  .mapContainer {
+    /* CSS styles for the map container */
+  }
+  
+  .mapImg {
+    /* CSS styles for the map image */
+  }
+  
+  .btn {
+    /* CSS styles for the button */
+    margin-top: 1rem;
+  }
+  

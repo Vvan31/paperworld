@@ -231,9 +231,9 @@
             "paymentTerms": "Terms and conditions of payment",
             "paymentInfo": "The price of the places acquired must be covered within the following period:",
             "paymentSchedule": {
-               "1st": "1st payment 40% - March",
-               "2nd": "2nd payment 30% - April",
-               "3rd": "3rd payment 30% - May"
+               "first": "1st payment 40% - March",
+               "second": "2nd payment 30% - April",
+               "third": "3rd payment 30% - May"
             },
             "paymentFailure": "Failure to comply with the specified deadlines or terms will lead to a price adjustment in the contracted stand, changing to the regular price and/or the loss of the stand assigned to your company.",
             "selectPackage": "Select the place and package",
