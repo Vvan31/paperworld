@@ -6,7 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import data from "../data.json";
-
+import MapApp from './mapapp';
 import "./exhibitor.css";
 
 export default function ExhibitorForm({ language }) {
@@ -14,7 +14,7 @@ export default function ExhibitorForm({ language }) {
 
   return (
     <React.Fragment>
-        <div className='exhibitorForm'>
+        <div className='registerForm'>
         <Typography variant="h10" gutterBottom>
             {exhibitor.subtitle}
         </Typography>
@@ -484,7 +484,7 @@ export default function ExhibitorForm({ language }) {
                 </Typography>
             </div>
             <div className='mapContainer'>
-                <img src={""} alt='map' className='mapImg'/>
+                <MapApp/>
             </div>
         </div>
         <Grid item xs={12} sm={6}>
@@ -497,7 +497,6 @@ export default function ExhibitorForm({ language }) {
             <Button variant="contained"color="primary" href="#contained-buttons" className='btn'>
                 {exhibitor.register}
             </Button>
-        
         </Grid>
     </React.Fragment>
   );

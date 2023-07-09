@@ -1,0 +1,218 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visitors",
+  "info": {
+    "singularName": "visitor",
+    "pluralName": "visitors",
+    "displayName": "visitor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "required": true
+    },
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "company": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "position": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger"
+    },
+    "country": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "United States",
+        "Germany",
+        "India",
+        "Mexico",
+        "China",
+        "Japan",
+        "United Kingdom",
+        "France",
+        "Italy",
+        "Canada",
+        "Brazil",
+        "Australia",
+        "Russia",
+        "South Korea",
+        "Spain",
+        "Indonesia",
+        "Netherlands",
+        "Switzerland",
+        "Sweden",
+        "Turkey",
+        "Saudi Arabia",
+        "Argentina",
+        "Poland",
+        "Belgium",
+        "Norway",
+        "Austria",
+        "United Arab Emirates",
+        "Iran",
+        "Thailand",
+        "South Africa",
+        "Denmark",
+        "Egypt",
+        "Finland",
+        "Colombia",
+        "Malaysia",
+        "Chile",
+        "Portugal",
+        "Greece",
+        "Czech Republic",
+        "Vietnam",
+        "Israel",
+        "Ireland",
+        "Romania",
+        "Philippines",
+        "Pakistan",
+        "Hungary",
+        "New Zealand",
+        "Bangladesh",
+        "Iraq",
+        "Algeria",
+        "Qatar",
+        "Kazakhstan",
+        "Peru",
+        "Ukraine",
+        "Kuwait",
+        "Morocco",
+        "Angola",
+        "Ecuador",
+        "Sri Lanka",
+        "Oman",
+        "Myanmar (Burma)",
+        "Sudan",
+        "Luxembourg",
+        "Dominican Republic",
+        "Kenya",
+        "Guatemala",
+        "Uruguay",
+        "Croatia",
+        "Costa Rica",
+        "Tunisia",
+        "Lithuania",
+        "Ethiopia",
+        "Tanzania",
+        "Bulgaria",
+        "Lebanon",
+        "Slovenia",
+        "Serbia",
+        "Panama",
+        "Ghana",
+        "Nepal",
+        "Azerbaijan",
+        "Uzbekistan",
+        "Côte d'Ivoire (Ivory Coast)",
+        "Cyprus",
+        "Jordan",
+        "Democratic Republic of the Congo",
+        "Bolivia",
+        "Bahrain",
+        "Paraguay",
+        "Cameroon",
+        "Latvia",
+        "Senegal",
+        "Estonia",
+        "Uganda",
+        "Zambia",
+        "Albania",
+        "Georgia",
+        "Mozambique"
+      ]
+    },
+    "state": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "city": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "postalcode": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "address": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

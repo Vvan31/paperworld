@@ -1,0 +1,54 @@
+.map{
+    width: 90%;
+    height: 25rem;
+    margin: 0.5rem;
+    
+    border-color: black;
+    border-radius: 4px;
+    border: 5px;
+    border-color: white;
+
+}
+
+.pink{
+    background-color: pink;
+    border:  1px solid black;
+}
+.pink:hover{
+    background-color: #ff99cc;
+    border:  1px solid black;
+}
+
+.blue{
+    background-color: #00ADEF;
+    border:  1px solid black;
+}
+.blue:hover{
+    background-color: #0b6285;
+    border:  1px solid black;
+}
+.green{
+    background-color: green;
+    border:  1px solid black;
+}
+.green:hover{
+    background-color: #006600;
+    border:  1px solid black;
+}
+.white{
+    background-color: white;
+    border:  1px solid black;
+}
+.white:hover{
+    background-color: #cccccc;
+    border:  1px solid black;
+}
+/* .a1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 10%;
+    height: 10%;
+    background-color: #00ADEF;
+    border:  1px solid black;
+} */
