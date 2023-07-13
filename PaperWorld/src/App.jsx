@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { useState } from 'react';
 import './App.css';
 // components
 import Navbar from './components/navBar';
 import Home from './components/home';
 import Register from './components/register';
 import Map from './components/map';
+import Footer from './components/footer';
 
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
@@ -57,6 +56,7 @@ function App() {
           <img src={usa} alt="usa" />
         </Fab>
       </div>
+      <Footer />
     </div>
   );
 }
