@@ -70,7 +70,10 @@
   }
   
   .map {
-    /* CSS styles for the map section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .mapTitle {
