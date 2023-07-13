@@ -3,52 +3,55 @@
 
 .seat-selection {
     position: relative;
-    width: 600px;
+    width: 850px;
     height: 600px;
     min-width: 600px;
-    overflow-x: auto  ;
+    overflow-x: auto;
+    background-image:url("https://github.com/Vvan31/paperworld/blob/main/PaperWorld/src/assets/mapBK.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
   }
   
   .G1 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 70px;
+    left: 90px;
   }
   
   .G2 {
     position: absolute;
-    top: 90px;
-    left: 80px;
+    top: 170px;
+    left: 180px;
   }
   
   .G3 {
     position: absolute;
-    top: 90px;
-    left: 240px;
+    top: 170px;
+    left: 330px;
   }
   
   .G4 { 
     position: absolute;
-    top: 135px;
-    left: 0px;
+    top: 210px;
+    left: 90px;
   }
   
   .G5 {
     position: absolute;
-    top: 220px;
-    left: 80px;
+    top: 290px;
+    left: 180px;
   }
   
   .G6 {
     position: absolute;
-    top: 220px;
-    left: 240px;
+    top: 290px;
+    left: 330px;
   }
   
   .G7 {
     position: absolute;
-    top: 350px;
-    left: 60px;
+    top: 440px;
+    left: 150px;
   }
   .large {
     background-color: #E91E63;
