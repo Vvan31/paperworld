@@ -1,4 +1,4 @@
-import React from "react";  
+
 import map from "../assets/map.png";
 
 const Map = () => {

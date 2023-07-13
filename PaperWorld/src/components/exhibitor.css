@@ -85,6 +85,8 @@
   
   .mapContainer {
     /* CSS styles for the map container */
+    min-width: 600px;
+    overflow-x: auto;
   }
   
   .mapImg {
