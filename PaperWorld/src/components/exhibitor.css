@@ -1,3 +1,7 @@
+
+.registerForm{
+    margin: 10px 25% 0px 25%;
+}
 .title {
     /* CSS styles for the title */
   }
@@ -89,7 +93,8 @@
   .mapContainer {
     /* CSS styles for the map container */
     min-width: 600px;
-    overflow-x: auto;
+    min-height: 600px;
+
   }
   
   .mapImg {
@@ -101,3 +106,9 @@
     margin-top: 1rem;
   }
   
+  @media screen and (max-width: 600px) {
+    .registerForm{
+        margin: 10px 3% 0px 3% !important;
+        padding: 0 !important;
+    }
+}

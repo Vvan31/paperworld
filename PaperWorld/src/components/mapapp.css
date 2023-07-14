@@ -7,7 +7,6 @@
     height: 600px;
     min-width: 600px;
     overflow-x: auto;
-    background-image:url("https://github.com/Vvan31/paperworld/blob/main/PaperWorld/src/assets/mapBK.png?raw=true");
     background-repeat: no-repeat;
     background-size: 100% 90%;
   }
@@ -92,4 +91,9 @@
     flex-direction: column;
    
   }
-  
+@media screen and (max-width: 600px) {
+    .seat-selection {
+        transform: scale(0.80);
+        overflow-x: scroll;
+      }
+    }
