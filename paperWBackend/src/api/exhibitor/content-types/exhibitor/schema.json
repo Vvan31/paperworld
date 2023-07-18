@@ -483,6 +483,12 @@
         }
       },
       "type": "biginteger"
+    },
+    "spot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::spot.spot",
+      "inversedBy": "exhibitor"
     }
   }
 }
