@@ -28,114 +28,115 @@ export default function ExhibitorForm({ language }) {
             <Grid item xs={12} sm={3}>
                 <TextField
                     required
-                    id="firstName"
-                    name="firstName"
+                    id="companyName"
+                    name="companyName"
                     label={exhibitor.companyName}
                     fullWidth
-                    autoComplete="given-name"
+                    autoComplete="organization"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={3}>
                 <TextField
                     required
-                    id="lastName"
-                    name="lastName"
+                    id="rfc"
+                    name="rfc"
                     label={exhibitor.rfc}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="off"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={3}>
                 <TextField
                     required
-                    id="lastName"
-                    name="lastName"
+                    id="country"
+                    name="country"
                     label={exhibitor.country}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="country"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={3}>
                 <TextField
-                    id="lastName"
-                    name="lastName"
+                    id="state"
+                    name="state"
                     label={exhibitor.state}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="region"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={3}>
                 <TextField
                     required
-                    id="lastName"
-                    name="lastName"
+                    id="city"
+                    name="city"
                     label={exhibitor.city}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="address-level2"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
-                id="phone"
-                name="phone"
+                id="zip"
+                name="zip"
                 label={exhibitor.zip}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="postal-code"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
-                id="phone"
-                name="phone"
+                id="colonia"
+                name="colonia"
                 label={exhibitor.colonia}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="off"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
-                id="phone"
-                name="phone"
+                id="address"
+                name="address"
                 label={exhibitor.address}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="address-line1"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
-                id="phone"
-                name="phone"
+                id="numberExt"
+                name="numberExt"
                 label={exhibitor.numberExt}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="off"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
-                id="phone"
-                name="phone"
+                id="numberInt"
+                name="numberInt"
                 label={exhibitor.numberInt}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="off"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={6}>
             <TextField
-                id="phone"
-                name="phone"
+                required
+                id="email"
+                name="email"
                 label={exhibitor.email}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="email"
                 variant="standard"
             />
             </Grid>
@@ -150,241 +151,112 @@ export default function ExhibitorForm({ language }) {
         <Grid item xs={12} sm={6}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="companyNameExhibitor"
+                name="companyNameExhibitor"
                 label={exhibitor.companyNameExhibitor}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="organization"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="countryExhibitor"
+                name="countryExhibitor"
                 label={exhibitor.countryExhibitor}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="country"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="stateExhibitor"
+                name="stateExhibitor"
                 label={exhibitor.stateExhibitor}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="region"
                 variant="standard"
             />
             </Grid><Grid item xs={12} sm={3}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="cityExhibitor"
+                name="cityExhibitor"
                 label={exhibitor.cityExhibitor}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="address-level2"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={3}>
             <TextField
                 required
-                id="zip"
-                name="zip"
+                id="zipExhibitor"
+                name="zipExhibitor"
                 label={exhibitor.zipExhibitor}
                 fullWidth
-                autoComplete="shipping postal-code"
+                autoComplete="postal-code"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={3}>
             <TextField
-                id="address2"
-                name="address2"
+                id="coloniaExhibitor"
+                name="coloniaExhibitor"
                 label={exhibitor.coloniaExhibitor}
                 fullWidth
-                autoComplete="shipping address-line2"
+                autoComplete="off"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={3}>
             <TextField
-                id="address2"
-                name="address2"
+                id="addressExhibitor"
+                name="addressExhibitor"
                 label={exhibitor.addressExhibitor}
                 fullWidth
-                autoComplete="shipping address-line2"
+                autoComplete="address-line1"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={3}>
             <TextField
-                id="address2"
-                name="address2"
+                id="numberExtExhibitor"
+                name="numberExtExhibitor"
                 label={exhibitor.numberExtExhibitor}
                 fullWidth
-                autoComplete="shipping address-line2"
+                autoComplete="off"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={3}>
             <TextField
-                id="address2"
-                name="address2"
+                id="web"
+                name="web"
                 label={exhibitor.web}
                 fullWidth
-                autoComplete="shipping address-line2"
+                autoComplete="url"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={3}>
             <TextField
-                id="address2"
-                name="address2"
+                id="phone"
+                name="phone"
                 label={exhibitor.phone}
                 fullWidth
-                autoComplete="shipping address-line2"
+                autoComplete="tel"
                 variant="standard"
             />
             </Grid>
         </Grid>
 
         {/* Required contacts */}
-
-        <Typography variant="h4" gutterBottom className='title'>
-        {exhibitor.requiredContacts}
-        </Typography>
-
-        <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
-            <TextField
-                required
-                id="address1"
-                name="address1"
-                label={exhibitor.showContactPerson}
-                fullWidth
-                autoComplete="shipping address-line1"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-            <TextField
-                required
-                id="address1"
-                name="address1"
-                label={exhibitor.jobTitle}
-                fullWidth
-                autoComplete="shipping address-line1"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-            <TextField
-                required
-                id="address1"
-                name="address1"
-                label={exhibitor.phoneContact}
-                fullWidth
-                autoComplete="shipping address-line1"
-                variant="standard"
-            />
-            </Grid><Grid item xs={12} sm={3}>
-            <TextField
-                required
-                id="address1"
-                name="address1"
-                label={exhibitor.emailContact}
-                fullWidth
-                autoComplete="shipping address-line1"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-            <TextField
-                required
-                id="zip"
-                name="zip"
-                label={exhibitor.paymentContact}
-                fullWidth
-                autoComplete="shipping postal-code"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.titlePayment}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.phonePayment}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.emailPayment}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.marketingContact}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.titleMarketing}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.phoneMarketing}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={3}>
-            <TextField
-                id="address2"
-                name="address2"
-                label={exhibitor.emailMarketing}
-                fullWidth
-                autoComplete="shipping address-line2"
-                variant="standard"
-            />
-            </Grid>
-        </Grid>
+        {/* Add required contacts fields here */}
+     
 
         <Typography variant="h4" gutterBottom className='title'>
         {exhibitor.paymentTerms}

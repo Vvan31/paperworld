@@ -6,6 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import data from "../data.json";
+
 export default function AddressForm({ language }) {
     const { register } = data[language]; 
 
@@ -15,7 +16,7 @@ export default function AddressForm({ language }) {
         <Typography variant="h10" gutterBottom>
             {register.required}
         </Typography>
-        <Typography variant="h4" gutterBottom className='title'>
+        <Typography variant="h" gutterBottom className='title'>
             {register.personal}
         </Typography>
         <Grid container spacing={3}>
@@ -44,32 +45,33 @@ export default function AddressForm({ language }) {
             <Grid item xs={12} sm={6}>
                 <TextField
                     required
-                    id="lastName"
-                    name="lastName"
+                    id="company"
+                    name="company"
                     label={register.company}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="organization"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={6}>
                 <TextField
-                    id="lastName"
-                    name="lastName"
+                    id="position"
+                    name="position"
                     label={register.position}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="organization-title"
                     variant="standard"
                 />
             </Grid>
             <Grid item xs={12} sm={6}>
                 <TextField
                     required
-                    id="lastName"
-                    name="lastName"
+                    id="email"
+                    name="email"
+                    type="email"
                     label={register.email}
                     fullWidth
-                    autoComplete="family-name"
+                    autoComplete="email"
                     variant="standard"
                 />
             </Grid>
@@ -79,7 +81,7 @@ export default function AddressForm({ language }) {
                 name="phone"
                 label={register.phone}
                 fullWidth
-                autoComplete="00000000"
+                autoComplete="tel"
                 variant="standard"
             />
             </Grid>
@@ -92,53 +94,53 @@ export default function AddressForm({ language }) {
             <Grid item xs={12} sm={6}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="country"
+                name="country"
                 label={register.country}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="country"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={6}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="state"
+                name="state"
                 label={register.state}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="region"
                 variant="standard"
             />
             </Grid><Grid item xs={12} sm={6}>
             <TextField
                 required
-                id="address1"
-                name="address1"
+                id="city"
+                name="city"
                 label={register.city}
                 fullWidth
-                autoComplete="shipping address-line1"
+                autoComplete="address-level2"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12} sm={6}>
             <TextField
                 required
-                id="zip"
-                name="zip"
+                id="postalCode"
+                name="postalCode"
                 label={register.zip}
                 fullWidth
-                autoComplete="shipping postal-code"
+                autoComplete="postal-code"
                 variant="standard"
             />
             </Grid>
             <Grid item xs={12}>
             <TextField
-                id="address2"
-                name="address2"
+                id="address"
+                name="address"
                 label={register.address}
                 fullWidth
-                autoComplete="shipping address-line2"
+                autoComplete="address-line1"
                 variant="standard"
             />
             </Grid>
@@ -150,7 +152,7 @@ export default function AddressForm({ language }) {
                 label={register.privacy}
             />
             </Grid>
-            <Button variant="contained"color="primary" href="#contained-buttons" className='btn'>
+            <Button variant="contained" color="primary" href="#contained-buttons" className='btn'>
                 {register.register}
             </Button>
         </Grid>
