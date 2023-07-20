@@ -7,8 +7,54 @@ import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import data from "../data.json";
 
+import RegisterService from '../services/register';
+
 export default function AddressForm({ language }) {
     const { register } = data[language]; 
+
+    const handleSubmit = async (event) => {
+        console.log('submit');
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const user = {
+            data:{
+                slug: `visitor${Math.floor(Math.random() * (179900 - 6 + 1)) + 6}`,
+                name: formData.get('firstName'),
+                lastname: formData.get('lastName'),
+                company: formData.get('company'),
+                position: formData.get('position'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                country: formData.get('country'),
+                state: formData.get('state'),
+                city: formData.get('city'),
+                postalcode: formData.get('postalCode'),
+                address: formData.get('address')
+            }
+            
+        };
+
+
+        try {
+            console.log(user); // The user data sent to the server
+
+            const response = await RegisterService.registerUser(user);
+            console.log(response.data); // Server response data
+            console.log(user); // The user data sent to the server
+        } catch (error) {
+            console.error('Error occurred during registration:', error.response);
+        }
+    };
+    const registerVisitor = (user) => {
+        let promise = RegisterService.registerUser(user);
+        promise
+          .then(response => {
+            console.log(response.data);
+          })
+          .catch(e => {
+            console.log(e);
+          });
+        };
 
   return (
     <React.Fragment>
@@ -19,76 +65,78 @@ export default function AddressForm({ language }) {
         <Typography variant="h" gutterBottom className='title'>
             {register.personal}
         </Typography>
-        <Grid container spacing={3}>
-            <Grid item xs={12} sm={6}>
+
+        <form onSubmit={handleSubmit}>
+            <Grid container spacing={3}>
+                <Grid item xs={12} sm={6}>
+                    <TextField
+                        required
+                        id="firstName"
+                        name="firstName"
+                        label={register.name}
+                        fullWidth
+                        autoComplete="given-name"
+                        variant="standard"
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <TextField
+                        required
+                        id="lastName"
+                        name="lastName"
+                        label={register.lastName}
+                        fullWidth
+                        autoComplete="family-name"
+                        variant="standard"
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <TextField
+                        required
+                        id="company"
+                        name="company"
+                        label={register.company}
+                        fullWidth
+                        autoComplete="organization"
+                        variant="standard"
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <TextField
+                        id="position"
+                        name="position"
+                        label={register.position}
+                        fullWidth
+                        autoComplete="organization-title"
+                        variant="standard"
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <TextField
+                        required
+                        id="email"
+                        name="email"
+                        type="email"
+                        label={register.email}
+                        fullWidth
+                        autoComplete="email"
+                        variant="standard"
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
                 <TextField
-                    required
-                    id="firstName"
-                    name="firstName"
-                    label={register.name}
+                    id="phone"
+                    name="phone"
+                    label={register.phone}
                     fullWidth
-                    autoComplete="given-name"
+                    autoComplete="tel"
                     variant="standard"
                 />
+                </Grid>
             </Grid>
-            <Grid item xs={12} sm={6}>
-                <TextField
-                    required
-                    id="lastName"
-                    name="lastName"
-                    label={register.lastName}
-                    fullWidth
-                    autoComplete="family-name"
-                    variant="standard"
-                />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-                <TextField
-                    required
-                    id="company"
-                    name="company"
-                    label={register.company}
-                    fullWidth
-                    autoComplete="organization"
-                    variant="standard"
-                />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-                <TextField
-                    id="position"
-                    name="position"
-                    label={register.position}
-                    fullWidth
-                    autoComplete="organization-title"
-                    variant="standard"
-                />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-                <TextField
-                    required
-                    id="email"
-                    name="email"
-                    type="email"
-                    label={register.email}
-                    fullWidth
-                    autoComplete="email"
-                    variant="standard"
-                />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-            <TextField
-                id="phone"
-                name="phone"
-                label={register.phone}
-                fullWidth
-                autoComplete="tel"
-                variant="standard"
-            />
-            </Grid>
-        </Grid>
-        <Typography variant="h4" gutterBottom className='title'>
-        {register.addressInfo}
-        </Typography>
+            <Typography variant="h4" gutterBottom className='title'>
+            {register.addressInfo}
+            </Typography>
 
         <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
@@ -145,17 +193,17 @@ export default function AddressForm({ language }) {
             />
             </Grid>
         
- 
             <Grid item xs={12}>
             <FormControlLabel
                 control={<Checkbox color="primary" name="privacy" value="yes" />}
                 label={register.privacy}
             />
             </Grid>
-            <Button variant="contained" color="primary" href="#contained-buttons" className='btn'>
-                {register.register}
+            <Button type='submit' variant="contained" color="primary" href="#contained-buttons" className='btn'>
+                <input type="submit" value={register.register}></input>
             </Button>
         </Grid>
+        </form>
         </div>
     </React.Fragment>
   );
