@@ -45,6 +45,7 @@ export default function AddressForm({ language }) {
             console.error('Error occurred during registration:', error.response);
         }
     };
+    
     const registerVisitor = (user) => {
         let promise = RegisterService.registerUser(user);
         promise
