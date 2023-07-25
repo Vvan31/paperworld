@@ -49,6 +49,7 @@ streetNumberExhibitor: formData.get('numberExtExhibitor'),
 aptNumberExhibitor: formData.get('numberIntExhibitor'),
 web: formData.get('web'),
 phone: formData.get('phone'),
+/* spot: selection */
 },
 };
 
