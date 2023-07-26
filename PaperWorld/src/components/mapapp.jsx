@@ -30,7 +30,7 @@ const MapApp = ({ setSelection }) => {
     const selectedSpot = e.target.id;
     setSpot(selectedSpot);
     setClickedButton(selectedSpot);
-    console.log(selectedSpot)
+  /*   console.log(selectedSpot) */
   };
 
   const getSpotExhibitorName = (slug) => {
@@ -39,7 +39,7 @@ const MapApp = ({ setSelection }) => {
         return null;
     } else if (spotData.attributes.exhibitor.data == null) {return null}
     else{
-        console.log(spotData.attributes.exhibitor.data.attributes.company);
+        /* console.log(spotData.attributes.exhibitor.data.attributes.company); */
         return spotData.attributes.exhibitor.data.attributes.company;
     }
   };

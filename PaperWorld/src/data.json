@@ -18,6 +18,9 @@
             "what-content": "America's Paper World es una exhibición que ofrece una interacción presencial de expertos y profesionales en el medio papelero con todo el público que busca adquirir nuevos conocimientos y mantenerse actualizados con los más importantes desarrollos a nivel mundial así como crear nuevos vínculos y contactos en nuestra gran Industria Papelera."
          },
          "register":{
+            "success":"¡Registro Exitoso!",
+            "successDialog": "Si tiene alguna duda no dude en contactase con nosotros.",
+            "close": "Cerrar",
             "title":"Selecciona el tipo de acceso al que deseas registrarte",
             "visitor": "Visitante",
             "exhibitor": "Expositor",
@@ -39,6 +42,9 @@
             "register" : "Registrarse"
          },
          "exhibitor":{
+            "success":"¡Registro Exitoso!",
+            "successDialog": "Si tiene alguna duda no dude en contactase con nosotros.",
+            "close": "Cerrar",
             "privacy": "Acepto el Aviso de Privacidad ",
             "register" : "Registrarse",
             "title":"Selecciona el tipo de acceso al que deseas registrarte",
@@ -93,8 +99,6 @@
                "third": "3er pago 30% - Mayo"
             },
             "paymentFailure": "El incumplimiento de los plazos o términos especificados dará lugar a un ajuste de precios en el stand contratado, cambiando a precio regular y/o la pérdida del stand asignado para su empresa.",
-            
-            
             "selectPackage": "Selecciona el lugar y paquete",
             "packageInfo": "Seleccione los lugares en los que le gustaría exhibir durante el evento. Recuerde que su espacio no estará garantizado hasta concluir el proceso de pago. Los precios son los siguientes:",
             "whiteStand": "Lugar blanco:",
@@ -129,6 +133,9 @@
             "what-content": "America's Paper World is an exhibition that offers face-to-face interaction between experts and professionals in the paper industry with the public that seeks to acquire new knowledge and stay updated with the most important developments worldwide, as well as create new links and contacts in our great Paper Industry."
          },
          "register":{
+            "success": "Registration Successful!",
+            "successDialog": "If you have any questions, feel free to contact us.",
+            "close": "Close",
             "title":"Select the type of access you want to register for",
             "visitor": "Visitor",
             "exhibitor": "Exhibitor",
@@ -182,6 +189,9 @@
             "register" : "Register"
          },
          "exhibitor":{
+            "success": "Registration Successful!",
+            "successDialog": "If you have any questions, feel free to contact us.",
+            "close": "Close",
             "privacy": "I accept the Privacy Notice ",
             "register" : "Register",
             "title":"Selecciona el tipo de acceso al que deseas registrarte",

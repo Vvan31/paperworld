@@ -8,12 +8,32 @@ import Button from '@mui/material/Button';
 import data from "../data.json";
 
 import RegisterService from '../services/register';
+// Success modal imports 
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 export default function AddressForm({ language }) {
     const { register } = data[language]; 
+    // Success modal
+    const [open, setOpen] = React.useState(false);
+    const theme = useTheme();
+    const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+    const handleClickOpen = () => {
+        setOpen(true);
+      };
+    
+      const handleClose = () => {
+        setOpen(false);
+      };
+    
 
     const handleSubmit = async (event) => {
-        console.log('submit');
+        /* console.log('submit'); */
         event.preventDefault();
         const formData = new FormData(event.currentTarget);
         const user = {
@@ -31,14 +51,13 @@ export default function AddressForm({ language }) {
                 postalcode: formData.get('postalCode'),
                 address: formData.get('address')
             }
-            
         };
         try {
-            console.log(user); // The user data sent to the server
-
+         /*    console.log(user); // The user data sent to the server */
             const response = await RegisterService.registerUser(user);
             console.log(response.data); // Server response data
-            console.log(user); // The user data sent to the server
+            handleClickOpen();
+            /* console.log(user); // The user data sent to the server */
         } catch (error) {
             console.error('Error occurred during registration:', error.response);
         }
@@ -57,6 +76,26 @@ export default function AddressForm({ language }) {
 
   return (
     <React.Fragment>
+         <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="responsive-dialog-title"
+      >
+        <DialogTitle id="responsive-dialog-title">
+          {register.success}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {register.successDialog}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button autoFocus onClick={handleClose}>
+            {register.close}
+          </Button>
+        </DialogActions>
+      </Dialog>
         <div className='registerForm'>
         <Typography variant="h10" gutterBottom>
             {register.required}
@@ -196,6 +235,7 @@ export default function AddressForm({ language }) {
             <FormControlLabel
                 control={<Checkbox color="primary" name="privacy" value="yes" />}
                 label={register.privacy}
+                required
             />
             </Grid>
             <Button type='submit' variant="contained" color="primary" href="#contained-buttons" className='btn'>

@@ -10,16 +10,39 @@ import MapApp from './mapapp';
 import './exhibitor.css'
 import RegisterService from '../services/register';
 
+// Success modal imports 
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+
 export default function ExhibitorForm({ language }) {
 const { exhibitor } = data[language];
 const [selection, setSelection] = React.useState(null);
+// Success modal
+const [open, setOpen] = React.useState(false);
+const theme = useTheme();
+const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
 
 const handleSelection = (spot) => {
 setSelection(spot);
 };
 
 const handleSubmit = async (event) => {
-    console.log('submit');
+    event.preventDefault();
+   /*  console.log('submit'); */
     const formData = new FormData(event.currentTarget);
     const user = {
         data: {
@@ -51,11 +74,12 @@ const handleSubmit = async (event) => {
         },
     };
     try {
-        console.log(user); // The user data sent to the server
-        console.log('data:' + user);
+      /*   console.log(user); 
+        console.log('data:' + user); */
 
         const response = await RegisterService.registerExhibitor(user);
-        console.log(response.data); // Server response data
+        handleClickOpen();
+        console.log(response.data);
     } catch (error) {
         console.error('Error occurred during registration:', error.response);
     }
@@ -63,6 +87,26 @@ const handleSubmit = async (event) => {
 
 return (
     <React.Fragment>
+         <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="responsive-dialog-title"
+      >
+        <DialogTitle id="responsive-dialog-title">
+          {exhibitor.success}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {exhibitor.successDialog}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button autoFocus onClick={handleClose}>
+            {exhibitor.close}
+          </Button>
+        </DialogActions>
+      </Dialog>
         <form onSubmit={handleSubmit}>
         <div className='exhibitorForm'>
           <Typography variant="h10" gutterBottom>
@@ -74,8 +118,6 @@ return (
             <Typography variant="h4" gutterBottom className='title'>
                 {exhibitor.billinginformation}
             </Typography>
-        
-            
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                         <TextField required id="organization" name="organization" label={exhibitor.companyName} fullWidth
