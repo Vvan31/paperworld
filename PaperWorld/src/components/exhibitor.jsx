@@ -26,7 +26,7 @@ const handleSubmit = async (event) => {
         slug: `exhibitor${Math.floor(Math.random() * (179900 - 6 + 1)) + 6}`,
         name: formData.get('firstName'),
         lastname: formData.get('lastName'),
-        company: formData.get('companyName'),
+        company: formData.get('companyNameExhibitor'),
         rfc: formData.get('rfc'),
         country: formData.get('country'),
         state: formData.get('state'),
@@ -52,13 +52,14 @@ const handleSubmit = async (event) => {
     };
     try {
         console.log(user); // The user data sent to the server
+        console.log('data:' + user);
+
         const response = await RegisterService.registerExhibitor(user);
         console.log(response.data); // Server response data
     } catch (error) {
         console.error('Error occurred during registration:', error.response);
     }
 };
-
 
 return (
     <React.Fragment>
@@ -77,7 +78,7 @@ return (
             
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
-                        <TextField required id="companyName" name="companyName" label={exhibitor.companyName} fullWidth
+                        <TextField required id="organization" name="organization" label={exhibitor.companyName} fullWidth
                             autoComplete="organization" variant="standard" />
                     </Grid>
                     <Grid item xs={12} sm={6}>

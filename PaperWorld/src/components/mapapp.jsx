@@ -30,6 +30,7 @@ const MapApp = ({ setSelection }) => {
     const selectedSpot = e.target.id;
     setSpot(selectedSpot);
     setClickedButton(selectedSpot);
+    console.log(selectedSpot)
   };
 
   const getSpotExhibitorName = (slug) => {
