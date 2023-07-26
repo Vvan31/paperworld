@@ -17,7 +17,14 @@
     border-bottom: 2px solid #223B82;
 }
 .registerForm{
-    margin: 10px 25% 0px 25% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20% 10px 20% !important;
+}
+.exhibitorForm{
+    margin: 10px 20% 10px 20% !important;
 }
 .btn{
     margin-top: 10px !important;
@@ -31,8 +38,11 @@
     transform: translateX(-50%);
 }
 @media screen and (max-width: 600px) {
-    .registerForm{
+    .registerForm {
         margin: 10px 3% 0px 3% !important;
-        padding: 0 !important;
+        padding: 0px !important;
+    }
+    .exhibitorForm {
+        margin: 10px 10px 10px 10px !important;
     }
 }

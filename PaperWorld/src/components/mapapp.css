@@ -2,10 +2,10 @@
 
 
 .seat-selection {
-    position: relative;
+ position: relative;
     width: 850px;
     height: 600px;
-    min-width: 600px;
+   /* min-width: 600px; */
     overflow-x: auto;
     background-repeat: no-repeat;
     background-size: 100% 90%;
@@ -91,9 +91,13 @@
     flex-direction: column;
    
   }
+  .map-container {
+    margin: 2rem 0; /* Add some margin to the top and bottom */
+    overflow: auto; /* Add overflow to the map container to allow scrolling */
+  }
 @media screen and (max-width: 600px) {
     .seat-selection {
-        transform: scale(0.80);
+        /* transform: scale(0.80); */
         overflow-x: scroll;
       }
     }

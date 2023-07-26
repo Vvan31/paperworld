@@ -1,15 +1,5 @@
 
-.registerForm{
-    margin: 10px 25% 0px 25%;
-}
-.title {
-    /* CSS styles for the title */
-  }
-  
-  .sub {
-    /* CSS styles for the sub-heading */
-  }
-  
+
   .payment {
     /* CSS styles for the payment section */
     display: flex;
@@ -55,9 +45,9 @@
   .stands .pink {
     background-color: pink;
   }
-    .stands .green {
-        background-color: green;
-    }
+  .stands .green {
+      background-color: green;
+  }
   
   .stands .standName {
     /* CSS styles for the stand name */
@@ -69,46 +59,35 @@
     margin-right: 1rem;
   }
   
-  .stands .standSize {
-    /* CSS styles for the stand size */
-  }
-  
   .map {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
   }
   
   .mapTitle {
-    /* CSS styles for the map title */
     display: flex;
   }
   
   .mapTitle .tag {
-    /* CSS styles for the map tags */
     margin-right: 0.5rem;
   }
   
   .mapContainer {
-    /* CSS styles for the map container */
-    min-width: 600px;
-    min-height: 600px;
+    margin-top: 2rem; /* Add some top margin to the map container wrapper */
+    overflow: auto; /* Add overflow to the wrapper to allow scrolling */
+  }
 
+  .submit{
+    padding: 3px  10px 3px 10px;
+    background-color: rgba(0, 0, 255, 0);
+    border: 0;
+    color: aliceblue;
   }
-  
-  .mapImg {
-    /* CSS styles for the map image */
+    .submit::after{
+    padding: 3px  10px 3px 10px;
+    background-color: rgb(0, 0, 255);
+    border: 0;
+    color: aliceblue;
   }
-  
-  .btn {
-    /* CSS styles for the button */
-    margin-top: 1rem;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .registerForm{
-        margin: 10px 3% 0px 3% !important;
-        padding: 0 !important;
-    }
-}

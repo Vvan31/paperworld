@@ -6,7 +6,7 @@ class RegisterService {
     }
 
     registerExhibitor(user) {
-        return axios.post('https://paperworld-production.up.railway.app/api/exhibitors?populate=exhibitor', user);
+        return axios.post('https://paperworld-production.up.railway.app/api/exhibitors?populate=spot', user);
     }
 
     getRegisteredExhibitorsSpots() {

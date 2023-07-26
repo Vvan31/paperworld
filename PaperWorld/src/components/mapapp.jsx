@@ -26,7 +26,7 @@ const MapApp = ({ setSelection }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const selectedSpot = e.target.innerText;
+    const selectedSpot = e.target.id;
     setSpot(selectedSpot);
   };
 
@@ -41,145 +41,145 @@ const MapApp = ({ setSelection }) => {
     }
   };
 
-
   return (
-    <div className="seat-selection">
-      <div className="G1">
-        <button onClick={handleClick} className="seat-button large" id="a1">
-          {getSpotExhibitorName('a1') || 'A1'}
-        </button>
-        <button onClick={handleClick} className="seat-button small" id="a2">
-          {getSpotExhibitorName('a2') || 'A2'}
-        </button>
-        <button onClick={handleClick} className="seat-button small" id='a3'>
-        {getSpotExhibitorName('a3') || 'A3'}
-        </button>
-        <button onClick={handleClick} className="seat-button small" id='a4'>
-        {getSpotExhibitorName('a4') || 'A4'}
-
-        </button>
-        <button onClick={handleClick} className="seat-button small" id='a5'>
-        {getSpotExhibitorName('a5') || 'A5'}
-        </button>
-        <button onClick={handleClick} className="seat-button large" id='a6'>
-          {getSpotExhibitorName('a6') || 'A6'}
-
-        </button>
-        <button onClick={handleClick} className="seat-button large" id='a7'>
-          {getSpotExhibitorName('a7') || 'A7'}
-        </button>
-    </div>
-   
-        <div className="G2 group-row">
-            <div className="group">
-                <button onClick={handleClick} className="seat-button large" id='b1'>
-          {getSpotExhibitorName('b1') || 'B1'}
-                </button>
-                <button onClick={handleClick} className="seat-button large" id='c2'>
-          {getSpotExhibitorName('c2') || 'C2'}
-                </button>
-            </div>
-            <div className="group">
-                <button onClick={handleClick} className="seat-button vertical" id='b2'>
-          {getSpotExhibitorName('b2') || 'B2'}
-
-                </button>
-            </div>
+    <div className="map-container">
+      <div className="seat-selection">
+        <div className="G1">
+          <button onClick={handleClick} className="seat-button large" id="1">
+            {getSpotExhibitorName('a1') || 'A1'}
+          </button>
+          <button onClick={handleClick} className="seat-button small" id="3">
+            {getSpotExhibitorName('a2') || 'A2'}
+          </button>
+          <button onClick={handleClick} className="seat-button small" id="4">
+            {getSpotExhibitorName('a3') || 'A3'}
+          </button>
+          <button onClick={handleClick} className="seat-button small" id="5">
+            {getSpotExhibitorName('a4') || 'A4'}
+          </button>
+          <button onClick={handleClick} className="seat-button small" id="6">
+            {getSpotExhibitorName('a5') || 'A5'}
+          </button>
+          <button onClick={handleClick} className="seat-button large" id="7">
+            {getSpotExhibitorName('a6') || 'A6'}
+          </button>
+          <button onClick={handleClick} className="seat-button large" id="8">
+            {getSpotExhibitorName('a7') || 'A7'}
+          </button>
         </div>
-        <div className="G3 group-row">
-            <div className="group">
-                <button onClick={handleClick} className="seat-button vertical" id='b3'>
-          {getSpotExhibitorName('b3') || 'B3'}
 
-                </button>
-            </div>
-            <div className="group">
-                <button onClick={handleClick} className="seat-button small" id='b4'>
-            {getSpotExhibitorName('b4') || 'B4'}
-                </button>
-            </div>
-            <div className="group">
-            <button onClick={handleClick} className="seat-button large" id='b5'>
-            {getSpotExhibitorName('b5') || 'B5'}
+        <div className="G2 group-row">
+          <div className="group">
+            <button onClick={handleClick} className="seat-button large" id="12">
+              {getSpotExhibitorName('b1') || 'B1'}
             </button>
-            <button onClick={handleClick} className="seat-button large" id='c3'>
-            {getSpotExhibitorName('c3') || 'C3'}
+            <button onClick={handleClick} className="seat-button large" id="10">
+              {getSpotExhibitorName('c2') || 'C2'}
             </button>
-            </div>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button vertical" id="13">
+              {getSpotExhibitorName('b2') || 'B2'}
+            </button>
+          </div>
+        </div>
+
+        <div className="G3 group-row">
+          <div className="group">
+            <button onClick={handleClick} className="seat-button vertical" id="14">
+              {getSpotExhibitorName('b3') || 'B3'}
+            </button>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button small" id="15">
+              {getSpotExhibitorName('b4') || 'B4'}
+            </button>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button large" id="16">
+              {getSpotExhibitorName('b5') || 'B5'}
+            </button>
+            <button onClick={handleClick} className="seat-button large" id="11">
+              {getSpotExhibitorName('c3') || 'C3'}
+            </button>
+          </div>
         </div>
 
         <div className="G4 group-row">
-            <div className="group">
-            <button onClick={handleClick} className="seat-button vertical" id='c1'>
-            {getSpotExhibitorName('c1') || 'C1'}
+          <div className="group">
+            <button onClick={handleClick} className="seat-button vertical" id="9">
+              {getSpotExhibitorName('c1') || 'C1'}
             </button>
-            <button onClick={handleClick} className="seat-button vertical" id='d1'>
-            {getSpotExhibitorName('d1') || 'D1'}
+            <button onClick={handleClick} className="seat-button vertical" id="17">
+              {getSpotExhibitorName('d1') || 'D1'}
             </button>
-            </div>
+          </div>
         </div>
+
         <div className="G5 group-row">
-            <div className="group">
-                <button onClick={handleClick} className="seat-button large" id='d2'>
-                {getSpotExhibitorName('d2') || 'D2'}
-                </button>
-                <button onClick={handleClick} className="seat-button large" id='e1'>
-                {getSpotExhibitorName('e1') || 'E1'}
-                </button>
-            </div>
-            <div className="group">
-                <button onClick={handleClick} className="seat-button vertical" id='d3'>
-                {getSpotExhibitorName('d3') || 'D3'}
-                </button>
-            </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button large" id="18">
+              {getSpotExhibitorName('d2') || 'D2'}
+            </button>
+            <button onClick={handleClick} className="seat-button large" id="24">
+              {getSpotExhibitorName('e1') || 'E1'}
+            </button>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button vertical" id="19">
+              {getSpotExhibitorName('d3') || 'D3'}
+            </button>
+          </div>
         </div>
+
         <span className="empty-space"></span>
 
-
         <div className="G6 group-row">
-            <div className="group">
-                <button onClick={handleClick} className="seat-button vertical" id='d4'>
-                {getSpotExhibitorName('d4') || 'D4'}
-                </button>
-            </div>
-            <div className="group">
-                <button onClick={handleClick} className="seat-button small" id='d5'>
-                {getSpotExhibitorName('d5') || 'D5'}
-                </button>
-                <button onClick={handleClick} className="seat-button small" id='e2'>
-                {getSpotExhibitorName('e2') || 'E2'}
-                </button>
-            </div>
-            <div className="group">
-                <button onClick={handleClick} className="seat-button small" id='d6'>
-                {getSpotExhibitorName('d6') || 'D6'}
-                </button>
-                <button onClick={handleClick} className="seat-button small" id='e3'>
-                {getSpotExhibitorName('e3') || 'E3'}
-                </button>
-            </div>
-            <div className="group">
-                <button onClick={handleClick} className="seat-button vertical" id='d7'>
-                {getSpotExhibitorName('d7') || 'D7'}
-                </button>
-            </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button vertical" id="20">
+              {getSpotExhibitorName('d4') || 'D4'}
+            </button>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button small" id="21">
+              {getSpotExhibitorName('d5') || 'D5'}
+            </button>
+            <button onClick={handleClick} className="seat-button small" id="25">
+              {getSpotExhibitorName('e2') || 'E2'}
+            </button>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button small" id="22">
+              {getSpotExhibitorName('d6') || 'D6'}
+            </button>
+            <button onClick={handleClick} className="seat-button small" id="26">
+              {getSpotExhibitorName('e3') || 'E3'}
+            </button>
+          </div>
+          <div className="group">
+            <button onClick={handleClick} className="seat-button vertical" id="23">
+              {getSpotExhibitorName('d7') || 'D7'}
+            </button>
+          </div>
         </div>
+
         <span className="empty-space"></span>
 
         <div className="G7">
-            <button onClick={handleClick} className="seat-button large" id='f1'>
+          <button onClick={handleClick} className="seat-button large" id="27">
             {getSpotExhibitorName('f1') || 'F1'}
-            </button>
-            <button onClick={handleClick} className="seat-button small" id='f2'>
+          </button>
+          <button onClick={handleClick} className="seat-button small" id="25">
             {getSpotExhibitorName('f2') || 'F2'}
-            </button>
-            <button onClick={handleClick} className="seat-button large" id='f3'>
+          </button>
+          <button onClick={handleClick} className="seat-button large" id="28">
             {getSpotExhibitorName('f3') || 'F3'}
-            </button>
-            <button onClick={handleClick} className="seat-button large" id='f4'>
+          </button>
+          <button onClick={handleClick} className="seat-button large" id="29">
             {getSpotExhibitorName('f4') || 'F4'}
-            </button>
+          </button>
         </div>
+      </div>
     </div>
   );
 };

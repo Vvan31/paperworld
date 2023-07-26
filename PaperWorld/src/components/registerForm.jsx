@@ -33,8 +33,6 @@ export default function AddressForm({ language }) {
             }
             
         };
-
-
         try {
             console.log(user); // The user data sent to the server
 
@@ -60,13 +58,13 @@ export default function AddressForm({ language }) {
   return (
     <React.Fragment>
         <div className='registerForm'>
-        <Typography variant="h10" gutterBottom>
+          <Typography variant="h10" gutterBottom>
             {register.required}
         </Typography>
-        <Typography variant="h" gutterBottom className='title'>
+        <Typography variant="h10" gutterBottom className='title'>
             {register.personal}
         </Typography>
-
+        
         <form onSubmit={handleSubmit}>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>
