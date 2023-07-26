@@ -1,17 +1,16 @@
-/* SeatSelection.css */
-
-
+/* 
 .seat-selection {
- position: relative;
-    width: 850px;
-    height: 600px;
-   /* min-width: 600px; */
+    margin-left: 600px;
+    position: relative;
+    width: 100%;
+    height: 30rem;
     overflow-x: auto;
     background-repeat: no-repeat;
     background-size: 100% 90%;
   }
   
   .G1 {
+    display: inline-block;
     position: absolute;
     top: 70px;
     left: 90px;
@@ -76,6 +75,7 @@
     height: 80px;
     padding: 2;
     margin: 2;
+
   }
 
   .group-row {
@@ -83,21 +83,147 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
-
   }
-  
+
   .group {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
    
   }
   .map-container {
-    margin: 2rem 0; /* Add some margin to the top and bottom */
-    overflow: auto; /* Add overflow to the map container to allow scrolling */
+    margin: 2rem 0; 
+    overflow: auto; 
   }
+
+  .clicked {
+    background-color: #FF9800; 
+    color: white;
+  }
+  
 @media screen and (max-width: 600px) {
     .seat-selection {
-        /* transform: scale(0.80); */
+        transform: scale(0.80); 
         overflow-x: scroll;
+        margin-top: -90px;
       }
+      .G1, .G2, .G3, .G4, .G5, .G6, .G7 {
+        display: flex;
+        position: absolute;
+        flex-wrap: nowrap;
+      }
+  } 
+ */
+
+ .seat-selection {
+  margin-left: 600px;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  overflow-x: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+}
+
+.G1 {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  left: 90px;
+}
+
+.G2 {
+  position: absolute;
+  top: 170px;
+  left: 180px;
+}
+
+.G3 {
+  position: absolute;
+  top: 170px;
+  left: 330px;
+}
+
+.G4 { 
+  position: absolute;
+  top: 210px;
+  left: 90px;
+}
+
+.G5 {
+  position: absolute;
+  top: 290px;
+  left: 180px;
+}
+
+.G6 {
+  position: absolute;
+  top: 290px;
+  left: 330px;
+}
+
+.G7 {
+  position: absolute;
+  top: 440px;
+  left: 150px;
+}
+.large {
+  background-color: #E91E63;
+  color: white;
+  width: 80px;
+  height: 40px;
+  padding: 2;
+  margin: 2;
+}
+
+.small {
+  background-color: #2196F3;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 2;
+  margin: 2;
+}
+.vertical{
+  background-color: #2196F3;
+  color: white;
+  width: 40px;
+  height: 80px;
+  padding: 2;
+  margin: 2;
+
+}
+
+.group-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+ 
+}
+.map-container {
+  margin: 2rem 0; 
+  overflow: auto; 
+}
+.clicked {
+  background-color: #FF9800; 
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .seat-selection {
+      transform: scale(0.80); 
+      overflow-x: scroll;
+      margin-top: -90px;
     }
+    .G1, .G2, .G3, .G4, .G5, .G6, .G7 {
+      display: flex;
+      position: absolute;
+      flex-wrap: nowrap;
+    }
+} 

@@ -58,7 +58,7 @@ export default function AddressForm({ language }) {
   return (
     <React.Fragment>
         <div className='registerForm'>
-          <Typography variant="h10" gutterBottom>
+        <Typography variant="h10" gutterBottom>
             {register.required}
         </Typography>
         <Typography variant="h10" gutterBottom className='title'>

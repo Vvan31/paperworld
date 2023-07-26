@@ -257,6 +257,7 @@ return (
                     {exhibitor.standInclusions}
                 </Typography>
         </div>
+        
 
         {/* Map */}
         <div className='map'>
