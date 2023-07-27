@@ -39,7 +39,7 @@ const MapApp = ({ setSelection }) => {
         return null;
     } else if (spotData.attributes.exhibitor.data == null) {return null}
     else{
-        /* console.log(spotData.attributes.exhibitor.data.attributes.company); */
+        console.log(spotData.attributes.exhibitor.data.attributes.company);
         return spotData.attributes.exhibitor.data.attributes.company;
     }
   };

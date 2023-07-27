@@ -29,7 +29,7 @@ function App() {
   } else if (page === 'register') {
     pageComponent = <Register language={language} />;
   }else if (page === 'map') {
-    pageComponent = <Map  />;
+    pageComponent = <Map  language={language} />;
   }
 
   return (
