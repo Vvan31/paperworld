@@ -1,0 +1,56 @@
+.schedule{
+  min-height: 82vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paperContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paper{
+    width: 40% ;
+}
+.scheduleTitle{ 
+    background-color: #223B82;
+    margin-top: -10px !important;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.title div{
+    width: 60%;
+}
+
+.content{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start; 
+    padding-top: 20px;
+    align-items: flex-start;
+    padding-bottom:40px ;
+}
+
+.paper-content {
+    text-align: left !important; /* Align the text! to the left */
+    margin-bottom: 10px !important;
+
+}
+
+@media (max-width: 600px) {
+    .schedule{
+        height: 150vh;
+    }
+    .paperContainer{
+        flex-direction: column;
+    }
+    .paper{
+        width: 80%;
+    }
+  }
