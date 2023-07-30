@@ -36,23 +36,24 @@ const Navbar = ({ language, onLanguageChange, onPageChange }) => {
 
   const handlePageChange = (selectedPage) => {
     onPageChange(selectedPage);
+    setIsResponsive(false);
   };
 
   return (
     <div className={`topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
-      <a href="/" className="menuItemLogo" onClick={() => handlePageChange('home')}>
+      <a href="#home" className="menuItemLogo" onClick={() => handlePageChange('home')}>
         <img src={logo} alt="APW Logo" width={'70px'} />
       </a>
-      <a className="menuItem" href="/register" onClick={() => handlePageChange('register')}>
+      <a className="menuItem" href="#" onClick={() => handlePageChange('register')}>
         {content.register}
       </a>
-      <a className="menuItem" href="/schedule" onClick={() => handlePageChange('schedule')}>
+      <a className="menuItem" href="#" onClick={() => handlePageChange('schedule')}>
         {content.shcedule}
       </a>
-      <a className="menuItem" href="/map" onClick={() => handlePageChange('map')}>
+      <a className="menuItem" href="#" onClick={() => handlePageChange('map')}>
         {content.map}
       </a>
-      <a className="menuItem" href="/about">
+      <a className="menuItem" href="#about" onClick={() => handlePageChange('contact')}>
         {content.contact}
       </a>
       <a className="burgericon" onClick={toggleResponsive}>
