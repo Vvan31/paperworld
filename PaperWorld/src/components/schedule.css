@@ -45,12 +45,13 @@
 
 @media (max-width: 600px) {
     .schedule{
-        height: 150vh;
+        height: auto;
     }
     .paperContainer{
         flex-direction: column;
     }
-    .paper{
+    .papers{
         width: 80%;
+        min-height: 50vh !important;
     }
   }

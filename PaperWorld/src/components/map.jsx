@@ -14,8 +14,8 @@ const Map = ({ language }) => {
     return (
         <div className="container">
             <MapApp setSelection={handleSelection}  />
-            <div className="information">
-            {/* Place and package */}
+          {/*   <div className="information">
+
             <Typography variant="h4" gutterBottom className='title'>
                     {exhibitor.selectPackage}
                 </Typography>
@@ -79,7 +79,7 @@ const Map = ({ language }) => {
                 <Typography variant="h10" gutterBottom className='sub'>
                     {exhibitor.standInclusions}
                 </Typography>
-                </div>
+                </div> */}
         </div>
 
     );

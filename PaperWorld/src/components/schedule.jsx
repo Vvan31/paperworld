@@ -15,7 +15,7 @@ const Schedule = () => {
   return (
     <div className='schedule'>
         <div className='paperContainer'>
-            <div className='paper'>
+            <div className='papers'>
                 <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1000 } : {})}>
                 <Paper sx={{ m: 1 }} elevation={4}>
                     <div className='scheduleTitle'>
@@ -43,7 +43,7 @@ const Schedule = () => {
                 </Paper>
                 </Grow>
             </div>
-            <div className='paper'>
+            <div className='papers'>
                 <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1500 } : {})}>
                     <Paper sx={{ m: 1 }} elevation={4}>
                         <div className='scheduleTitle'>
@@ -72,7 +72,6 @@ const Schedule = () => {
                 </Grow>
             </div>
         </div>
-     
     </div>
   );
 };

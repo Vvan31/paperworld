@@ -53,6 +53,7 @@ import Home from './components/home';
 import Register from './components/register';
 import Schedule from './components/schedule';
 import Map from './components/map';
+import Contact from './components/contact';
 import Footer from './components/footer';
 
 import mx from './assets/mx.png';
@@ -80,6 +81,8 @@ function App() {
     pageComponent = <Map  language={language} />;
   }else if (page === 'schedule') {
     pageComponent = <Schedule  />;
+  }else {
+    pageComponent = <Contact />
   }
 
   return (

@@ -53,7 +53,7 @@ const Navbar = ({ language, onLanguageChange, onPageChange }) => {
       <a className="menuItem" href="#" onClick={() => handlePageChange('map')}>
         {content.map}
       </a>
-      <a className="menuItem" href="#about" onClick={() => handlePageChange('contact')}>
+      <a className="menuItem" href="#" onClick={() => handlePageChange('contact')}>
         {content.contact}
       </a>
       <a className="burgericon" onClick={toggleResponsive}>
