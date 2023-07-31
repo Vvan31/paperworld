@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <div className="contactContainer">
                 <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1000 } : {})}>
-                    <Paper sx={{ m: 1, height: 700 }} className='paper' elevation={4}>
+                    <Paper sx={{ m: 1, height: 700, width:700 }} className='paper' elevation={4}>
                         <div className='contactMain'>
                             <div className="map">
                                 <Typography variant="h3" component="div" className="mapContentTitle">

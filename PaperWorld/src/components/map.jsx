@@ -12,7 +12,7 @@ const Map = ({ language }) => {
         };
         
     return (
-        <div className="container">
+        <div className="mapcontainer">
             <MapApp setSelection={handleSelection}  />
           {/*   <div className="information">
 

@@ -32,7 +32,7 @@
 .fachada{
   display: block;
 }
-.content {
+.homeContent {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -40,13 +40,13 @@
   margin: 0px 35px 0px 35px;
 }
 
-.content h2 {
+.homeContent h2 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: #223B82;
 }
-.content p{
+.homeContent p{
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 10px;
@@ -77,12 +77,12 @@
   .fachada{
     display: none;
   }
-  .content{
+  .homeContent{
     justify-content: center;
     align-items: center;
     margin: 10px 10px 10px 10px; 
   }
-  .content p{
+  .homeContent p{
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 10px;

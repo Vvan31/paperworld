@@ -26,17 +26,17 @@ const Schedule = () => {
                             NOV
                         </Typography>
                     </div>
-                    <div className='content'>
-                        <Typography variant="h4" component="div" className="paper-content">
+                    <div className='scheduleContent'>
+                        <Typography variant="h4" component="div" className="paperContent">
                             Technical conferences
                         </Typography>
-                        <Typography variant="h6" component="div" className="paper-content">
+                        <Typography variant="h6" component="div" className="paperContent">
                             8:30 - 12:30 hrs
                         </Typography>
-                        <Typography variant="h4" component="div" className="paper-content">
+                        <Typography variant="h4" component="div" className="paperContent">
                             Exposition
                         </Typography>
-                        <Typography variant="h6" component="div" className="paper-content">
+                        <Typography variant="h6" component="div" className="paperContent">
                             11:00 - 19:00 hrs
                         </Typography>
                     </div>
@@ -54,17 +54,17 @@ const Schedule = () => {
                                 NOV
                             </Typography>
                         </div>
-                        <div className='content'>
-                        <Typography variant="h4" component="div" className="paper-content">
+                        <div className='scheduleContent'>
+                        <Typography variant="h4" component="div" className="paperContent">
                             Technical conferences
                         </Typography>
-                        <Typography variant="h6" component="div" className="paper-content">
+                        <Typography variant="h6" component="div" className="paperContent">
                             8:30 - 12:30 hrs
                         </Typography>
-                        <Typography variant="h4" component="div" className="paper-content">
+                        <Typography variant="h4" component="div" className="paperContent">
                             Exposition
                         </Typography>
-                        <Typography variant="h6" component="div" className="paper-content">
+                        <Typography variant="h6" component="div" className="paperContent">
                             11:00 - 19:00 hrs
                         </Typography>
                     </div>

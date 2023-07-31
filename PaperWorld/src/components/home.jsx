@@ -28,7 +28,7 @@ const Home = ({ language }) => {
           <img className="hero" src={eventLogo} alt="America's paper world" />
         </div>
       </div>
-      <div className="content">
+      <div className="homeContent">
         <Paper elevation={4} className="about">
           <h2>{home.about}</h2>
           <p>{home["about-content"]}</p>

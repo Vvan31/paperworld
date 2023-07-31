@@ -28,16 +28,18 @@
     width: 60%;
 }
 
-.content{
+.scheduleContent{
     flex-wrap: wrap;
+    margin: 10px 10px 10px 10px; 
     display: flex;
     justify-content: flex-start; 
     padding-top: 20px;
     align-items: flex-start;
     padding-bottom:40px ;
+    flex-direction: column;
 }
 
-.paper-content {
+.paperContent {
     text-align: left !important; /* Align the text! to the left */
     margin-bottom: 10px !important;
 
