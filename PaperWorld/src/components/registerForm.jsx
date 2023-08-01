@@ -7,6 +7,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import data from "../data.json";
 
+import AlertDialog from './privacyNotice';
 import RegisterService from '../services/register';
 // Success modal imports 
 import Dialog from '@mui/material/Dialog';
@@ -23,6 +24,18 @@ export default function AddressForm({ language }) {
     const [open, setOpen] = React.useState(false);
     const theme = useTheme();
     const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+    //Modal 
+    const [openModal, setOpenModal] = React.useState(false);
+
+    const handlePrivacyNoticeClickOpen = () => {
+        setOpenModal(true);
+      };
+    
+      const handlePrivacyNoticeClose = () => {
+        setOpenModal(false);
+      };
+
     const handleClickOpen = () => {
         setOpen(true);
       };
@@ -63,20 +76,9 @@ export default function AddressForm({ language }) {
         }
     };
     
-    const registerVisitor = (user) => {
-        let promise = RegisterService.registerUser(user);
-        promise
-          .then(response => {
-            console.log(response.data);
-          })
-          .catch(e => {
-            console.log(e);
-          });
-        };
-
   return (
     <React.Fragment>
-         <Dialog
+        <Dialog
         fullScreen={fullScreen}
         open={open}
         onClose={handleClose}
@@ -95,154 +97,158 @@ export default function AddressForm({ language }) {
             {register.close}
           </Button>
         </DialogActions>
-      </Dialog>
+        </Dialog>
         <div className='registerForm'>
-        <Typography variant="h10" gutterBottom>
-            {register.required}
-        </Typography>
-        <Typography variant="h10" gutterBottom className='title'>
-            {register.personal}
-        </Typography>
-        
-        <form onSubmit={handleSubmit}>
+            <Typography variant="h10" gutterBottom>
+                {register.required}
+            </Typography>
+            <Typography variant="h10" gutterBottom className='title'>
+                {register.personal}
+            </Typography>
+            
+            <form onSubmit={handleSubmit}>
+                <Grid container spacing={3}>
+                    <Grid item xs={12} sm={6}>
+                        <TextField
+                            required
+                            id="firstName"
+                            name="firstName"
+                            label={register.name}
+                            fullWidth
+                            autoComplete="given-name"
+                            variant="standard"
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <TextField
+                            required
+                            id="lastName"
+                            name="lastName"
+                            label={register.lastName}
+                            fullWidth
+                            autoComplete="family-name"
+                            variant="standard"
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <TextField
+                            required
+                            id="company"
+                            name="company"
+                            label={register.company}
+                            fullWidth
+                            autoComplete="organization"
+                            variant="standard"
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <TextField
+                            id="position"
+                            name="position"
+                            label={register.position}
+                            fullWidth
+                            autoComplete="organization-title"
+                            variant="standard"
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <TextField
+                            required
+                            id="email"
+                            name="email"
+                            type="email"
+                            label={register.email}
+                            fullWidth
+                            autoComplete="email"
+                            variant="standard"
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                    <TextField
+                        id="phone"
+                        name="phone"
+                        label={register.phone}
+                        fullWidth
+                        autoComplete="tel"
+                        variant="standard"
+                    />
+                    </Grid>
+                </Grid>
+                <Typography variant="h4" gutterBottom className='title'>
+                {register.addressInfo}
+                </Typography>
+
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>
-                    <TextField
-                        required
-                        id="firstName"
-                        name="firstName"
-                        label={register.name}
-                        fullWidth
-                        autoComplete="given-name"
-                        variant="standard"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <TextField
-                        required
-                        id="lastName"
-                        name="lastName"
-                        label={register.lastName}
-                        fullWidth
-                        autoComplete="family-name"
-                        variant="standard"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <TextField
-                        required
-                        id="company"
-                        name="company"
-                        label={register.company}
-                        fullWidth
-                        autoComplete="organization"
-                        variant="standard"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <TextField
-                        id="position"
-                        name="position"
-                        label={register.position}
-                        fullWidth
-                        autoComplete="organization-title"
-                        variant="standard"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <TextField
-                        required
-                        id="email"
-                        name="email"
-                        type="email"
-                        label={register.email}
-                        fullWidth
-                        autoComplete="email"
-                        variant="standard"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6}>
                 <TextField
-                    id="phone"
-                    name="phone"
-                    label={register.phone}
+                    required
+                    id="country"
+                    name="country"
+                    label={register.country}
                     fullWidth
-                    autoComplete="tel"
+                    autoComplete="country"
                     variant="standard"
                 />
                 </Grid>
+                <Grid item xs={12} sm={6}>
+                <TextField
+                    required
+                    id="state"
+                    name="state"
+                    label={register.state}
+                    fullWidth
+                    autoComplete="region"
+                    variant="standard"
+                />
+                </Grid><Grid item xs={12} sm={6}>
+                <TextField
+                    required
+                    id="city"
+                    name="city"
+                    label={register.city}
+                    fullWidth
+                    autoComplete="address-level2"
+                    variant="standard"
+                />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                <TextField
+                    required
+                    id="postalCode"
+                    name="postalCode"
+                    label={register.zip}
+                    fullWidth
+                    autoComplete="postal-code"
+                    variant="standard"
+                />
+                </Grid>
+                <Grid item xs={12}>
+                <TextField
+                    id="address"
+                    name="address"
+                    label={register.address}
+                    fullWidth
+                    autoComplete="address-line1"
+                    variant="standard"
+                />
+                </Grid>
+                 <Grid item xs={12}>
+                    <FormControlLabel
+                    control={<Checkbox color="primary" name="privacy" value="yes" />}
+                    label={
+                        <a href="#" onClick={handlePrivacyNoticeClickOpen}>
+                        {register.privacy}
+                        </a>
+                        }
+                    required
+                    />
+                </Grid>
+                <Button type='submit' variant="contained" color="primary" href="#contained-buttons" className='btn'>
+                    <input type="submit" value={register.register} className='submit'></input>
+                </Button>
             </Grid>
-            <Typography variant="h4" gutterBottom className='title'>
-            {register.addressInfo}
-            </Typography>
-
-        <Grid container spacing={3}>
-            <Grid item xs={12} sm={6}>
-            <TextField
-                required
-                id="country"
-                name="country"
-                label={register.country}
-                fullWidth
-                autoComplete="country"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-            <TextField
-                required
-                id="state"
-                name="state"
-                label={register.state}
-                fullWidth
-                autoComplete="region"
-                variant="standard"
-            />
-            </Grid><Grid item xs={12} sm={6}>
-            <TextField
-                required
-                id="city"
-                name="city"
-                label={register.city}
-                fullWidth
-                autoComplete="address-level2"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-            <TextField
-                required
-                id="postalCode"
-                name="postalCode"
-                label={register.zip}
-                fullWidth
-                autoComplete="postal-code"
-                variant="standard"
-            />
-            </Grid>
-            <Grid item xs={12}>
-            <TextField
-                id="address"
-                name="address"
-                label={register.address}
-                fullWidth
-                autoComplete="address-line1"
-                variant="standard"
-            />
-            </Grid>
-        
-            <Grid item xs={12}>
-            <FormControlLabel
-                control={<Checkbox color="primary" name="privacy" value="yes" />}
-                label={register.privacy}
-                required
-            />
-            </Grid>
-            <Button type='submit' variant="contained" color="primary" href="#contained-buttons" className='btn'>
-                <input type="submit" value={register.register}></input>
-            </Button>
-        </Grid>
-        </form>
+            <AlertDialog language={language} open={openModal} handleClose={handlePrivacyNoticeClose} />
+            </form>
         </div>
     </React.Fragment>
   );

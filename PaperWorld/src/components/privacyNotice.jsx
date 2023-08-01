@@ -5,26 +5,14 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-
+import PropTypes from 'prop-types';
 import data from "../data.json";
 
-export default function AlertDialog({ language }) {
+export default function AlertDialog({ language, open, handleClose } ) {
   const { privacy } = data[language]; // Access the corresponding language data
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open alert dialog
-      </Button>
       <Dialog
         open={open}
         onClose={handleClose}
@@ -74,13 +62,18 @@ export default function AlertDialog({ language }) {
             {privacy.p10}
           </DialogContentText>
         </DialogContent>
-        <DialogActions>
+     {/*    <DialogActions>
           <Button onClick={handleClose}>Disagree</Button>
           <Button onClick={handleClose} autoFocus>
             Agree
           </Button>
-        </DialogActions>
+        </DialogActions> */}
       </Dialog>
     </div>
   );
 }
+AlertDialog.propTypes = {
+  language: PropTypes.string.isRequired,
+  open: PropTypes.bool.isRequired,
+  handleClose: PropTypes.func.isRequired,
+};
