@@ -23,6 +23,11 @@
     width: 50%;
     min-width: 600px;
   }
+  .frame{
+    width: 90%;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+
+  }
   .mapContentTitle{
     color: #223B82;
     font-weight: 600 !important;
@@ -59,6 +64,9 @@
       height:75vh !important;
       min-width: 90vw !important;
     }
+     .frame{
+    width: 80%;
+  }
     .map {
         min-width: 400px;
         width: 100%;
@@ -99,6 +107,7 @@
         min-width: 400px;
         width: 100%;
         padding: auto;
+        margin-bottom: 20px;
       }
       .mapContentTitle{
         margin-left: 0px !important;
