@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15%;
+
   }
 
   
@@ -15,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15% !important;
   }
   .paper {
     min-width: 70vw !important;
@@ -30,9 +33,11 @@
   }
   .mapContentTitle{
     color: #223B82;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     text-align: left;
-    margin-left: -40px !important;
+    margin-left: -150px !important;
+    margin-bottom: 10px !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   }
   .mapContentInformation{
     color:whitesmoke;
@@ -53,6 +58,8 @@
     padding-bottom: 3%;
     flex-wrap: wrap;
     flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+
   }
   .information h4 {
     margin: 0;
