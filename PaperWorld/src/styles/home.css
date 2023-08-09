@@ -37,34 +37,75 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 0px 35px 0px 35px;
+  margin: 60px 0px 0px 0px;
 }
-
-.homeContent h2 {
+.aboutContainer h2{
+  color: rgb(250, 243, 234);
   font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #223B82;
 }
-.homeContent p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 10px;
+.whyContainer h2{
+  color: #223B82;
+  font-size: 2.5rem;
+}
+.aboutContent{
+  color: rgb(235, 228, 218);
+  font-size: 1.5rem;
+  display: flex;
+  background-color: #223B82;
+  padding: 4rem 20rem 4rem 20rem;
+}
+.whyContent{
+  color: #223B82;
+  font-size: 1.5rem;
+  display: flex;
+  padding: 4rem 20rem 4rem 20rem;
+}
+.aboutContent p{
+  color: rgb(235, 228, 218);
+  font-size: 1.5rem;
+  display: flex;
+  font-weight: 500;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.whyContent p{
+  color: #1e2f5e;
+  font-size: 1.5rem;
+  display: flex;
+  font-weight: 500;
   text-align: justify;
   text-justify: inter-word;
 }
 
-.about {
-  width: 70vw;
-  height: auto;
-  margin-top: 2%;
-  padding: 2%;
-  border-radius: 50%;
+.aboutImage{
+  width: 25%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+.whyImage{
+  width: 25%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+}
+.aboutIcon{
+  width: 170px;
+  height: 170px;
+  filter:  brightness(0) invert(1);
+/*   margin-left: 100px;
+  margin-top: 30px; */
+}
+.whyIcon{
+  width: 170px;
+  height: 170px;
+/*   margin-right: 100px;
+  margin-top: 30px; */
+}
+.header{
+  width: 85%;
 }
 
-.attend {
-  margin-left: auto;
-}
 
 @media screen and (max-width: 600px) {
   .imageContainer{
@@ -80,21 +121,40 @@
   .homeContent{
     justify-content: center;
     align-items: center;
-    margin: 10px 10px 10px 10px; 
+    margin: 0px; 
   }
   .homeContent p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 10px;
-  text-align: justify;
-  text-justify:newspaper;
-}
-  .about,
-  .attend {
-    width: 85vw;
-    height: auto;
-    margin-top: 3%;
-    padding: 5%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: none;
+  }
+  .aboutContent{
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 2rem;
+  } 
+  .whyContent{
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+ 
+  .header {
+    width: 100%;
+  }
+  .aboutImage{
+    display: none;
 
+  }
+  .whyImage{
+    display: none;
+  }
+  .aboutContent p{
+    text-align: justify;
+    text-justify:inter-word;
+
+  }
+  .whyContent p{
+    text-align: justify;
+    text-justify:distribute;
   }
 }

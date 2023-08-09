@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import fachada from "../assets/Fachada.png";
 import eventLogoESP from "../assets/heroEsp.svg";
 import eventLogoENG from "../assets/heroENG.svg";
+import aboutIcon from "../assets/5635791.png"
+import whatIcon from "../assets/memphis.png";
+import whyIcon from "../assets/memphis (1).png";
 import "../styles/home.css";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
@@ -29,18 +32,36 @@ const Home = ({ language }) => {
         </div>
       </div>
       <div className="homeContent">
-        <Paper elevation={4} className="about">
-          <h2>{home.about}</h2>
-          <p>{home["about-content"]}</p>
-        </Paper>
-        <Paper elevation={4} className="about">
-          <h2>{home.why}</h2>
-          <p>{home["why-content"]}</p>
-        </Paper>
-        <Paper elevation={4} className="about">
-          <h2>{home.what}</h2>
-          <p>{home["what-content"]}</p>
-        </Paper>
+
+        <div className="aboutContent">
+          <div className="header">
+            <h2>{home.about}</h2>
+            <p>{home["about-content"]}</p>
+          </div>
+          <div className="aboutImage">
+            <img className="aboutIcon" src={aboutIcon} alt="about"/>
+          </div>
+        </div>
+
+        <div className="whyContent">
+          <div className="whyImage">
+              <img className="whyIcon" src={whatIcon} alt="about"/>
+          </div>
+          <div className="header">
+            <h2>{home.why}</h2>
+            <p>{home["why-content"]}</p>
+          </div>
+        </div>
+
+        <div className="aboutContent">
+          <div className="header">
+            <h2>{home.what}</h2>
+            <p>{home["what-content"]}</p>
+          </div>
+          <div className="aboutImage">
+            <img className="aboutIcon" src={whyIcon} alt="about"/>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -138,7 +138,7 @@ return (
                                 variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <TextField required id="country" name="country" label={exhibitor.country} fullWidth
+                            <TextField  id="country" name="country" label={exhibitor.country} fullWidth
                                 autoComplete="country" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -146,7 +146,7 @@ return (
                                 variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <TextField required id="city" name="city" label={exhibitor.city} fullWidth
+                            <TextField  id="city" name="city" label={exhibitor.city} fullWidth
                                 autoComplete="address-level2" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -163,15 +163,15 @@ return (
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <TextField id="numberExt" name="numberExt" label={exhibitor.numberExt} fullWidth autoComplete="off"
-                                variant="standard" />
+                                variant="standard" type="number"/>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <TextField id="numberInt" name="numberInt" label={exhibitor.numberInt} fullWidth autoComplete="off"
-                                variant="standard" />
+                                variant="standard" type="number"/>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <TextField required id="email" name="email" label={exhibitor.email} fullWidth autoComplete="email"
-                                variant="standard" />
+                                variant="standard" type="email"/>
                         </Grid>
                     </Grid>
 
@@ -187,19 +187,19 @@ return (
                                 variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
-                            <TextField required id="countryExhibitor" name="countryExhibitor" label={exhibitor.countryExhibitor}
+                            <TextField  id="countryExhibitor" name="countryExhibitor" label={exhibitor.countryExhibitor}
                                 fullWidth autoComplete="country" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
-                            <TextField required id="stateExhibitor" name="stateExhibitor" label={exhibitor.stateExhibitor}
+                            <TextField  id="stateExhibitor" name="stateExhibitor" label={exhibitor.stateExhibitor}
                                 fullWidth autoComplete="region" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
-                            <TextField required id="cityExhibitor" name="cityExhibitor" label={exhibitor.cityExhibitor}
+                            <TextField  id="cityExhibitor" name="cityExhibitor" label={exhibitor.cityExhibitor}
                                 fullWidth autoComplete="address-level2" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
-                            <TextField required id="zipExhibitor" name="zipExhibitor" label={exhibitor.zipExhibitor} fullWidth
+                            <TextField  id="zipExhibitor" name="zipExhibitor" label={exhibitor.zipExhibitor} fullWidth
                                 autoComplete="postal-code" variant="standard" />
                         </Grid>
                         <Grid item   xs={12} sm={3}>
@@ -212,7 +212,7 @@ return (
                         </Grid>
                         <Grid item xs={12} sm={3}>
                             <TextField id="numberExtExhibitor" name="numberExtExhibitor" label={exhibitor.numberExtExhibitor}
-                                fullWidth autoComplete="off" variant="standard" />
+                                fullWidth autoComplete="off" variant="standard" type="number" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
                             <TextField id="web" name="web" label={exhibitor.web} fullWidth autoComplete="url"
@@ -232,7 +232,7 @@ return (
                     </Typography>
                     <div className='payment'>
                         <Typography variant="h10" gutterBottom>
-                            {exhibitor.paymentSchedule.second}
+                            {exhibitor.paymentSchedule.first}
                         </Typography>
                         <Typography variant="h10" gutterBottom>
                             {exhibitor.paymentSchedule.second}
