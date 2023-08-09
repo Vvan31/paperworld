@@ -41,38 +41,38 @@
 }
 .aboutContainer h2{
   color: rgb(250, 243, 234);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .whyContainer h2{
   color: #223B82;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .aboutContent{
   color: rgb(235, 228, 218);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   background-color: #223B82;
-  padding: 4rem 20rem 4rem 20rem;
+  padding: 4rem 15rem 4rem 15rem;
 }
 .whyContent{
   color: #223B82;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
-  padding: 4rem 20rem 4rem 20rem;
+  padding: 4rem 15rem 4rem 15rem;
 }
 .aboutContent p{
   color: rgb(235, 228, 218);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
   text-justify: inter-word;
 }
 .whyContent p{
   color: #1e2f5e;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -90,15 +90,15 @@
   justify-content: flex-start;
 }
 .aboutIcon{
-  width: 170px;
-  height: 170px;
+  width: 135px;
+  height: 135px;
   filter:  brightness(0) invert(1);
 /*   margin-left: 100px;
   margin-top: 30px; */
 }
 .whyIcon{
-  width: 170px;
-  height: 170px;
+  width: 135px;
+  height: 135px;
 /*   margin-right: 100px;
   margin-top: 30px; */
 }
@@ -124,7 +124,7 @@
     margin: 0px; 
   }
   .homeContent p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 10px;
     text-align: none;

@@ -27,13 +27,13 @@ const Schedule = () => {
                         </Typography>
                     </div>
                     <div className='scheduleContent'>
-                        <Typography variant="h4" component="div" className="paperContent">
+                        <Typography variant="h5" component="div" className="paperContent">
                             Technical conferences
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
                             8:30 - 12:30 hrs
                         </Typography>
-                        <Typography variant="h4" component="div" className="paperContent">
+                        <Typography variant="h5" component="div" className="paperContent">
                             Exposition
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
@@ -55,13 +55,13 @@ const Schedule = () => {
                             </Typography>
                         </div>
                         <div className='scheduleContent'>
-                        <Typography variant="h4" component="div" className="paperContent">
+                        <Typography variant="h5" component="div" className="paperContent">
                             Technical conferences
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
                             8:30 - 12:30 hrs
                         </Typography>
-                        <Typography variant="h4" component="div" className="paperContent">
+                        <Typography variant="h5" component="div" className="paperContent">
                             Exposition
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">

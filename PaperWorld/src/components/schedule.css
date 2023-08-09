@@ -33,16 +33,16 @@
     margin: 10px 10px 10px 10px; 
     display: flex;
     justify-content: flex-start; 
-    padding-top: 20px;
+    /* padding-top: 20px; */
     align-items: flex-start;
-    padding-bottom:40px ;
+    padding:20px ;
     flex-direction: column;
 }
 
 .paperContent {
     text-align: left !important; /* Align the text! to the left */
     margin-bottom: 10px !important;
-
+    font-weight: 500 !important;
 }
 
 @media (max-width: 600px) {
