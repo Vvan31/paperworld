@@ -30,7 +30,7 @@
     color: white;
     padding: 10px;
   }
-  .map {
+  .googlemap{
     width: 50%;
     min-width: 500px;
   }
@@ -55,7 +55,7 @@
      .frame{
         width: 80%;
       }
-    .map {
+    .googlemap{
         width: 50%;
         padding: auto;
       }

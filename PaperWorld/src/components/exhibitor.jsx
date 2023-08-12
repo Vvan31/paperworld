@@ -259,10 +259,10 @@ return (
                                 {exhibitor.whiteStand}
                             </Typography>
                             <Typography variant="h10" gutterBottom className='standPrice'>
-                                {exhibitor.whiteStandPrice}
+                                {exhibitor.whiteStandSize}
                             </Typography>
                             <Typography variant="h10" gutterBottom className='standSize'>
-                                {exhibitor.whiteStandSize}
+                                {exhibitor.whiteStandTerms}
                             </Typography>
                         </div>
                         <div className='stand'>
@@ -271,39 +271,12 @@ return (
                                 {exhibitor.blueStand}
                             </Typography>
                             <Typography variant="h10" gutterBottom className='standPrice'>
-                                {exhibitor.blueStandPrice}
-                            </Typography>
-                            <Typography variant="h10" gutterBottom className='standSize'>
                                 {exhibitor.blueStandSize}
                             </Typography>
-                        </div>
-                        <div className='stand'>
-                            <div className='standSquare pink' />
-                            <Typography variant="h10" gutterBottom className='standName'>
-                                {exhibitor.pinkStand}
-                            </Typography>
-                            <Typography variant="h10" gutterBottom className='standPrice'>
-                                {exhibitor.pinkStandPrice}
-                            </Typography>
                             <Typography variant="h10" gutterBottom className='standSize'>
-                                {exhibitor.pinkStandSize}
+                                {exhibitor.blueStandTerms}
                             </Typography>
                         </div>
-                        <div className='stand'>
-                            <div className='standSquare green' />
-                            <Typography variant="h10" gutterBottom className='standName'>
-                                {exhibitor.greenStand}
-                            </Typography>
-                            <Typography variant="h10" gutterBottom className='standPrice'>
-                                {exhibitor.greenStandPrice}
-                            </Typography>
-                            <Typography variant="h10" gutterBottom className='standSize'>
-
-
-                                {exhibitor.greenStandSize}
-                            </Typography>
-                        </div>
-
                     </div>
 
                     <Typography variant="h10" gutterBottom className='sub'>

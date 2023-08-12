@@ -80,9 +80,9 @@ function App() {
   }else if (page === 'map') {
     pageComponent = <Map  language={language} />;
   }else if (page === 'schedule') {
-    pageComponent = <Schedule  />;
+    pageComponent = <Schedule language={language} />;
   }else {
-    pageComponent = <Contact />
+    pageComponent = <Contact language={language}/>
   }
 
   return (

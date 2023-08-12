@@ -128,17 +128,33 @@
             "paymentFailure": "El incumplimiento de los plazos o términos especificados dará lugar a un ajuste de precios en el stand contratado, cambiando a precio regular y/o la pérdida del stand asignado para su empresa.",
             "selectPackage": "Selecciona el lugar y paquete",
             "packageInfo": "Seleccione los lugares en los que le gustaría exhibir durante el evento. Recuerde que su espacio no estará garantizado hasta concluir el proceso de pago. Los precios son los siguientes:",
-            "whiteStand": "Lugar blanco:",
-            "whiteStandSize": "USD $3,500.00 (9m² Más IVA)",
-            "blueStand": "Lugar azul:",
-            "blueStandSize": "USD $5,000.00 (18m² Más IVA)",
+            
+            "whiteStand": "Lugar azul claro:",
+            "whiteStandSize": "USD $5,000.00 (18m²)",
+            "whiteStandTerms": "Presentaciones técnicas",
+
+            "blueStand": "Lugar azul claro:",
+            "blueStandSize": "USD $3,500.00 (9m²)",
+            "blueStandTerms": "(por 500$ mas) presentaciones técnicas ",
+
             "pinkStand": "Lugar rosa:",
             "pinkStandSize": "USD $6,300.00 (27m² Más IVA)",
             "greenStand": "Lugar verde:",
             "greenStandSize": "USD $7,000.00 (32m² Más IVA)",
-            "standInclusions": "Por cada 9m² se incluye un tablón y dos sillas (no incluye alfombra). Los lugares verdes y rosas incluyen conferencias técnicas sin costo (sujetas a disponibilidad)",
+            "standInclusions": "Por cada 9m² se incluye un tablón y dos sillas (no incluye alfombra). Los lugares azul claro incluyen conferencias técnicas sin costo (sujetas a disponibilidad)",
             "occupied": "Ocupado",
             "available": "Disponible"
+         },
+         "contact":{
+            "technicalSupport": "Soporte técnico",
+            "customerSupport": "servio a cliente",
+            "paymentSupport": "Información de pagos",
+            "copy":"Copiar"
+         },
+         "program":{
+            "technicalConferences":"Conferencias técnicas ",
+            "exposition" : "Exposición",
+            "date": "Enero"
          }
        },
     "eng":{
@@ -302,17 +318,33 @@
             "paymentFailure": "Failure to comply with the specified deadlines or terms will lead to a price adjustment in the contracted stand, changing to the regular price and/or the loss of the stand assigned to your company.",
             "selectPackage": "Select the place and package",
             "packageInfo": "Select the locations you would like to exhibit during the event. Remember that your space will not be guaranteed until the payment process is completed. Prices are as follows:",
-            "whiteStand": "White stand:",
-            "whiteStandSize": "USD $3,500.00 (9m²)",
-            "blueStand": "Blue stand:",
-            "blueStandSize": "USD $5,000.00 (18m²)",
+          
+            "whiteStand": "Blue stand:",
+            "whiteStandSize": "USD $5,00.00 (18m²)",
+            "whiteStandTerms": "Technical conferences",
+
+            "blueStand": "Dark Blue stand:",
+            "blueStandSize": "USD $3,500.00 (9m²)",
+            "blueStandTerms": "(for $500.00 more) Technical conferences ",
+
             "pinkStand": "Pink stand:",
             "pinkStandSize": "USD $6,300.00 (27m²)",
             "greenStand": "Green stand:",
             "greenStandSize": "USD $7,000.00 (32m²)",
-            "standInclusions": "For every 9m², a plank and two chairs are included (carpet not included). Green and pink stands include free technical conferences (subject to availability)",
+            "standInclusions": "For every 9m², a plank and two chairs are included (carpet not included). Clear blue include free technical conferences (subject to availability)",
             "occupied": "Occupied",
             "available": "Available"
+         },
+         "contact":{
+            "technicalSupport": "Technical support",
+            "customerSupport": "Customer support",
+            "paymentSupport": "Payment Support",
+            "copy":"Copy"
+         },
+         "program":{
+            "technicalConferences":"Technical conferences",
+            "exposition" : "Exposition",
+            "date": "January"
          }
     }
 }

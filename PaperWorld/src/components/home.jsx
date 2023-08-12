@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import fachada from "../assets/Fachada.png";
-import eventLogoESP from "../assets/heroEsp.svg";
-import eventLogoENG from "../assets/heroENG.svg";
+import eventLogoESP from "../assets/jun.svg";
+import eventLogoENG from "../assets/jan.svg";
 import aboutIcon from "../assets/5635791.png"
 import whatIcon from "../assets/memphis.png";
 import whyIcon from "../assets/memphis (1).png";

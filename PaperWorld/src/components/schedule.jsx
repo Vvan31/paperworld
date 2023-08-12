@@ -3,10 +3,12 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
 import Typography from '@mui/material/Typography';
+import data from "../data.json";
 
 import './schedule.css';
-const Schedule = () => {
+const Schedule = ({language}) => {
   const [checked, setChecked] = useState(false);
+  const { program } = data[language];
 
   React.useEffect(() => {
     setChecked(true);
@@ -20,21 +22,22 @@ const Schedule = () => {
                 <Paper sx={{ m: 1 }} elevation={4}>
                     <div className='scheduleTitle'>
                     <Typography variant="h1" component="div">
-                            14
+                            17
                         </Typography>
                         <Typography variant="h3" component="div" className='month' sx={{ textTransform: 'capitalize' }}>
-                            NOV
+                            {program.date}
                         </Typography>
                     </div>
                     <div className='scheduleContent'>
                         <Typography variant="h5" component="div" className="paperContent">
-                            Technical conferences
+                        {program.technicalConferences}
+
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
                             8:30 - 12:30 hrs
                         </Typography>
                         <Typography variant="h5" component="div" className="paperContent">
-                            Exposition
+                        {program.exposition}
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
                             11:00 - 19:00 hrs
@@ -48,21 +51,21 @@ const Schedule = () => {
                     <Paper sx={{ m: 1 }} elevation={4}>
                         <div className='scheduleTitle'>
                             <Typography variant="h1" component="div">
-                                15
+                                18
                             </Typography>
                             <Typography variant="h3" component="div">
-                                NOV
+                            {program.date}
                             </Typography>
                         </div>
                         <div className='scheduleContent'>
                         <Typography variant="h5" component="div" className="paperContent">
-                            Technical conferences
+                        {program.technicalConferences}
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
                             8:30 - 12:30 hrs
                         </Typography>
                         <Typography variant="h5" component="div" className="paperContent">
-                            Exposition
+                        {program.exposition}
                         </Typography>
                         <Typography variant="h6" component="div" className="paperContent">
                             11:00 - 19:00 hrs

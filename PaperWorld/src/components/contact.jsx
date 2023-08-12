@@ -1,32 +1,51 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
 import Typography from '@mui/material/Typography';
 import './contact.css'
 import copy from "../assets/copy.svg"
-const Contact = () => {
+import data from '../data.json';
 
+const Contact = ({ language }) => {
+    const { contact } = data[language]; // Access the corresponding language data
+    
     const [checked, setChecked] = useState(false);
         React.useEffect(() => {
         setChecked(true);
     }, []);
    
-
-    const [emailData] = useState([
+    useEffect(() => {
+        setEmailData([
+            {
+                description:contact.technicalSupport,
+                email: 'a.estrada@apw.enterprises'
+            },
+            {
+                description:contact.customerSupport,
+                email: 'info@apw.enterprises'
+            },
+            {
+                description:contact.paymentSupport,
+                email: 'alberto.escotera@apw.enterprises'
+            }
+        ]);
+      }, [language]);
+    const [emailData,setEmailData] = useState([
         {
-            description: 'Technical support',
+            description:contact.technicalSupport,
             email: 'a.estrada@apw.enterprises'
         },
         {
-            description: 'Customer support',
+            description:contact.customerSupport,
             email: 'info@apw.enterprises'
         },
         {
-            description: 'Payment Support',
+            description:contact.paymentSupport,
             email: 'alberto.escotera@apw.enterprises'
         }
     ]);
+
 
     const handleCopyClick = (email) => {
         navigator.clipboard.writeText(email);
@@ -55,7 +74,7 @@ const Contact = () => {
                     </div>
                 ))}
             </div>
-            <div className="map">
+            <div className="googlemap">
                 <h4 className="mapContentTitle">
                     Expo Santa Fe
                 </h4>
