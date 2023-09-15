@@ -12,7 +12,7 @@ const Footer = () => {
             </Grid>
             <Divider variant="middle" />
             <Grid item xs={12} sm={12} container justifyContent="center">
-              <Grid item sx={{ m: 1 }}>
+        {/*       <Grid item sx={{ m: 1 }}>
                 <a href="https://www.facebook.com/americaspaperworld"><FaFacebook /></a>
               </Grid>
               <Grid item sx={{ m: 1 }}>
@@ -20,7 +20,7 @@ const Footer = () => {
               </Grid>
               <Grid item sx={{ m: 1 }}>
                 <a href="/"><FaTwitter /></a>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
         </Box>

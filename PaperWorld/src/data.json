@@ -11,7 +11,7 @@
          },
          "home":{
             "about": "Sobre nosotros",
-            "about-content": "America's Paper World nace de la necesidad de crear un espacio en donde se puedan encontrar el STATE OF THE ART tecnológico con gente visionaria que desea estar a la vanguardia con sus procesos productivos, permitiendo así una optimización y salvaguarda de sus activos, un lugar en donde el conocimiento de estos desarrollos pueda encontrar los canales adecuados de promoción, comercialización, distribución y representación, coadyuvando así al fortalecimiento de la Industria Papelera nivel mundial.",
+            "about-content": "America's Paper World nace de la necesidad de crear un espacio en donde se puedan encontrar el STATE OF THE ART tecnológico con gente visionaria que desea estar a la vanguardia con sus procesos productivos, permitiendo así una optimización y salvaguarda de sus activos, un lugar en donde el conocimiento de estos desarrollos pueda encontrar los canales adecuados de promoción, comercialización, distribución y representación, coadyuvando así al fortalecimiento de la Industria Papelera a nivel mundial.",
             "why":"¿Por qué asistir a America's Paper World?",
             "why-content": "Esta cumbre es un espacio y tiempo compartido para nuestra familia papelera, es el punto de encuentro con profesionales de la industria, Ingenieros, Científicos, Diseñadores industriales, Directores, Ejecutivos y Gerentes que asistirán con la idea de encontrar los elementos que les permitan ser más productivos, así como conocer los nuevos avances tecnológicos disponibles, las tendencias y las expectativas para lograr una planeación estratégica que les lleve a la vanguardia en la producción de papel así como en la optimización de los recursos.",
             "what":"¿Qué me ofrece America's Paper World?",
@@ -78,7 +78,7 @@
             "visitor": "Visitante",
             "exhibitor": "Expositor",
             "required": "Todos los campos marcados con un asterisco (*) son obligatorios",
-            "subtitle": "Para asegurar su lugar como expositor en el evento America's Paper World 2023, que se llevará a cabo los días 13, 14 y 15 de junio del 2023, deberá completar la siguiente solicitud. Los espacios para expositores se asignan por orden de reserva y confirmación de pago.",
+            "subtitle": "Para asegurar su lugar como expositor en el evento America's Paper World 2023, que se llevará a cabo los días 17 y 18 de Enero del 2024, deberá completar la siguiente solicitud. Los espacios para expositores se asignan por orden de reserva y confirmación de pago.",
             "billinginformation": "Datos de facturación y contrato",
             "companyName": "Razón social a facturar",
             "rfc": "RFC",
@@ -119,7 +119,7 @@
             "emailMarketing": "Correo eléctronico ",
 
             "paymentTerms": "Términos y condiciones de pago",
-            "paymentInfo": "El precio de los lugares adquiridos deberá ser cubierto en el plazo siguiente:",
+            "paymentInfo": "El precio de los lugares adquiridos deberá ser cubierto al 100% para garantizar el lugar",
             "paymentSchedule": {
                "first": "1er pago 40% - Marzo",
                "second": "2do pago 30% - Abril",
@@ -141,7 +141,7 @@
             "pinkStandSize": "USD $6,300.00 (27m² Más IVA)",
             "greenStand": "Lugar verde:",
             "greenStandSize": "USD $7,000.00 (32m² Más IVA)",
-            "standInclusions": "Por cada 9m² se incluye un tablón y dos sillas (no incluye alfombra). Los lugares azul claro incluyen conferencias técnicas sin costo (sujetas a disponibilidad)",
+            "standInclusions": "Por cada 9m² se incluye un tablón y dos sillas. Los lugares azul claro incluyen conferencias técnicas sin costo (sujetas a disponibilidad)",
             "occupied": "Ocupado",
             "available": "Disponible"
          },
@@ -268,7 +268,7 @@
             "visitor": "Visitor",
             "exhibitor": "Expositor",
             "required": "All fields marked with an asterisk (*) are required",
-            "subtitle": "To secure your spot as an exhibitor at the America's Paper World 2023 event, which will take place on June 13, 14 and 15, 2023, you must complete the following application. The spaces for exhibitors are assigned by order of reservation and confirmation of payment.",
+            "subtitle": "To secure your spot as an exhibitor at the America's Paper World 2023 event, which will take place on January 17 and 18, 2024, you must complete the following application. The spaces for exhibitors are assigned by order of reservation and confirmation of payment.",
             "billinginformation": "Billing and contract data",
             "companyName": "Company Name for Contract ",
             "rfc": "RFC",
@@ -309,7 +309,7 @@
             "phoneMarketing": "Phone with area code ",
             "emailMarketing": "E-mail ",
             "paymentTerms": "Terms and conditions of payment",
-            "paymentInfo": "The price of the places acquired must be covered within the following period:",
+            "paymentInfo": "The price of the places acquired must be covered in full to guarantee the reserved spot.",
             "paymentSchedule": {
                "first": "1st payment 40% - March",
                "second": "2nd payment 30% - April",
@@ -331,7 +331,7 @@
             "pinkStandSize": "USD $6,300.00 (27m²)",
             "greenStand": "Green stand:",
             "greenStandSize": "USD $7,000.00 (32m²)",
-            "standInclusions": "For every 9m², a plank and two chairs are included (carpet not included). Clear blue include free technical conferences (subject to availability)",
+            "standInclusions": "For every 9m², a plank and two chairs are included. Clear blue include free technical conferences (subject to availability)",
             "occupied": "Occupied",
             "available": "Available"
          },

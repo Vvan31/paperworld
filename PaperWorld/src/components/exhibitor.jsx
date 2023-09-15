@@ -230,7 +230,7 @@ return (
                     <Typography variant="h10" gutterBottom className='sub'>
                         {exhibitor.paymentInfo}
                     </Typography>
-                    <div className='payment'>
+                  {/*   <div className='payment'>
                         <Typography variant="h10" gutterBottom>
                             {exhibitor.paymentSchedule.first}
                         </Typography>
@@ -240,10 +240,10 @@ return (
                         <Typography variant="h10" gutterBottom>
                             {exhibitor.paymentSchedule.third}
                         </Typography>
-                    </div>
-                    <Typography variant="h10" gutterBottom className='sub'>
+                    </div> */}
+                  {/*   <Typography variant="h10" gutterBottom className='sub'>
                         {exhibitor.paymentFailure}
-                    </Typography>
+                    </Typography> */}
 
                     {/* Place and package */}
                     <Typography variant="h4" gutterBottom className='title'>
@@ -284,14 +284,14 @@ return (
                     </Typography>
             </div>
             <div className='map'>
-                <div className='mapTitle'>
+            {/*     <div className='mapTitle'>
                     <Typography variant="h10" gutterBottom className='tag'>
                         {exhibitor.occupied}
                     </Typography>
                     <Typography variant="h10" gutterBottom className='tag'>
                         {exhibitor.available}
                     </Typography>
-                </div>
+                </div> */}
                 <div className='mapContainer'>
                     <MapApp setSelection={handleSelection} />
                 </div>
