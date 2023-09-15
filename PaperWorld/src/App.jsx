@@ -1,52 +1,7 @@
-/* import React, { useState } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import React Router components
-import Navbar from './components/navBar';
-import Home from './components/home';
-import Register from './components/register';
-import Map from './components/map';
-import Footer from './components/footer';
-import Schedule from './components/schedule';
-import mx from './assets/mx.png';
-import usa from './assets/usa.png';
-import Fab from '@mui/material/Fab';
 
-function App() {
-  const [language, setLanguage] = useState('esp');
-
-  const handleLanguageChange = (selectedLanguage) => {
-    setLanguage(selectedLanguage);
-  };
-
-  return (
-    <div className="main">
-      <Router>
-        <Navbar language={language} onLanguageChange={handleLanguageChange} />
-        <Routes>
-          <Route path="/register" element={<Register language={language} />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/map" element={<Map language={language} />} />
-          <Route path="/" element={<Home language={language} />} />
-        </Routes>
-      </Router>
-
-      <div className="language">
-        <Fab onClick={() => handleLanguageChange('esp')} color="primary" aria-label="add" className="icon">
-          <img src={mx} alt="mxn" />
-        </Fab>
-        <Fab onClick={() => handleLanguageChange('eng')} color="primary" aria-label="add" className="icon">
-          <img src={usa} alt="usa" />
-        </Fab>
-      </div>
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
- */
 import { useState } from 'react';
 import './App.css';
+import { Helmet } from 'react-helmet-async';
 // components
 import Navbar from './components/navBar';
 import Home from './components/home';
@@ -87,6 +42,13 @@ function App() {
 
   return (
     <div className="main">
+       <Helmet>
+        <meta charSet="utf-8" />
+        <title>America's Paper World</title>
+        <meta name="description" content="A first level and world class exhibition which brings together the whole world in one place with the aim of showing technological advances and innovation on the industry and machinery for the manufacture of pulp and paper" />
+        <meta name="keywords" content="APW, America's Paper World, Paper, America's, World" />
+      
+      </Helmet>
       <Navbar language={language} onLanguageChange={handleLanguageChange} onPageChange={handlePageChange} />
 
       {pageComponent}
