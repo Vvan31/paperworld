@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
-import { Helmet } from 'react-helmet-async';
+import {Helmet} from "react-helmet";
 // components
 import Navbar from './components/navBar';
 import Home from './components/home';
