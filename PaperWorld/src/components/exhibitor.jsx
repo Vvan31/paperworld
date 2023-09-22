@@ -130,11 +130,11 @@ return (
                 </Typography>
                     <Grid container spacing={3}>
                         <Grid item xs={12} sm={6}>
-                            <TextField required id="organization" name="organization" label={exhibitor.companyName} fullWidth
+                            <TextField  id="organization" name="organization" label={exhibitor.companyName} fullWidth
                                 autoComplete="organization" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <TextField required id="rfc" name="rfc" label={exhibitor.rfc} fullWidth autoComplete="off"
+                            <TextField  id="rfc" name="rfc" label={exhibitor.rfc} fullWidth autoComplete="off"
                                 variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -170,7 +170,7 @@ return (
                                 variant="standard" type="number"/>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <TextField required id="email" name="email" label={exhibitor.email} fullWidth autoComplete="email"
+                            <TextField id="email" name="email" label={exhibitor.email} fullWidth autoComplete="email"
                                 variant="standard" type="email"/>
                         </Grid>
                     </Grid>
@@ -187,11 +187,11 @@ return (
                                 variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
-                            <TextField  id="countryExhibitor" name="countryExhibitor" label={exhibitor.countryExhibitor}
+                            <TextField required id="countryExhibitor" name="countryExhibitor" label={exhibitor.countryExhibitor}
                                 fullWidth autoComplete="country" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
-                            <TextField  id="stateExhibitor" name="stateExhibitor" label={exhibitor.stateExhibitor}
+                            <TextField required id="stateExhibitor" name="stateExhibitor" label={exhibitor.stateExhibitor}
                                 fullWidth autoComplete="region" variant="standard" />
                         </Grid>
                         <Grid item xs={12} sm={3}>
