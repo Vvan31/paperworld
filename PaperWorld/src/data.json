@@ -130,10 +130,12 @@
             "packageInfo": "Seleccione los lugares en los que le gustaría exhibir durante el evento. Recuerde que su espacio no estará garantizado hasta concluir el proceso de pago. Los precios son los siguientes:",
             
             "whiteStand": "Lugar azul claro:",
+            "whiteColor":"standSquare white",
             "whiteStandSize": "USD $5,000.00 (18m²)",
             "whiteStandTerms": "Este precio incluye la posibilidad de la presentación técnica de 45 minutos (sujeto a disponibilidad).",
 
             "blueStand": "Lugar azul obscuro:",
+            "blueColor":"standSquare blue",
             "blueStandSize": "USD $3,500.00 (9m²)",
             "blueStandTerms": "Si requiere exponer una plática técnica se deberá pagar $500 USD adicionales por 45 minutos de exposición (Sujeto a disponibilidad).",
 
@@ -320,10 +322,13 @@
             "packageInfo": "Select the locations you would like to exhibit during the event. Remember that your space will not be guaranteed until the payment process is completed. Prices are as follows:",
           
             "whiteStand": "Blue stand:",
+      
+            "whiteColor":"standSquare white",
             "whiteStandSize": "USD $5,00.00 (18m²)",
             "whiteStandTerms": "This price includes the possibility of a 45-minute technical presentation (subject to availability).",
 
             "blueStand": "Dark Blue stand:",
+            "blueColor":"standSquare blue",
             "blueStandSize": "USD $3,500.00 (9m²)",
             "blueStandTerms": "If you require giving a technical talk, you will need to pay an additional $500 USD for a 45-minute presentation (subject to availability).",
 

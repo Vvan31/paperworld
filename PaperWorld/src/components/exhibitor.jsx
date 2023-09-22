@@ -10,6 +10,7 @@ import MapApp from './mapapp';
 import './exhibitor.css'
 import RegisterService from '../services/register';
 import AlertDialog from './privacyNotice';
+import InfoTable from './infoTable'
 
 // Success modal imports 
 import Dialog from '@mui/material/Dialog';
@@ -19,6 +20,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { Divider } from '@mui/material';
 
 export default function ExhibitorForm({ language }) {
 const { exhibitor } = data[language];
@@ -252,6 +254,9 @@ return (
                     <Typography variant="h10" gutterBottom className='sub'>
                         {exhibitor.packageInfo}
                     </Typography>
+                   {/*  <InfoTable language={language} /> */}
+                   <Divider/>
+
                     <div className='stands'>
                         <div className='stand'>
                             <div className='standSquare white' />
@@ -265,6 +270,7 @@ return (
                                 {exhibitor.whiteStandTerms}
                             </Typography>
                         </div>
+                        <Divider/>
                         <div className='stand'>
                             <div className='standSquare blue' />
                             <Typography variant="h10" gutterBottom className='standName'>
@@ -277,6 +283,8 @@ return (
                                 {exhibitor.blueStandTerms}
                             </Typography>
                         </div>
+                        <Divider/>
+
                     </div>
 
                     <Typography variant="h10" gutterBottom className='sub'>
