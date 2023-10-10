@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import fachada from "../assets/Fachada.png";
-import eventLogoESP from "../assets/jun.svg";
-import eventLogoENG from "../assets/jan.svg";
+import eventLogoESP from "../assets/8.svg";
+import eventLogoENG from "../assets/9.svg";
 import aboutIcon from "../assets/5635791.png"
 import whatIcon from "../assets/memphis.png";
 import whyIcon from "../assets/memphis (1).png";
 import "../styles/home.css";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
+/* import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper"; */
 import data from "../data.json";
 
+// eslint-disable-next-line react/prop-types
 const Home = ({ language }) => {
     const { home } = data[language]; // Access the corresponding language data
     const [eventLogo, setEventLogo] = React.useState(eventLogoESP);
@@ -28,7 +29,7 @@ const Home = ({ language }) => {
       <div className="heroContainer">
         <div className="imageContainer">
           <img className="hero fachada" src={fachada} alt="fachada" />
-          <img className="hero" src={eventLogo} alt="America's paper world" />
+          <img className="hero logo" src={eventLogo} alt="America's paper world" />
         </div>
       </div>
       <div className="homeContent">
@@ -39,13 +40,13 @@ const Home = ({ language }) => {
             <p>{home["about-content"]}</p>
           </div>
           <div className="aboutImage">
-            <img className="aboutIcon" src={aboutIcon} alt="about"/>
+            <img className="aboutIcon" src={whatIcon} alt="about"/>
           </div>
         </div>
 
         <div className="whyContent">
           <div className="whyImage">
-              <img className="whyIcon" src={whatIcon} alt="about"/>
+              <img className="whyIcon" src={aboutIcon} alt="about"/>
           </div>
           <div className="header">
             <h2>{home.why}</h2>

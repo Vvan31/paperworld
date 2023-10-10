@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import './navBar.css';
 import logo from '../assets/apwLogo.svg';
 import menu from '../assets/menu.svg';
 import data from '../data.json';
 
-const Navbar = ({ language, onLanguageChange, onPageChange }) => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ language, onPageChange }) => {
   const [isResponsive, setIsResponsive] = useState(false);
   const [content, setContent] = useState(data.esp.navBar);
 
