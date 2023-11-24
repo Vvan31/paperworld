@@ -42,6 +42,7 @@ export default function AddressForm({ language }) {
     
       const handleClose = () => {
         setOpen(false);
+        window.location.reload();
       };
     
 

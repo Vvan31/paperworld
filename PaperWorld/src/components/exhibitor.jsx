@@ -45,6 +45,7 @@ const handleClickOpen = () => {
 
   const handleClose = () => {
     setOpen(false);
+    window.location.reload();
   };
 
 
