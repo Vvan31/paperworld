@@ -1,8 +1,8 @@
 
-import { useState } from 'react';
-import './App.css';
-import {Helmet} from "react-helmet";
-// components
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 import Navbar from './components/navBar';
 import Home from './components/home';
 import Register from './components/register';
@@ -14,65 +14,61 @@ import Footer from './components/footer';
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
 import Fab from '@mui/material/Fab';
-
-function App() {
-  const [page, setPage] = useState('home');
-  const [language, setLanguage] = useState('esp');
+import './App.css';
+const App = () => {
+  const [language, setLanguage] = useState(getInitialLanguage());
 
   const handleLanguageChange = (selectedLanguage) => {
     setLanguage(selectedLanguage);
   };
 
-  const handlePageChange = (selectedPage) => {
-    setPage(selectedPage);
-  };
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
 
-  let pageComponent;
-  if (page === 'home') {
-    pageComponent = <Home language={language} />;
-  } else if (page === 'register') {
-    pageComponent = <Register language={language} />;
-  }else if (page === 'map') {
-    pageComponent = <Map  language={language} />;
-  }else if (page === 'schedule') {
-    pageComponent = <Schedule language={language} />;
-  }else {
-    pageComponent = <Contact language={language}/>
+  function getInitialLanguage() {
+    return localStorage.getItem('language') || 'esp';
   }
 
-  return (
-    <div className="main">
-       <Helmet>
+return (
+    <Router>
+      <div className="main">
+      <Helmet>
         <meta charSet="utf-8" />
-        <title>America's Paper World</title>
+        <title>America&apos;s Paper World</title>
         <meta name="description" content="A first level and world class exhibition which brings together the whole world in one place with the aim of showing technological advances and innovation on the industry and machinery for the manufacture of pulp and paper" />
-        <meta name="keywords" content="APW, America's Paper World, Paper, America's, World" />
-      
+        <meta name="keywords" content="APW, America&apos;s Paper World, Paper, America&apos;s, World" />
       </Helmet>
-      <Navbar language={language} onLanguageChange={handleLanguageChange} onPageChange={handlePageChange} />
+        <Navbar language={language} onLanguageChange={handleLanguageChange} />
+        <Routes>
+          <Route path="/" element={<Home language={language} />} />
+          <Route path="/register" element={<Register language={language} />} />
+          <Route path="/map" element={<Map language={language} />} />
+          <Route path="/schedule" element={<Schedule language={language} />} />
+          <Route path="/contact" element={<Contact language={language} />} />
+        </Routes>
 
-      {pageComponent}
-
-      <div className="language">
-        <Fab
-          onClick={() => handleLanguageChange('esp')}
-          color="primary"
-          aria-label="add"
-          className="icon"
-        >
-          <img src={mx} alt="mxn" />
-        </Fab>
-        <Fab
-          onClick={() => handleLanguageChange('eng')}
-          color="primary"
-          aria-label="add"
-          className="icon"
-        >
-          <img src={usa} alt="usa" />
-        </Fab>
+        <div className="language">
+          <Fab
+            onClick={() => handleLanguageChange('esp')}
+            color="primary"
+            aria-label="add"
+            className="icon"
+          >
+            <img src={mx} alt="mxn" />
+          </Fab>
+          <Fab
+            onClick={() => handleLanguageChange('eng')}
+            color="primary"
+            aria-label="add"
+            className="icon"
+          >
+            <img src={usa} alt="usa" />
+          </Fab>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

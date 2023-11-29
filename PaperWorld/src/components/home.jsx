@@ -36,7 +36,7 @@ const Home = ({ language }) => {
 
         <div className="aboutContent">
           <div className="header">
-            <h2>{home.about}</h2>
+            <h1>{home.about}</h1>
             <p>{home["about-content"]}</p>
           </div>
           <div className="aboutImage">
@@ -49,14 +49,14 @@ const Home = ({ language }) => {
               <img className="whyIcon" src={aboutIcon} alt="about"/>
           </div>
           <div className="header">
-            <h2>{home.why}</h2>
+            <h1>{home.why}</h1>
             <p>{home["why-content"]}</p>
           </div>
         </div>
 
         <div className="aboutContent">
           <div className="header">
-            <h2>{home.what}</h2>
+            <h1>{home.what}</h1>
             <p>{home["what-content"]}</p>
           </div>
           <div className="aboutImage">
