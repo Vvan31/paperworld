@@ -1,3 +1,5 @@
+
+
 module.exports = ({ env }) => ({
     email: {
       config: {
@@ -9,6 +11,7 @@ module.exports = ({ env }) => ({
             user: env('SMTP_USERNAME', 'apw373613@gmail.com'),
             pass: env('SMTP_PASSWORD', 'apwAdmin10'),
           },
+          secure: false,
         },
         settings: {
           defaultFrom: 'apw373613@gmail.com',
