@@ -11,6 +11,7 @@ module.exports = ({ env }) => ({
   settings: {
     cors: {
       origin: ['http://expo.apw.enterprises', 'https://expo.apw.enterprises', 'http://paperworld-production.up.railway.app/', 'https://paperworld-production.up.railway.app/'],
+      credentials: true,
     },
   },
 });
