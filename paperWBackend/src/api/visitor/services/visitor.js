@@ -15,10 +15,18 @@ module.exports = createCoreService('api::visitor.visitor', {
 });
 
 async function sendEmail(to, subject, text, data) {
-  const transporter = nodemailer.createTransport({
+
+    await strapi.plugin('email').service('email').send({
+    to: to,
+    from: process.env.SMTP_USERNAME,
+    subject: subject,
+    text: text,
+    html: `<h4>Hello world</h4>`,
+    });
+  /* const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: 587,
-    secure: true,
+    secure: false,
     auth: {
       user: process.env.SMTP_USERNAME,
       pass: process.env.SMTP_PASSWORD,
@@ -39,5 +47,5 @@ async function sendEmail(to, subject, text, data) {
     console.log('Email sent successfully');
   } catch (error) {
     console.error('Error sending email:', error);
-  }
+  } */
 }
