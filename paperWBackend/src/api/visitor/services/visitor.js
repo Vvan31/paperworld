@@ -38,6 +38,8 @@ async function sendEmail(to, subject, text, data) {
         }
       }
 let transporter = nodemailer.createTransport(config.mail);
+console.log("Sending email... " + JSON.stringify(mailObj));
+console.log(transporter);
 await transporter.sendMail(mailObj);
 
  /*    await strapi.plugin('email').service('email').send({
