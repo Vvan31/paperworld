@@ -9,7 +9,6 @@ module.exports = {
               to: 'v31.osorio@gmail.com',
               from: 'a.estrada@apw.enterprises', 
               cc: 'a.estrada@apw.enterprises',
-              bcc: 'a.estrada@apw.enterprises',
               replyTo: 'a.estrada@apw.enterprises',
               subject: 'The Strapi Email plugin worked successfully',
               text: 'Hello world! ' + result.email, 
