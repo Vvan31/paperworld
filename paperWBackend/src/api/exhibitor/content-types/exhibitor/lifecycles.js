@@ -4,7 +4,7 @@ const qr = require('qr-image');
 module.exports = {
     async afterCreate(event) {    // Connected to "Save" button in admin panel
         const { result } = event;
-
+        
         try{
             console.log("Email sending to...");
             console.log(result.email);
@@ -34,6 +34,7 @@ module.exports = {
               },
               attachments: [
                 {
+                  content: qrCodeBuffer,
                   filename: `${result.id}-qrcode.png`,
                   path: `./public/uploads/${result.id}-qrcode.png`,
                   encoding: 'base64',
