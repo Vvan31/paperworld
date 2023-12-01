@@ -31,7 +31,7 @@ module.exports = {
                 from: 'a.estrada@apw.enterprises',
                 cc: 'a.estrada@apw.enterprises',
                 replyTo: 'a.estrada@apw.enterprises',
-                subject: 'The Strapi Email plugin worked successfully',
+                subject: 'Welcome to Americas Paper World',
                 templateId: process.env.SENDGRID_EXHIBITOR_TEMPLATE_ID,
                 attachments: [
                     {
