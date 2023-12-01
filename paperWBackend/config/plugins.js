@@ -3,19 +3,13 @@
 module.exports = ({ env }) => ({
     email: {
       config: {
-        provider: 'nodemailer',
+        provider: 'sendgrid',
         providerOptions: {
-          host: env('SMTP_HOST', 'smtp.google.com'),
-          port: env('SMTP_PORT', 587),
-          auth: {
-            user: env('SMTP_USERNAME', 'apw373613@gmail.com'),
-            pass: env('SMTP_PASSWORD', 'apwAdmin10'),
-          },
-          secure: false,
+          apiKey: env('SENDGRID_API_KEY'),
         },
         settings: {
-          defaultFrom: 'apw373613@gmail.com',
-          defaultReplyTo: 'apw373613@gmail.com',
+          defaultFrom: env('SENDGRID_FROM', 'a.estrada@apw.enterprises'),
+          defaultReplyTo: env('SENDGRID_FROM', 'a.estrada@apw.enterprises'),
         },
       },
     },
