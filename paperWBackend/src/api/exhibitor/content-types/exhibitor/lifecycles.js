@@ -11,9 +11,9 @@ module.exports = {
             console.log(result.email);
 
             const qrData = {
-                slug: result.slug,
+                id: result.slug,
                 company: result.company,
-                spot: result.spot,
+                spot: result.spot.name,
                 email: result.email,
                 country: result.countryexhibitor,
                 name: result.name,
