@@ -31,37 +31,21 @@ module.exports = {
                 name: result.name,
                 spot: result.spot,
                 qrCode: `./public/uploads/${result.id}-qrcode.png`,
-              }
+              },
+              attachments: [
+                {
+                  filename: `${result.id}-qrcode.png`,
+                  path: `./public/uploads/${result.id}-qrcode.png`,
+                  encoding: 'base64',
+                  type: 'image/png',
+                  disposition: 'attachment',
+                },
+              ],
             })
         } catch(err) {
             console.log(err);
             console.log("Email not sent");
             console.log(JSON.stringify(err, null, 2));
         }
-        /* 
-          async sendRegistryEmail(exhibitor, data) {
-            // Generate QR code
-            const qrCode = qr.image(exhibitor.qrData, { type: 'png' });
-            const qrCodeBuffer = qrCode.pipe(require('fs').createWriteStream(`./public/uploads/${exhibitor.id}-qrcode.png`));
-        
-            // Send email with QR code attached
-            await strapi.plugins['email'].services.email.send({
-              to: data.email,
-              from: 'your@example.com',
-              subject: 'Registry Confirmation',
-              text: 'Thank you for your registry.',
-              attachments: [
-                {
-                  filename: `${exhibitor.id}-qrcode.png`,
-                  path: `./public/uploads/${exhibitor.id}-qrcode.png`,
-                  encoding: 'base64',
-                  type: 'image/png',
-                  disposition: 'attachment',
-                },
-              ],
-            });
-          },
-        };
-         */
     }
 }
