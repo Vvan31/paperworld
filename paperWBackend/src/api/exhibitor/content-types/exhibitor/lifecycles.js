@@ -32,7 +32,7 @@ module.exports = {
                 spot: result.spot,
                 qrCode: `./public/uploads/${result.id}-qrcode.png`,
               },
-              attachments: [
+           /*    attachments: [
                 {
                   content: qrCodeBuffer.toString('base64'),
                   filename: `${result.id}-qrcode.png`,
@@ -41,7 +41,7 @@ module.exports = {
                   type: 'image/png',
                   disposition: 'attachment',
                 },
-              ],
+              ], */
             })
         } catch(err) {
             console.log(err);
