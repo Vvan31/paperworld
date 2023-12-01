@@ -9,12 +9,11 @@ module.exports = {
               to: 'v31.osorio@gmail.com',
               from: 'a.estrada@apw.enterprises', 
               cc: 'a.estrada@apw.enterprises',
-              bcc: 'valid email address',
-              replyTo: 'valid email address',
+              bcc: 'a.estrada@apw.enterprises',
+              replyTo: 'a.estrada@apw.enterprises',
               subject: 'The Strapi Email plugin worked successfully',
               text: 'Hello world! ' + result.email, 
               html: 'Hello world!', 
-                
             })
         } catch(err) {
             console.log(err);
