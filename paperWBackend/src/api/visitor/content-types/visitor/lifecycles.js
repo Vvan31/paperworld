@@ -3,6 +3,8 @@ module.exports = {
         const { result } = event;
 
         try{
+            console.log("Email sending...");
+            console.log(result.email);
             await strapi.plugins['email'].services.email.send({
               to: 'v31.osorio@gmail.com',
               from: 'a.estrada@apw.enterprises', 
@@ -16,6 +18,8 @@ module.exports = {
             })
         } catch(err) {
             console.log(err);
+            console.log("Email not sent");
+            console.log(JSON.stringify(err, null, 2));
         }
     }
 }
