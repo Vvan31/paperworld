@@ -10,7 +10,7 @@ module.exports = {
               from: 'a.estrada@apw.enterprises', 
               cc: 'a.estrada@apw.enterprises',
               replyTo: 'a.estrada@apw.enterprises',
-              subject: 'The Strapi Email plugin worked successfully',
+              subject: 'Welcome to Americas Paper World',
               /* text: 'Hello world! ' + result.email, 
               html: 'Hello world!',  */
               templateId: process.env.SENDGRID_VISITOR_TEMPLATE_ID,
