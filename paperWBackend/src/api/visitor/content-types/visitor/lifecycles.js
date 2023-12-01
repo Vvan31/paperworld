@@ -1,15 +1,21 @@
 module.exports = {
-    async afterCreate(event) {
+    async afterCreate(event) {    // Connected to "Save" button in admin panel
         const { result } = event;
-        try {
+
+        try{
             await strapi.plugins['email'].services.email.send({
-                to: result.email,
-                from: 'a.estrada@apw.enterprises',
-                subject: 'Thank you for registering to Americas Paper World',
-                text: 'Welcome: ' +JSON.stringify(result),
-            });
-        } catch (error) {
-            console.log(error);
+              to: 'v31.osorio@gmail.com',
+              from: 'a.estrada@apw.enterprises', 
+              cc: 'a.estrada@apw.enterprises',
+              bcc: 'valid email address',
+              replyTo: 'valid email address',
+              subject: 'The Strapi Email plugin worked successfully',
+              text: 'Hello world! ' + result.email, 
+              html: 'Hello world!', 
+                
+            })
+        } catch(err) {
+            console.log(err);
         }
     }
 }
