@@ -34,7 +34,7 @@ module.exports = {
               },
               attachments: [
                 {
-                  content: qrCodeBuffer.toString(),
+                  content: qrCodeBuffer.toString('base64'),
                   filename: `${result.id}-qrcode.png`,
                   path: `./public/uploads/${result.id}-qrcode.png`,
                   encoding: 'base64',
