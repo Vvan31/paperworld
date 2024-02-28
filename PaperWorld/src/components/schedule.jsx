@@ -54,7 +54,7 @@ const Schedule = ({language}) => {
                                 1
                             </Typography>
                             <Typography variant="h3" component="div">
-                            {program.date2}
+                            {program.fecha}
                             </Typography>
                         </div>
                         <div className='scheduleContent'>
