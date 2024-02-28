@@ -156,7 +156,7 @@
          "program":{
             "technicalConferences":"Conferencias técnicas ",
             "exposition" : "Exposición",
-            "date": "Octubre"
+            "date": "Octubre",
             "fecha": "Noviembre"
          }
        },
@@ -350,7 +350,7 @@
          "program":{
             "technicalConferences":"Technical conferences",
             "exposition" : "Exposition",
-            "date": "October"
+            "date": "October",
             "fecha": "November"
          }
     }
