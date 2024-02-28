@@ -22,7 +22,7 @@ const Schedule = ({language}) => {
                 <Paper sx={{ m: 1 }} elevation={4}>
                     <div className='scheduleTitle'>
                     <Typography variant="h1" component="div">
-                            17
+                            31
                         </Typography>
                         <Typography variant="h3" component="div" className='month' sx={{ textTransform: 'capitalize' }}>
                             {program.date}
@@ -51,7 +51,7 @@ const Schedule = ({language}) => {
                     <Paper sx={{ m: 1 }} elevation={4}>
                         <div className='scheduleTitle'>
                             <Typography variant="h1" component="div">
-                                18
+                                1
                             </Typography>
                             <Typography variant="h3" component="div">
                             {program.date}
