@@ -1,23 +1,27 @@
-import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grow from '@mui/material/Grow';
-import Typography from '@mui/material/Typography';
-import data from "../data.json";
+// import React, { useState } from 'react';
+// import Paper from '@mui/material/Paper';
+// import Grow from '@mui/material/Grow';
+// import Typography from '@mui/material/Typography';
+// import data from "../data.json";
+import AnimatedBack from './animatedBack';
 
+import './gradient.css';
 import './schedule.css';
+import CardFlip from './cardFlip';
+// eslint-disable-next-line react/prop-types
 const Schedule = ({language}) => {
-  const [checked, setChecked] = useState(false);
-  const { program } = data[language];
+//   const [checked, setChecked] = useState(false);
+//   const { program } = data[language];
 
-  React.useEffect(() => {
-    setChecked(true);
-  }, []);
+//   React.useEffect(() => {
+//     setChecked(true);
+//   }, []);
 
   return (
     <div className='schedule'>
         <div className='paperContainer'>
-            <div className='papers'>
+        <CardFlip language={language} dateNum={1} />
+            {/* <div className='papers'>
                 <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1000 } : {})}>
                 <Paper sx={{ m: 1 }} elevation={4}>
                     <div className='scheduleTitle'>
@@ -25,7 +29,7 @@ const Schedule = ({language}) => {
                             31
                         </Typography>
                         <Typography variant="h3" component="div" className='month' sx={{ textTransform: 'capitalize' }}>
-                            {program.date}
+                            {program.date1}
                         </Typography>
                     </div>
                     <div className='scheduleContent'>
@@ -45,8 +49,10 @@ const Schedule = ({language}) => {
                     </div>
                 </Paper>
                 </Grow>
-            </div>
-            <div className='papers'>
+            </div> */}
+        <CardFlip language={language} dateNum={2} />
+
+            {/* <div className='papers'>
                 <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1500 } : {})}>
                     <Paper sx={{ m: 1 }} elevation={4}>
                         <div className='scheduleTitle'>
@@ -54,7 +60,7 @@ const Schedule = ({language}) => {
                                 1
                             </Typography>
                             <Typography variant="h3" component="div">
-                            {program.fecha}
+                            {program.date2}
                             </Typography>
                         </div>
                         <div className='scheduleContent'>
@@ -73,8 +79,10 @@ const Schedule = ({language}) => {
                     </div>
                     </Paper>
                 </Grow>
-            </div>
+            </div> */}
+            
         </div>
+        <AnimatedBack />
     </div>
   );
 };

@@ -23,6 +23,7 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 100%;
 }
 .title div{
     width: 60%;
