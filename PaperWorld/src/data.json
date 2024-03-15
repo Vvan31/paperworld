@@ -156,8 +156,11 @@
          "program":{
             "technicalConferences":"Conferencias técnicas ",
             "exposition" : "Exposición",
-            "date": "Octubre",
-            "fecha": "Noviembre"
+            "number1" : "31",
+            "number2" : "1",
+            "date1": "Octubre",
+            "date2": "Noviembre",
+            "download":"Descargar programa"
          }
        },
     "eng":{
@@ -350,8 +353,11 @@
          "program":{
             "technicalConferences":"Technical conferences",
             "exposition" : "Exposition",
-            "date": "October",
-            "fecha": "November"
+            "number1" : "31",
+            "number2" : "1",
+            "date1": "October",
+            "date2": "November",
+            "download":"Download"
          }
     }
 }
