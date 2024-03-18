@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
+    border-radius: 16px;
 }
 .title div{
     width: 60%;
@@ -38,6 +39,7 @@
     align-items: flex-start;
     padding:20px ;
     flex-direction: column;
+    border-radius: 16px;
 }
 
 .paperContent {
