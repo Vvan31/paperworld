@@ -51,12 +51,12 @@ const { program } = data[language];
         <Typography variant="h6" component="div" className="paperContent">
             11:00 - 19:00 hrs
         </Typography>
-        <a
+        {/* <a
         href={programa}
         download
         >
             Descarga programa
-        </a>
+        </a> */}
         </div>
       </BackSide>
     </Flippy>
