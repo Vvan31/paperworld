@@ -1,0 +1,89 @@
+.mexicoMain {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+.mini-parallax {
+    margin: 30px 0px 35px 0px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100% 100% 100% 100% /60% 60% 0% 0%;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: border-radius 0.3s ease-in-out;
+}
+
+.titulo-parallax {
+    color: #f2f2f2;
+    top: 43.6vh;
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    padding: 2px 0px 0px 0px; 
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.568));
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+}
+
+.titulo-parallax h1 {
+    font-size: 4.8rem;
+}
+.content {
+   padding: 1% 27% 10% 27% ;
+   background-color: #f2f2f2;
+   animation: fadein 1s;
+   -moz-animation: fadein 1s; /* Firefox */
+   -webkit-animation: fadein 1s; /* Safari and Chrome */
+   -o-animation: fadein 1s; /* Opera */
+   @keyframes fadein {
+       from {
+           opacity:0;
+       }
+       to {
+           opacity:1;
+       }
+   }
+}
+
+.title-content {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.content p {
+    padding: 0px 10px 0px 10px;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}

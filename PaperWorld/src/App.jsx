@@ -10,6 +10,7 @@ import Schedule from './components/schedule';
 import Map from './components/map';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Mexico from './components/mexico';
 
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
@@ -40,14 +41,16 @@ return (
         <meta name="keywords" content="APW, America&apos;s Paper World, Paper, America&apos;s, World" />
       </Helmet>
         <Navbar language={language} onLanguageChange={handleLanguageChange} />
-        <Routes>
-          <Route path="/" element={<Home language={language} />} />
-          <Route path="/register" element={<Register language={language} />} />
-          <Route path="/map" element={<Map language={language} />} />
-          <Route path="/schedule" element={<Schedule language={language} />} />
-          <Route path="/contact" element={<Contact language={language} />} />
-        </Routes>
-
+        <div className="mainContent">
+          <Routes>
+            <Route path="/" element={<Home language={language} />} />
+            <Route path="/register" element={<Register language={language} />} />
+            <Route path="/map" element={<Map language={language} />} />
+            <Route path="/schedule" element={<Schedule language={language} />} />
+            <Route path="/contact" element={<Contact language={language} />} />
+            <Route path="/mexico" element={<Mexico language={language} />} />
+          </Routes>
+        </div>
         <div className="language">
           <Fab
             onClick={() => handleLanguageChange('esp')}

@@ -12,6 +12,10 @@ body {
   margin: 0;
   width: 100%;
   position: relative;
+
+}
+.mainContent{
+  margin-top: 47px;
 }
 .language {
   position: fixed !important;
