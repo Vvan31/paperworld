@@ -50,7 +50,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 60px 0px 0px 0px;
+  /* margin: 60px 0px 0px 0px; */
 }
 .aboutContainer h1{
   color: rgb(250, 243, 234);

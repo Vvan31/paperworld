@@ -161,6 +161,12 @@
             "date1": "Octubre",
             "date2": "Noviembre",
             "download":"Descargar programa"
+         },
+         "countdown":{
+            "days":"Días",
+            "hours":"Horas",
+            "minutes":"Minutos",
+            "segundos":"Segundos"
          }
        },
     "eng":{
@@ -358,6 +364,12 @@
             "date1": "October",
             "date2": "November",
             "download":"Download"
+         },
+         "countdown":{
+            "days":"Days",
+            "hours":"Hours",
+            "minutes":"Minutes",
+            "segundos":"Seconds"
          }
     }
 }

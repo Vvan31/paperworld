@@ -5,6 +5,7 @@ import eventLogoENG from "../assets/9.svg";
 import aboutIcon from "../assets/5635791.png"
 import whatIcon from "../assets/memphis.png";
 import whyIcon from "../assets/memphis (1).png";
+import ShiftingCountdown from "./countdown.jsx"
 import "../styles/home.css";
 /* import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper"; */
@@ -33,7 +34,7 @@ const Home = ({ language }) => {
         </div>
       </div>
       <div className="homeContent">
-
+      <ShiftingCountdown language={language} />
         <div className="aboutContent">
           <div className="header">
             <h1>{home.about}</h1>
