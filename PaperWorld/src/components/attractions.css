@@ -74,7 +74,7 @@
  .postcard .postcard__preview-txt {
 	 overflow: hidden;
 	 text-overflow: ellipsis;
-	 text-align: justify;
+	 line-height: 1.8rem;
 	 height: 100%;
 }
  .postcard .postcard__tagbox {
