@@ -167,6 +167,20 @@
             "hours":"Horas",
             "minutes":"Minutos",
             "segundos":"Segundos"
+         },
+         "mexico":{
+            "title":"Conoce México",
+            "subtitle": "El Día de Muertos en México: Honrando la Vida y la Memoria de los Seres Queridos",
+            "p1": "El Día de Muertos, una de las festividades más emblemáticas de México, es una celebración profundamente arraigada en la rica historia y la cultura del país. Esta tradición única se remonta a las antiguas civilizaciones mesoamericanas, como los aztecas, mayas y purépechas, quienes honraban a sus ancestros y veneraban a la muerte como parte natural del ciclo de la vida.",
+            "p2":"El Día de Muertos se celebra cada año los días 1 y 2 de noviembre, coincidiendo con la celebración católica de Todos los Santos y los Fieles Difuntos. Durante esta festividad, las familias mexicanas se reúnen para recordar y honrar a sus seres queridos que han fallecido. A través de una mezcla de rituales, tradiciones y símbolos, se crea un ambiente de celebración y respeto por aquellos que han partido de este mundo.",
+            "p3":"Una de las características más reconocibles del Día de Muertos es el altarcito, un altar dedicado a los difuntos que se decora con fotografías, velas, flores, comida, bebidas y objetos personales. Se cree que, durante estos días, el espíritu de los seres queridos regresa al mundo de los vivos para disfrutar de las ofrendas que se les han preparado.",
+            "p4":"El Día de Muertos es una festividad llena de alegría, música, comida y recuerdos. A través de esta celebración, los mexicanos celebran la vida y la memoria de aquellos que ya no están físicamente con nosotros, manteniendo viva su presencia y su legado en el corazón de la comunidad.",
+            "p5":"En America’s Paper World, nos enorgullece celebrar y compartir esta rica tradición cultural con el mundo. Únete a nosotros para explorar la belleza y el significado del Día de Muertos en México, y para honrar juntos a aquellos que han dejado una huella indeleble en nuestras vidas.",
+            "titleAttraction": "Eventos que recomendamos conocer:",
+            "titleAttraction1": "La llorona embarcadero cuemanco",
+            "contentAttraction1":"El evento 'La Llorona' se ha presentado durante 30 años en los canales de Xochimilco, específicamente en el Embarcadero Cuemanco, ofreciendo un espectáculo multidisciplinario que fusiona música, teatro y danza prehispánica. A través de más de 700 representaciones, el evento busca promover la riqueza natural y cultural de Xochimilco, reconocida como Patrimonio Cultural de la Humanidad. Este año, bajo el nombre 'Chokani', el espectáculo resalta la importancia de las lenguas indígenas y su relevancia en la identidad nacional. La duración del espectáculo es de 60 minutos, seguido de un recorrido en trajinera de 90 minutos, incluido en el precio del boleto, ofreciendo una experiencia única en los canales de Xochimilco.",
+            "titleAttraction2": "La Mega Ofrenda en el Zócalo",
+            "contentAttraction2":"La Mega Ofrenda en el corazón del Centro Histórico de la ciudad de México sigue siendo un espectáculo visual impresionante, aprovechando el éxito del año anterior, que atrajo a multitudes. Durante el día, la luz natural resalta los detalles del altar y las figuras, proporcionando oportunidades para capturar fotografías increíbles. Sin embargo, al caer la noche, la atmósfera se transforma con una iluminación vibrante que envuelve el Zócalo, creando un ambiente aún más especial. A pesar de la temática diferente de este año, la calavera monumental sigue siendo una presencia imponente. Se anima a las familias y amigos a visitar esta celebración para disfrutar de una experiencia única y para honrar la tradición del Día de Muertos de una manera innovadora."
          }
        },
     "eng":{
@@ -370,6 +384,21 @@
             "hours":"Hours",
             "minutes":"Minutes",
             "segundos":"Seconds"
-         }
+         },
+         "mexico":{
+            "title": "Discover Mexico",
+            "subtitle": "Day of the Dead in Mexico: Honoring the Life and Memory of Loved Ones",
+            "p1": "Day of the Dead, one of Mexico's most emblematic festivals, is a celebration deeply rooted in the country's rich history and culture. This unique tradition dates back to ancient Mesoamerican civilizations such as the Aztecs, Mayans, and Purépechas, who honored their ancestors and revered death as a natural part of the cycle of life.",
+            "p2": "Day of the Dead is celebrated every year on November 1st and 2nd, coinciding with the Catholic celebration of All Saints' Day and All Souls' Day. During this festival, Mexican families gather to remember and honor their deceased loved ones. Through a mix of rituals, traditions, and symbols, an atmosphere of celebration and respect for those who have departed from this world is created.",
+            "p3": "One of the most recognizable features of Day of the Dead is the 'ofrenda,' an altar dedicated to the deceased decorated with photographs, candles, flowers, food, drinks, and personal items. It is believed that during these days, the spirits of loved ones return to the world of the living to enjoy the offerings prepared for them.",
+            "p4": "Day of the Dead is a festival filled with joy, music, food, and memories. Through this celebration, Mexicans celebrate the life and memory of those who are no longer physically with us, keeping their presence and legacy alive in the heart of the community.",
+            "p5": "At America’s Paper World, we take pride in celebrating and sharing this rich cultural tradition with the world. Join us to explore the beauty and significance of Day of the Dead in Mexico, and to honor together those who have left an indelible mark on our lives.",
+            "titleAttraction": "Events we recommend exploring:",
+            "titleAttraction1": "La Llorona at Embarcadero Cuemanco",
+            "contentAttraction1": "The 'La Llorona' event has been presented for 30 years in the canals of Xochimilco, specifically at Embarcadero Cuemanco, offering a multidisciplinary spectacle that merges music, theater, and pre-Hispanic dance. Through more than 700 performances, the event seeks to promote the natural and cultural richness of Xochimilco, recognized as a World Cultural Heritage site. This year, under the name 'Chokani,' the show highlights the importance of indigenous languages and their relevance to national identity. The duration of the spectacle is 60 minutes, followed by a 90-minute trajinera ride, included in the ticket price, offering a unique experience in the canals of Xochimilco.",
+            "titleAttraction2": "The Mega Ofrenda at Zócalo",
+            "contentAttraction2": "The Mega Ofrenda in the heart of Mexico City's Historic Center remains a stunning visual spectacle, building on the success of the previous year, which drew crowds. During the day, natural light highlights the details of the altar and figures, providing opportunities to capture incredible photographs. However, as night falls, the atmosphere transforms with vibrant lighting enveloping the Zócalo, creating an even more special ambiance. Despite this year's different theme, the monumental skull remains an imposing presence. Families and friends are encouraged to visit this celebration to enjoy a unique experience and to honor the tradition of Day of the Dead in an innovative way."
+        }
+        
     }
 }

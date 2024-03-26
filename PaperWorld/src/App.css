@@ -15,7 +15,7 @@ body {
 
 }
 .mainContent{
-  margin-top: 47px;
+  margin-top: 50px;
 }
 .language {
   position: fixed !important;
@@ -53,5 +53,8 @@ body {
     right: 9px;
   }
 
+  .mainContent{
+    margin-top: 0;
+  }
  
 }
