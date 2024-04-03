@@ -181,6 +181,58 @@
             "contentAttraction1":"El evento 'La Llorona' se ha presentado durante 30 años en los canales de Xochimilco, específicamente en el Embarcadero Cuemanco, ofreciendo un espectáculo multidisciplinario que fusiona música, teatro y danza prehispánica. A través de más de 700 representaciones, el evento busca promover la riqueza natural y cultural de Xochimilco, reconocida como Patrimonio Cultural de la Humanidad. Este año, bajo el nombre 'Chokani', el espectáculo resalta la importancia de las lenguas indígenas y su relevancia en la identidad nacional. La duración del espectáculo es de 60 minutos, seguido de un recorrido en trajinera de 90 minutos, incluido en el precio del boleto, ofreciendo una experiencia única en los canales de Xochimilco.",
             "titleAttraction2": "La Mega Ofrenda en el Zócalo",
             "contentAttraction2":"La Mega Ofrenda en el corazón del Centro Histórico de la ciudad de México sigue siendo un espectáculo visual impresionante, aprovechando el éxito del año anterior, que atrajo a multitudes. Durante el día, la luz natural resalta los detalles del altar y las figuras, proporcionando oportunidades para capturar fotografías increíbles. Sin embargo, al caer la noche, la atmósfera se transforma con una iluminación vibrante que envuelve el Zócalo, creando un ambiente aún más especial. A pesar de la temática diferente de este año, la calavera monumental sigue siendo una presencia imponente. Se anima a las familias y amigos a visitar esta celebración para disfrutar de una experiencia única y para honrar la tradición del Día de Muertos de una manera innovadora."
+         },
+         "whyExhibitor": {
+            "title": "¿Por que ser expositor en America's Paper World?",
+            "p1": "Estarás encantado de saber que la Expo APW 2024 será un escenario excepcional para presentar tus últimas innovaciones y productos químicos. Aquí tienes algunas razones por las que deberías considerar rentar un stand en nuestra expo.",
+            "titleContacts":"Red de Contactos",
+            "contactsContent":"Conectarás con profesionales de la industria papelera, incluyendo fabricantes, proveedores y profesionales de tu mismo sector, lo que te brindará oportunidades valiosas de colaboración y crecimiento profesional.",
+            "titleProducts":"Exposición de Productos",
+            "productsContent": "Tendrás la oportunidad de exhibir tus productos y soluciones más recientes a una audiencia altamente segmentada y enfocada en la industria papelera, lo que puede generar nuevos clientes y oportunidades de negocio.",
+            "titleTechnology": "Acceso a la Última Tecnología",
+            "technologyContent": "La Expo APW presentará lo último en tecnología relacionada con la producción de papel. Participar te permitirá mantenerte al día con las últimas tendencias y desarrollos en tu campo, lo que podría inspirar nuevas ideas para tu trabajo.",
+            "titleConferences": "Conferencias y Seminarios",
+            "conferencesContent": "Nuestra expo también incluirá una serie de conferencias y seminarios impartidos por expertos de la industria. Esto te brindará la oportunidad tanto de aprender como de posicionarte como líder del sector y ampliar tus conocimientos de vanguardia.",
+            "titleVisibility": "Visibilidad y Marca",
+            "visibilityContent":"Al rentar un stand en la Expo APW, aumentarás la visibilidad de tu marca entre profesionales clave de la industria. Esto te ayudará a consolidar tu posición como líder en tu campo y a mejorar tu reputación profesional.",
+            "conclution":"La Expo APW 2024 es el lugar perfecto para que los profesionales como tú exhiban sus productos, establezcan conexiones valiosas y se mantengan al tanto de las últimas tendencias en la industria papelera. No pierdas la oportunidad de ser parte de este emocionante evento. ¡Reserva tu stand hoy mismo! ¡Solo manda un correo a a.estrada@apw.enterprises!",
+            "IndustryAreas":{
+               "Químicos": {
+                  "title": "Químicos",
+                  "content": "Los productos químicos desempeñan un papel crucial en la industria papelera, desde el tratamiento del agua hasta la fabricación de productos de papel especializados. Explora las últimas innovaciones y tecnologías en esta área en la Expo APW.",
+                  "picto": "Químicos"
+                },
+                "Maquinaria": {
+                  "title": "Maquinaria",
+                  "content": "La maquinaria utilizada en la industria papelera abarca una amplia gama de equipos, desde máquinas de fabricación de papel hasta sistemas de embalaje. Descubre las últimas tendencias en maquinaria y equipos en nuestra exposición.",
+                  "picto": "Maquinaria"
+                },
+                "Ingeniería": {
+                  "title": "Ingeniería",
+                  "content": "La ingeniería juega un papel fundamental en la optimización de procesos en la industria papelera. Conoce cómo la ingeniería de procesos y diseño puede mejorar la eficiencia y sostenibilidad en la producción de papel.",
+                  "picto": "Ingenieria"
+                },
+                "Tratamientos de aguas y Biogás": {
+                  "title": "Tratamientos de aguas y Biogás",
+                  "content": "Los procesos de tratamiento de agua y biogás son esenciales para garantizar la sostenibilidad ambiental en la producción de papel. Descubre las últimas soluciones en tratamiento de aguas residuales y generación de biogás en nuestra exposición.",
+                  "picto": "tratamientos"
+                },
+                "Equipo de Carga": {
+                  "title": "Equipo de Carga",
+                  "content": "El manejo eficiente de la carga es crucial en la logística de la industria papelera. Explora las últimas tecnologías y equipos de carga para optimizar los procesos de transporte y almacenamiento de productos de papel.",
+                  "picto": "equipoCarga"
+                },
+                "Equipo de Seguridad": {
+                  "title": "Equipo de Seguridad",
+                  "content": "La seguridad en el lugar de trabajo es una prioridad en la industria papelera. Conoce las últimas soluciones en equipos de seguridad y protocolos de prevención de riesgos para garantizar un entorno de trabajo seguro para todos los empleados.",
+                  "picto": "equipoSeguridad"
+                },
+                "Equipo de Laboratorio, medición y control": {
+                  "title": "Equipo de Laboratorio, medición y control",
+                  "content": "El control de calidad y la medición precisa son fundamentales en la producción de papel. Descubre las últimas tecnologías en equipos de laboratorio y sistemas de medición para garantizar la calidad y consistencia del producto final.",
+                  "picto": "equipoLaboratorio"
+                }
+            }
          }
        },
     "eng":{
@@ -398,7 +450,58 @@
             "contentAttraction1": "The 'La Llorona' event has been presented for 30 years in the canals of Xochimilco, specifically at Embarcadero Cuemanco, offering a multidisciplinary spectacle that merges music, theater, and pre-Hispanic dance. Through more than 700 performances, the event seeks to promote the natural and cultural richness of Xochimilco, recognized as a World Cultural Heritage site. This year, under the name 'Chokani,' the show highlights the importance of indigenous languages and their relevance to national identity. The duration of the spectacle is 60 minutes, followed by a 90-minute trajinera ride, included in the ticket price, offering a unique experience in the canals of Xochimilco.",
             "titleAttraction2": "The Mega Ofrenda at Zócalo",
             "contentAttraction2": "The Mega Ofrenda in the heart of Mexico City's Historic Center remains a stunning visual spectacle, building on the success of the previous year, which drew crowds. During the day, natural light highlights the details of the altar and figures, providing opportunities to capture incredible photographs. However, as night falls, the atmosphere transforms with vibrant lighting enveloping the Zócalo, creating an even more special ambiance. Despite this year's different theme, the monumental skull remains an imposing presence. Families and friends are encouraged to visit this celebration to enjoy a unique experience and to honor the tradition of Day of the Dead in an innovative way."
-        }
-        
-    }
+        },
+         "whyExhibitor": {
+           "title": "¿Por qué ser expositor en America's Paper World?",
+           "p1": "You will be delighted to know that Expo APW 2024 will be an exceptional stage to showcase your latest innovations and chemical products. Here are some reasons why you should consider renting a booth at our expo.",
+           "titleContacts": "Networking",
+           "contactsContent": "You will connect with professionals from the paper industry, including manufacturers, suppliers, and professionals from your own sector, providing you with valuable opportunities for collaboration and professional growth.",
+           "titleProducts": "Product Exhibition",
+           "productsContent": "You will have the opportunity to exhibit your latest products and solutions to a highly segmented audience focused on the paper industry, which can generate new clients and business opportunities.",
+           "titleTechnology": "Access to the Latest Technology",
+           "technologyContent": "Expo APW will showcase the latest technology related to paper production. Participating will allow you to stay up-to-date with the latest trends and developments in your field, which could inspire new ideas for your work.",
+           "titleConferences": "Conferences and Seminars",
+           "conferencesContent": "Our expo will also include a series of conferences and seminars led by industry experts. This will provide you with the opportunity to both learn and position yourself as a sector leader, expanding your cutting-edge knowledge.",
+           "titleVisibility": "Visibility and Brand",
+           "visibilityContent": "By renting a booth at Expo APW, you will increase the visibility of your brand among key industry professionals. This will help you consolidate your position as a leader in your field and enhance your professional reputation.",
+           "conclusion": "Expo APW 2024 is the perfect place for professionals like you to showcase their products, establish valuable connections, and stay informed about the latest trends in the paper industry. Don't miss the opportunity to be part of this exciting event. Reserve your booth today! Just send an email to a.estrada@apw.enterprises!",
+           "IndustryAreas": {
+             "Químicos": {
+               "title": "Chemicals",
+               "content": "Chemical products play a crucial role in the paper industry, from water treatment to the manufacture of specialized paper products. Explore the latest innovations and technologies in this area at Expo APW.",
+               "picto": "Químicos"
+             },
+             "Maquinaria": {
+               "title": "Machinery",
+               "content": "The machinery used in the paper industry encompasses a wide range of equipment, from paper manufacturing machines to packaging systems. Discover the latest trends in machinery and equipment at our exhibition.",
+               "picto": "Maquinaria"
+             },
+             "Ingeniería": {
+               "title": "Engineering",
+               "content": "Engineering plays a fundamental role in optimizing processes in the paper industry. Learn how process and design engineering can improve efficiency and sustainability in paper production.",
+               "picto": "Ingenieria"
+             },
+             "Tratamientos de aguas y Biogás": {
+               "title": "Water Treatment and Biogas",
+               "content": "Water and biogas treatment processes are essential to ensure environmental sustainability in paper production. Discover the latest solutions in wastewater treatment and biogas generation at our exhibition.",
+               "picto": "tratamientos"
+             },
+             "Equipo de Carga": {
+               "title": "Loading Equipment",
+               "content": "Efficient cargo handling is crucial in the logistics of the paper industry. Explore the latest technologies and loading equipment to optimize the transportation and storage processes of paper products.",
+               "picto": "equipoCarga"
+             },
+             "Equipo de Seguridad": {
+               "title": "Safety Equipment",
+               "content": "Workplace safety is a priority in the paper industry. Learn about the latest solutions in safety equipment and risk prevention protocols to ensure a safe working environment for all employees.",
+               "picto": "equipoSeguridad"
+             },
+             "Equipo de Laboratorio, medición y control": {
+               "title": "Laboratory, Measurement, and Control Equipment",
+               "content": "Quality control and precise measurement are fundamental in paper production. Discover the latest technologies in laboratory equipment and measurement systems to ensure the quality and consistency of the final product.",
+               "picto": "equipoLaboratorio"
+             }
+           }
+         }
+      }
 }

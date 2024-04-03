@@ -16,6 +16,7 @@ body {
 }
 .mainContent{
   margin-top: 50px;
+  min-height: 95vh;
 }
 .language {
   position: fixed !important;

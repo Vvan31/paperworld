@@ -11,6 +11,7 @@ import Map from './components/map';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import Mexico from './components/mexico';
+import PorqueExponer from './components/porqueExponer';
 
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
@@ -49,6 +50,7 @@ return (
             <Route path="/schedule" element={<Schedule language={language} />} />
             <Route path="/contact" element={<Contact language={language} />} />
             <Route path="/mexico" element={<Mexico language={language} />} />
+            <Route path="/expositor" element={<PorqueExponer language={language} />} />
           </Routes>
         </div>
         <div className="language">
