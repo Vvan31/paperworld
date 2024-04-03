@@ -14,4 +14,8 @@ export default defineConfig({
       '@mui/icons-material', 
     ],
   },
+  define: {
+      global: {}
+    
+  }
 });
