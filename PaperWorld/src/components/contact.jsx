@@ -19,7 +19,7 @@ const Contact = ({ language }) => {
         setEmailData([
             {
                 description:contact.technicalSupport,
-                email: 'a.estrada@apw.enterprises'
+                email: 'j.urtuzuastegui@apw.enterprises'
             },
             {
                 description:contact.customerSupport,
@@ -27,14 +27,14 @@ const Contact = ({ language }) => {
             },
             {
                 description:contact.paymentSupport,
-                email: 'alberto.escotera@apw.enterprises'
+                email: 'a.estrada@apw.enterprises'
             }
         ]);
       }, [language]);
     const [emailData,setEmailData] = useState([
         {
             description:contact.technicalSupport,
-            email: 'a.estrada@apw.enterprises'
+            email: 'j.urtuzuastegui@apw.enterprises'
         },
         {
             description:contact.customerSupport,
@@ -42,7 +42,7 @@ const Contact = ({ language }) => {
         },
         {
             description:contact.paymentSupport,
-            email: 'alberto.escotera@apw.enterprises'
+            email: 'a.estrada@apw.enterprises'
         }
     ]);
 
