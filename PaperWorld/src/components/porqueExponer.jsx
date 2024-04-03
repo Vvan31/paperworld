@@ -32,9 +32,9 @@ const PorqueExponer = ({ language }) => {
                 </div>
                 <p>{whyExhibitor.conclution}</p>
             </div>
-            {/* <div className='blueBg'> */}
+            <div className='industry'>
                 <IndustryAreas language={language} />
-            {/* </div> */}
+            </div>
         </div>
     );
 }

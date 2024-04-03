@@ -11,46 +11,7 @@ import BiotechIcon from '@mui/icons-material/Biotech';
 
 import data from "../data.json"
 
-import papel from "../assets/PNG/Paper_06.png"
 import { Icon } from '@mui/material';
-
-const datas = {
-  'Químicos': {
-    title: 'Químicos',
-    content: 'The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)',
-    picto: 'Químicos'
-  },
-  'Maquinaria': {
-    title: 'Maquinaria',
-    content: 'A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.',
-    picto: 'Maquinaria'
-  },
-  'Ingeniería': {
-    title: 'Ingeniería',
-    content: 'The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.',
-    picto: 'Ingenieria'
-  },
-  'Tratamientos de aguas y Biogás': {
-    title: 'Tratamientos de aguas y Biogás',
-    content: 'The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.',
-    picto: 'tratamientos'
-  },
-  'Equipo de Carga': {
-    title: 'Equipo de Carga',
-    content: 'The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.',
-    picto: 'equipoCarga'
-  },
-  'Equipo de Seguridad': {
-    title: 'Equipo de Seguridad',
-    content: 'The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.',
-    picto: 'equipoSeguridad'
-  },
-  'Equipo de Laboratorio, medición y control': {
-    title: 'Equipo de Laboratorio, medición y control',
-    content: 'The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.',
-    picto: 'equipoLaboratorio'
-  }
-};
 
 const sections = ['Químicos', 'Maquinaria', 'Ingeniería', 'Tratamientos de aguas y Biogás', "Equipo de Carga", "Equipo de Seguridad", "Equipo de Laboratorio, medición y control"];
 

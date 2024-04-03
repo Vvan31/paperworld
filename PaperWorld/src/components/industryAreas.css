@@ -38,7 +38,7 @@
     /* background-color: #f2f2f2; */
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
     overflow: hidden;
-    padding-left: calc(7vw + 100px);
+    padding-left: 13%;
 }
  #scene #left-zone {
     background: #f2f2f200;
@@ -66,10 +66,11 @@
     display: block;
     opacity: 0.5;
     height: 50px;
-    text-align: center;
+    text-align: right;
     line-height: 50px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    padding-right: 18px;
 }
  #scene #left-zone .list li.item input[type="radio"] ~ label:first-letter {
     text-transform: uppercase;
@@ -128,13 +129,13 @@
 }
  #scene #left-zone .list li.item input[type="radio"] ~ .indAContent{
     position: absolute;
-    left: calc(10vw + 550px);
+    left: calc(40%);
     top: -400px;
     width: 600px;
     height: 400px;
     animation-duration: 0.75s;
     animation-name: slideout;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,11 +224,17 @@
     flex-grow: 3;
 }
 
+@media screen and (max-width: 1760px) {
 
-@media screen and (max-width: 600px) {
-  
     #scene {
         padding-left: 0;
+        padding-bottom: 100px;
+    }
+    
+}
+@media screen and (max-width: 1230px) {
+    #scene {
+        padding-left: 25%;
         padding-bottom: 100px;
     }
     .label {
@@ -240,4 +247,9 @@
         padding-bottom: 100px !important;
 
     }
+}
+@media screen and (max-width: 1230px) {
+#scene {
+        padding-left: 2%;
+}
 }

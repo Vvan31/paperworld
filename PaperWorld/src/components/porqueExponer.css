@@ -79,11 +79,8 @@ p{
     margin: 20px 0 20px 0;
 
 }
-.blueBg{
-    /* background: rgb(34,59,130);
-    background: linear-gradient(90deg, rgba(34,59,130,1) 0%, rgba(58,84,180,0.802976293056285) 50%, rgba(34,59,130,1) 100%); 
-    */
-    width: 100%;
+.industry{
+    width: 90%;
     padding: 0;
     margin: 0;
     padding-bottom: 50px;
@@ -92,7 +89,6 @@ p{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-   
 }
 .divider{
     transform: skewY(3deg);
@@ -104,5 +100,8 @@ p{
     .contentExpositor{
         width: 100%;
         padding: 1% 5% 0% 5%;
+    }
+    .industry{
+        width: 100%;
     }
 }
