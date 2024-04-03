@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "./industryAreas.css";
-import styled from '@emotion/styled';
 
 import ScienceIcon from '@mui/icons-material/Science';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
@@ -60,7 +59,7 @@ function IndustryAreas({ language }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSectionIndex((prevIndex) => (prevIndex + 1) % sections.length);
-    }, 3500);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
