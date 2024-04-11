@@ -18,7 +18,7 @@ const PorqueExponer = ({ language }) => {
                 </p>
                 <img className='image' src={group}></img>
 
-                <div className=''>
+                <div className='contenidoExponer'>
                     <h3>{whyExhibitor.titleContacts}</h3>
                     <p>{whyExhibitor.contactsContent}</p>
                     <h3>{whyExhibitor.titleProducts}</h3>
