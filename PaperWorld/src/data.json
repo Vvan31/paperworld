@@ -233,8 +233,72 @@
                   "picto": "equipoLaboratorio"
                 }
             }
+         },
+         "hotels":{
+            "title": "¿Dónde hospedarse?",
+            "subtitle": "En America's Paper World queremos que su estancia sea cómoda y segura.",
+            "hotels":{
+               "hilton":{
+                  "title":"Hilton Garden INN México, Santa Fe",
+                  "description": "Hilton Garden Inn México City Santa Fe, un hotel moderno e informal en el distrito corporativo de la ciudad.",
+                  "distance": "Al lado del Centro de convenciones Expo Santa Fe." ,
+                  "single": "Sencilla - $2,291.00 m.n.",
+                  "double": "Doble - $2,616.00 m.n.",
+                  "amenities": "incluye: Desayuno, WIFI y gimnasio.",
+                  "parking": "Costo de estacionamiento $125.00 m.n. por auto."
+               },
+               "doubleTree":{
+                  "title":"DoubleTree By Hilton",
+                  "description": "Nuestro hotel, conectado a Hilton Garden Inn Mexico City Santa Fe, se encuentra en el distrito empresarial.",
+                  "distance": "Al lado del Centro de convenciones Expo Santa Fe." ,
+                  "single": "Sencilla - $2,519.00 m.n.",
+                  "double": "Doble - $2,844.00 m.n.",
+                  "amenities": "incluye: Desayuno, WIFI y gimnasio.",
+                  "parking": "Costo de estacionamiento $125.00 m.n. por auto."
+               },
+               "gamma":{
+                  "title":"Gamma Ciudad de México Santa Fe",
+                  "description": "Un hotel casual y moderno, disfruta de una experiencia en cada momento, en cada espacio.",
+                  "distance": "A 6 min. de Expo Santa Fe." ,
+                  "single": "Sencilla - $1,427.00 m.n.",
+                  "double": "Doble - $1,659.00 m.n.",
+                  "amenities": "incluye: Desayuno, WIFI y gimnasio.",
+                  "parking": "Estacionamiento con costo."
+               },
+               "cityExpress":{
+                  "title":"City Express Pus Sant Fe",
+                  "description": "Cuando de confort y funcionalidad se trata, City Express Plus Santa Fe es una atractiva opción de alojamiento. Ideal para el viajero ejecutivo que visita la capital del país.",
+                  "distance": "A 2 min. de Expo Santa Fe." ,
+                  "single": "Sencilla - $1,602.00 m.n.",
+                  "double": "Doble - $1,781.00 m.n.",
+                  "amenities": "incluye: Desayuno",
+                  "parking": "Estacionamiento con costo."
+               },
+               "ac":{
+                  "title":"AC Hotel Santa Fe",
+                  "description": "En AC Hotel Santa Fe refleja el alma moderna y de negocios de la Ciudad de México. ",
+                  "distance": "A 5 min. de Expo Santa Fe." ,
+                  "single": "Sencilla - $2,331.00 m.n.",
+                  "double": "Doble - $2,546.00 m.n.",
+                  "amenities": "incluye: Buffet",
+                  "parking": "Estacionamiento con costo."
+               }
+            },
+            "reserve": {
+               "title": "Reservaciones",
+               "name": "Karina Aguilar hernández, Gerente de Grupos",
+               "email": "karina.aguilar@abatur.com",
+               "phone": "+52 55 5868 9838 | +52 55 3474 6839",
+               "termsConditions": {
+                  "title": "Términos y Condiciones",
+                  "t1": "Todas las tarifas incluyen I.V.A. 16 % e impuestos sobre hospedaje del 3.5%.",
+                  "t2": "Tarifas por habitación por noche.",
+                  "t3": "Tarifas sujetas a disponibilidad y cambio sin previo aviso.",
+                  "t4": "Tarifa exclusiva para el evento."
+               }
+            }
          }
-       },
+      },
     "eng":{
         "navBar":{
             "register":"Register",
@@ -450,7 +514,7 @@
             "contentAttraction1": "The 'La Llorona' event has been presented for 30 years in the canals of Xochimilco, specifically at Embarcadero Cuemanco, offering a multidisciplinary spectacle that merges music, theater, and pre-Hispanic dance. Through more than 700 performances, the event seeks to promote the natural and cultural richness of Xochimilco, recognized as a World Cultural Heritage site. This year, under the name 'Chokani,' the show highlights the importance of indigenous languages and their relevance to national identity. The duration of the spectacle is 60 minutes, followed by a 90-minute trajinera ride, included in the ticket price, offering a unique experience in the canals of Xochimilco.",
             "titleAttraction2": "The Mega Ofrenda at Zócalo",
             "contentAttraction2": "The Mega Ofrenda in the heart of Mexico City's Historic Center remains a stunning visual spectacle, building on the success of the previous year, which drew crowds. During the day, natural light highlights the details of the altar and figures, providing opportunities to capture incredible photographs. However, as night falls, the atmosphere transforms with vibrant lighting enveloping the Zócalo, creating an even more special ambiance. Despite this year's different theme, the monumental skull remains an imposing presence. Families and friends are encouraged to visit this celebration to enjoy a unique experience and to honor the tradition of Day of the Dead in an innovative way."
-        },
+         },
          "whyExhibitor": {
            "title": "Why should you be an APW Expo 2024 Exhibitor?",
            "p1": "You will be delighted to know that Expo APW 2024 will be an exceptional stage to showcase your latest innovations and products. Here are some reasons why you should consider renting a booth at our expo.",
@@ -502,6 +566,71 @@
                "picto": "equipoLaboratorio"
              }
            }
-         }
+         },
+         "hotels":{
+            "title": "Where to Stay?",
+            "subtitle": "At America's Paper World, we want your stay to be comfortable and safe.",
+            "hotels":{
+               "hilton":{
+                  "title":"Hilton Garden INN Mexico, Santa Fe",
+                  "description": "Hilton Garden Inn Mexico City Santa Fe, a modern and casual hotel in the city's corporate district.",
+                  "distance": "Next to the Expo Santa Fe Convention Center." ,
+                  "single": "Single - $2,291.00 MXN",
+                  "double": "Double - $2,616.00 MXN",
+                  "amenities": "Includes: Breakfast, WIFI, and gym access.",
+                  "parking": "Parking cost: $125.00 MXN per car."
+               },
+               "doubleTree":{
+                  "title":"DoubleTree By Hilton",
+                  "description": "Our hotel, connected to Hilton Garden Inn Mexico City Santa Fe, is located in the business district.",
+                  "distance": "Next to the Expo Santa Fe Convention Center." ,
+                  "single": "Single - $2,519.00 MXN",
+                  "double": "Double - $2,844.00 MXN",
+                  "amenities": "Includes: Breakfast, WIFI, and gym access.",
+                  "parking": "Parking cost: $125.00 MXN per car."
+               },
+               "gamma":{
+                  "title":"Gamma Ciudad de Mexico Santa Fe",
+                  "description": "A casual and modern hotel, enjoy an experience at every moment, in every space.",
+                  "distance": "6 minutes from Expo Santa Fe." ,
+                  "single": "Single - $1,427.00 MXN",
+                  "double": "Double - $1,659.00 MXN",
+                  "amenities": "Includes: Breakfast, WIFI, and gym access.",
+                  "parking": "Parking available at additional cost."
+               },
+               "cityExpress":{
+                  "title":"City Express Plus Santa Fe",
+                  "description": "When it comes to comfort and functionality, City Express Plus Santa Fe is an attractive accommodation option. Ideal for the executive traveler visiting the country's capital.",
+                  "distance": "2 minutes from Expo Santa Fe." ,
+                  "single": "Single - $1,602.00 MXN",
+                  "double": "Double - $1,781.00 MXN",
+                  "amenities": "Includes: Breakfast.",
+                  "parking": "Parking available at additional cost."
+               },
+               "ac":{
+                  "title":"AC Hotel Santa Fe",
+                  "description": "At AC Hotel Santa Fe, it reflects the modern and business soul of Mexico City.",
+                  "distance": "5 minutes from Expo Santa Fe." ,
+                  "single": "Single - $2,331.00 MXN",
+                  "double": "Double - $2,546.00 MXN",
+                  "amenities": "Includes: Buffet breakfast.",
+                  "parking": "Parking available at additional cost."
+               }
+            },
+            "reserve": {
+               "title": "Reservations",
+               "name": "Karina Aguilar Hernandez, Group Manager",
+               "email": "karina.aguilar@abatur.com",
+               "phone": "+52 55 5868 9838 | +52 55 3474 6839",
+               "termsConditions": {
+                  "title": "Terms and Conditions",
+                  "t1": "All rates include 16% VAT and 3.5% lodging tax.",
+                  "t2": "Rates are per room per night.",
+                  "t3": "Rates are subject to availability and change without prior notice.",
+                  "t4": "Exclusive rate for the event."
+               }
+            }
+        }
       }
 }
+

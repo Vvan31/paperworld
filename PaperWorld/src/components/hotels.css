@@ -1,0 +1,84 @@
+
+
+.wrapperHotels{
+    padding-top: 15px;
+}
+.subtituloWrapperHotels{
+    font-size: 20px;
+    margin-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+}
+.distance{
+    font-size: 14px;
+}
+.description{
+    font-size: 22px;
+}
+.prices{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #223c824d;
+    padding: 0% 1%;
+    align-items: center;
+
+}
+
+.prices p {
+   font-weight: 600;
+   font-size: 20px;
+}
+
+.barra{
+    height: 5px;
+    width: 120px;
+	border-radius: 5px;
+    background-color: #223c8247;
+    transition: width 0.2s ease;
+}
+
+.reservations{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #223B82; */
+    padding: 0% 1%;
+    align-items: center;
+}
+
+.reservationsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.reservationsContact{
+    flex-grow: 1;
+    /* width: 50%; */
+}
+.termsConditions{
+    flex-grow: 2;
+    /* width: 50%; */
+}
+
+
+@media screen and (min-width: 769px) {
+
+.prices{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #223c824d;
+    padding: 0% 1%;
+}
+.prices p {
+    font-weight: 600;
+ }
+ .reservationsContent{
+    flex-direction: row;
+ }
+}

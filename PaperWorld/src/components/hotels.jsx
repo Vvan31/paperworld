@@ -1,80 +1,95 @@
-
 import data from "../data.json";
-import hilton from "../assets/hoteles/hilton.jpg";
+
+import StarsRating from "./starsRating";
+
+import hilton from "../assets/hoteles/hilton.jpeg";
 import AC from "../assets/hoteles/AC.jpg";
 import gamma from "../assets/hoteles/gamma.jpg";
 import cityExpress from "../assets/hoteles/cityexpress.jpg";
-import doubleTree from "../assets/hoteles/doubleTree.jpg";
+import doubleTree from "../assets/hoteles/doubleTree.jpeg";
+import './hotels.css'
 
-const  Hotels = ({ language }) => {
+
+const images = {
+    "hilton": hilton,
+    "doubleTree": doubleTree,
+    "gamma": gamma,
+    "cityExpress": cityExpress,
+    "ac": AC,
+}
+
+const Hotels = ({ language }) => {
     const { hotels } = data[language]; 
-
+    const arrayHotels = hotels.hotels
     return (
-      <>
-        <Hotel />
-      </>  
+        <div className="wrapperHotels">
+        <div className="wrapper">
+            <section className="light">
+                <div className="container py-2 flex justify-center column">
+                    <div className="h1 text-center text-dark" id="pageHeaderTitle">{hotels.title}</div>
+                    <p className="subtituloWrapperHotels">{hotels.subtitle}</p>
+
+                    {Object.keys(arrayHotels).map((key) => (
+                        <Hotel key={key} hotel={arrayHotels[key]} imageName={key}/>
+                    ))}
+                </div>
+                <div className="reservations">
+                    <div className="reservationsContent">
+                        <div className="reservationsContact">
+                            <h2 className="reservationsTitle">{hotels.reserve.title}</h2>
+
+                            <p className="name">{hotels.reserve.name}</p>
+                            <p className="name">{hotels.reserve.email}</p>
+                            <p className="name">{hotels.reserve.phone}</p>
+                        </div>
+                        <div className="termsConditions">
+                            <h2>{hotels.reserve.termsConditions.title}</h2>
+                            <p>{hotels.reserve.termsConditions.t1}</p>
+                            <p>{hotels.reserve.termsConditions.t2}</p>
+                            <p>{hotels.reserve.termsConditions.t3}</p>
+                            <p>{hotels.reserve.termsConditions.t4}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
     );
 }
-export default Hotels;
-const Hotel = () => {
+
+const Hotel = ({ hotel, imageName}) => {
+    // Get the image dynamically based on hotel name
+    console.log(imageName)
+    const image = images[imageName];
+
     return (
-        <div className="wrapper">
-        <section className="light">
-            <div className="container py-2">
-                <div className="h1 text-center text-dark" id="pageHeaderTitle">Titulo</div>
+        <article className="postcard light blue">
+            <a className="postcard__img_link" href="#">
+                <img className="postcard__img" src={image} alt={hotel.title} />
+            </a>
+            <div className="postcard__text t-dark">
+                <h1 className="postcard__title blue"><a href="#">{hotel.title}</a></h1>
+                {/* <div className="postcard__subtitle small"> */}
+                {/* </div> */}
+                <StarsRating rating={4}/>
+                <div className="postcard__bar"></div>
+                <div className="postcard__preview-txt">
+                <p className="description">{hotel.description}</p>
 
-                <article className="postcard light blue">
-                    <a className="postcard__img_link" href="#">
-                        <img className="postcard__img" src={hilton} alt="Image Title" />
-                    </a>
-                    <div className="postcard__text t-dark">
-                        <h1 className="postcard__title blue"><a href="#">Hilton</a></h1>
-                        <div className="postcard__subtitle small">
-                            <time dateTime="2020-05-25 12:00:00">
-                                <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                            </time>
-                        </div>
-                        <div className="postcard__bar"></div>
-                        <div className="postcard__preview-txt">
-                            Contenidp Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit quod autem, nesciunt amet molestias soluta fuga exercitationem quis sed sint? Quod quo nam architecto, dicta ipsam fuga eos dolorum!
-                        </div>
-                        <a href="https://www.lalloronaencuemanco.com/">https://www.lalloronaencuemanco.com/</a>
+                <p className="distance">{hotel.distance}</p>
+                <div className="prices">
+                    <p>{hotel.single}</p>
+                    <p>{hotel.double}</p>
+                </div>
+                {/* <div className="barra"></div> */}
 
-                        <ul className="postcard__tagbox">
-                            <li className="tag__item"><i className="fas fa-tag mr-2"></i>Podcast</li>
-                            <li className="tag__item"><i className="fas fa-clock mr-2"></i>55 mins.</li>
-                            <li className="tag__item play blue">
-                                <a href="#"><i className="fas fa-play mr-2"></i>Play Episode</a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article className="postcard light blue">
-                    <a className="postcard__img_link" href="#">
-                        <img className="postcard__img" src={gamma} alt="Image Title" />	
-                    </a>
-                    <div className="postcard__text t-dark">
-                        <h1 className="postcard__title red"><a href="#">Gamma</a></h1>
-                        <div className="postcard__subtitle small">
-                            <time dateTime="2020-05-25 12:00:00">
-                                <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                            </time>
-                        </div>
-                        <div className="postcard__bar"></div>
-                        <div className="postcard__preview-txt">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus soluta eum, aspernatur minima corporis a doloremque voluptatem adipisci illum pariatur exercitationem dolorem, voluptatibus voluptates odio, eos sequi beatae ut enim?
-                            </div>
-                        <ul className="postcard__tagbox">
-                            <li className="tag__item"><i className="fas fa-tag mr-2"></i>Podcast</li>
-                            <li className="tag__item"><i className="fas fa-clock mr-2"></i>55 mins.</li>
-                            <li className="tag__item play red">
-                                <a href="#"><i className="fas fa-play mr-2"></i>Play Episode</a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
+                    <p className="amenities">{hotel.amenities}</p>
+                    <p className="parking">{hotel.parking}</p>
+                </div>
+                {/* <a href="#">{hotel.title}</a> */}
             </div>
-        </section>
-    </div>
+        </article>
     )
 }
+
+export default Hotels;
