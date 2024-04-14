@@ -1,6 +1,10 @@
 import data from "../data.json";
 
 import StarsRating from "./starsRating";
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import WifiIcon from '@mui/icons-material/Wifi';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 
 import hilton from "../assets/hoteles/hilton.jpeg";
 import AC from "../assets/hoteles/AC.jpg";
@@ -24,7 +28,7 @@ const Hotels = ({ language }) => {
     return (
         <div className="wrapperHotels">
         <div className="wrapper">
-            <section className="light">
+            <section className="conteinerHotel">
                 <div className="container py-2 flex justify-center column">
                     <div className="h1 text-center text-dark" id="pageHeaderTitle">{hotels.title}</div>
                     <p className="subtituloWrapperHotels">{hotels.subtitle}</p>
@@ -58,8 +62,6 @@ const Hotels = ({ language }) => {
 }
 
 const Hotel = ({ hotel, imageName}) => {
-    // Get the image dynamically based on hotel name
-    console.log(imageName)
     const image = images[imageName];
 
     return (
@@ -73,18 +75,18 @@ const Hotel = ({ hotel, imageName}) => {
                 {/* </div> */}
                 <StarsRating rating={4}/>
                 <div className="postcard__bar"></div>
-                <div className="postcard__preview-txt">
+                <div className="hotelPostcard__preview-txt">
                 <p className="description">{hotel.description}</p>
 
-                <p className="distance">{hotel.distance}</p>
+                <p className="distance"><AccessTimeIcon fontSize="medium" style={{ verticalAlign: 'middle' , color:'#223B82' }} />  {hotel.distance}</p>
                 <div className="prices">
                     <p>{hotel.single}</p>
                     <p>{hotel.double}</p>
                 </div>
                 {/* <div className="barra"></div> */}
 
-                    <p className="amenities">{hotel.amenities}</p>
-                    <p className="parking">{hotel.parking}</p>
+                    <p className="amenities"><RestaurantIcon fontSize="medium" style={{ verticalAlign: 'middle' , color:'#223B82'  }} />  {hotel.amenities}</p>
+                    <p className="parking"><DirectionsCarIcon fontSize="medium" style={{ verticalAlign: 'middle' , color:'#223B82'  }} />  {hotel.parking}</p>
                 </div>
                 {/* <a href="#">{hotel.title}</a> */}
             </div>

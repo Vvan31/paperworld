@@ -8,7 +8,7 @@ import data from "../data.json";
 const Map = ({ language }) => {
     const { exhibitor } = data[language];
     const handleSelection = (spot) => {
-        console.log(spot)
+        // console.log(spot)
         };
         
     return (

@@ -2,6 +2,13 @@
 
 .wrapperHotels{
     padding-top: 15px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 .subtituloWrapperHotels{
     font-size: 20px;
@@ -13,7 +20,17 @@
     font-size: 14px;
 }
 .description{
-    font-size: 22px;
+    font-size: 16px;
+}
+.conteinerHotel{
+    width: 100%;
+}
+
+.hotelPostcard__preview-txt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+    height: 100%;
 }
 .prices{
     width: 100%;
@@ -28,7 +45,9 @@
 
 .prices p {
    font-weight: 600;
-   font-size: 20px;
+   font-size: 18px;
+   /* border: 2px solid #223c824d; */
+
 }
 
 .barra{
@@ -47,6 +66,8 @@
     /* background-color: #223B82; */
     padding: 0% 1%;
     align-items: center;
+    line-height: 1.8rem;
+    margin-bottom: 5%;
 }
 
 .reservationsContent{
@@ -54,9 +75,13 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+
 }
 .reservationsContact{
     flex-grow: 1;
+    margin-bottom: 5%;
+
+
     /* width: 50%; */
 }
 .termsConditions{
@@ -65,20 +90,40 @@
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1560px) {
 
 .prices{
-    width: 450px;
+    width: 520px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #223c824d;
+    /* border: 8px solid #223c824d; */
     padding: 0% 1%;
 }
 .prices p {
     font-weight: 600;
  }
+
+ .description p{
+    font-size: 22px;
+ }
  .reservationsContent{
     flex-direction: row;
  }
+
+ .conteinerHotel{
+    width: 90%;
+ }
+
+ .wrapperHotels{
+    padding-left: 1%;
+    padding-right: 1%;
+ }
+}
+
+@media screen and (min-width: 700px) {
+    .reservationsContent{
+        flex-direction: row;
+     }
 }
