@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import Navbar from './components/navBar';
+import Navbar2 from './components/navBar2';
 import Home from './components/home';
 import Register from './components/register';
 import Schedule from './components/schedule';
@@ -13,6 +14,7 @@ import Footer from './components/footer';
 import Mexico from './components/mexico';
 import PorqueExponer from './components/porqueExponer';
 import Hotels from './components/hotels';
+import ScheduleExhibitor from './components/scheduleExhibitor.jsx';
 
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
@@ -42,7 +44,8 @@ return (
         <meta name="description" content="A first level and world class exhibition which brings together the whole world in one place with the aim of showing technological advances and innovation on the industry and machinery for the manufacture of pulp and paper" />
         <meta name="keywords" content="APW, America&apos;s Paper World, Paper, America&apos;s, World" />
       </Helmet>
-        <Navbar language={language} onLanguageChange={handleLanguageChange} />
+        {/* <Navbar language={language} onLanguageChange={handleLanguageChange} /> */}
+        <Navbar2 language={language} onLanguageChange={handleLanguageChange} />
         <div className="mainContent">
           <Routes>
             <Route path="/" element={<Home language={language} />} />
@@ -53,6 +56,7 @@ return (
             <Route path="/mexico" element={<Mexico language={language} />} />
             <Route path="/expositor" element={<PorqueExponer language={language} />} />
             <Route path="/hotel" element={<Hotels language={language} />} />
+            <Route path="/scheduleExhibitor" element={<ScheduleExhibitor language={language} />} />
           </Routes>
         </div>
         <div className="language">
@@ -73,7 +77,7 @@ return (
             <img src={usa} alt="usa" />
           </Fab>
         </div>
-        <Footer />
+        <Footer language={language} />
       </div>
     </Router>
   );

@@ -1,6 +1,20 @@
 {
     "esp":{
        "navBar":{
+         "visitor":{
+            "title": "Visitante",
+            "register":"Registrarse",
+            "hotels": "Hoteles",
+            "program": "Programa del Evento",
+            "mexico": "Conoce México"
+         },
+         "exhibitor":{
+            "title": "Expositor",
+            "whyExhibitor": "¿Porqué me interesa exponer en APW?",
+            "howRegister": "¿Cómo registrarse como expositor?",
+            "list": "Lista de expositores",
+            "listMessage":"La lista de expositores será liberada al público a mediados de Julio."
+         },
             "register":"Registro",
             "shcedule":"Programa",
             "map":"Mapa",
@@ -149,7 +163,7 @@
          },
          "contact":{
             "technicalSupport": "Soporte técnico",
-            "customerSupport": "servio a cliente",
+            "customerSupport": "Servio al cliente",
             "paymentSupport": "Información de pagos",
             "copy":"Copiar"
          },
@@ -297,10 +311,28 @@
                   "t4": "Tarifa exclusiva para el evento."
                }
             }
+         },
+         "scheduleExhibition":{
+            "download":"Descargar programa"
          }
       },
     "eng":{
         "navBar":{
+            "visitor":{
+               "title": "Visitor",
+               "register":"Register",
+               "hotels": "Hotels",
+               "program": "Schedule",
+               "mexico": "Know Mexico"
+            },
+            "exhibitor":{
+               "title": "Exhibitor",
+               "whyExhibitor": "Why be an exhibitor in APW?",
+               "howRegister": "How to register as an expositor?",
+               "list": "Exhibitors list",
+               "listMessage":"The exhibitors list will be available in July"
+            },
+
             "register":"Register",
             "shcedule":"Schedule",
             "map":"Map",
@@ -630,7 +662,10 @@
                   "t4": "Exclusive rate for the event."
                }
             }
-        }
+        },
+        "scheduleExhibition":{
+         "download":"Download" 
+         }
       }
 }
 

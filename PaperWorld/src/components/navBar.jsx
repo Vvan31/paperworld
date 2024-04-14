@@ -40,6 +40,8 @@ const Navbar = ({ language }) => {
   }, [isResponsive]);
 
 
+ 
+
   function getInitialContent() {
     const storedLanguage = localStorage.getItem('language');
     return data[storedLanguage || 'esp'].navBar;

@@ -22,19 +22,21 @@ const Register = ({ language }) => {
 
         return (
           <div className="register">
-            <h1>{register.title}</h1>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            {/* <h1>{register.title}</h1> */}
+            {/* <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                 <Tab label={register.visitor }{...a11yProps(0)} />
                 <Tab label={register.exhibitor} {...a11yProps(1)} />
               </Tabs>
-            </Box>
-            <CustomTabPanel value={value} index={0}>
+            </Box> */}
+                <RegisterForm language={language}/>
+
+            {/* <CustomTabPanel value={value} index={0}>
                 <RegisterForm language={language}/>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
               <ExhibitorForm language={language} />
-            </CustomTabPanel>
+            </CustomTabPanel> */}
    
           </div>
         );
