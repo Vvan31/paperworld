@@ -174,4 +174,7 @@
     text-align: justify;
     text-justify:distribute;
   }
+  .heroContainer{
+    margin-top: 50px;
+  }
 }
