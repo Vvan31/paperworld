@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 nav{
   position: fixed;
@@ -28,6 +28,7 @@ nav .navWrapper{
 .logoNavBar img{
     display: block;
     width: 100px;
+    filter:none;
 }
 .navWrapper .nav-links{
   display: inline-flex;
@@ -152,6 +153,17 @@ nav .navWrapper{
   .navWrapper .btn{
     display: block;
   }
+  .navWrapper {
+    background-color: #223B82;
+  }
+
+  .logoNavBar img{
+    filter: grayscale(100%) brightness(0) invert(100%);
+    z-index: 10000;
+    position: fixed;
+    top: 0%;
+}
+  
   .navWrapper .nav-links{
     position: fixed;
     height: 100vh;
