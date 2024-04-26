@@ -4,6 +4,7 @@
     align-items: center;
     overflow-y: auto;
     flex-direction: column;
+    margin-top: 60px;
   }
   
   .imageScheduleComponent {
@@ -26,6 +27,7 @@
     .imageScheduleComponent {
       max-width: none; 
       width: 650px; 
+      margin-top: 60px;
     }
   }
   

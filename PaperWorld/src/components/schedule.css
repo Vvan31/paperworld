@@ -51,6 +51,7 @@
 @media (max-width: 600px) {
     .schedule{
         height: auto;
+        margin-top: 60px;
     }
     .paperContainer{
         flex-direction: column;

@@ -19,7 +19,7 @@ const { program } = data[language];
       flipDirection="horizontal" // horizontal or vertical
       ref={ref}
       className="papers"
-      style={{ width: "300px", height: "400px", margin: "15px", zIndex: "10000", borderRadius: "10px" }}
+      style={{ width: "300px", height: "400px", margin: "15px", zIndex: "10", borderRadius: "10px" }}
     >
       <FrontSide style={{padding: "0px"}}>
         <Paper sx={{ m: 1 }} elevation={4}>

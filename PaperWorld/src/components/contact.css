@@ -19,6 +19,11 @@
     flex-direction:row ;
     justify-content: left;
   }
+  .mapContentTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0px 0px 25px;
+  }
   .mapContentInformation{
     font-size: 1.5rem;
     margin: 0px 0px 15px 0px;
@@ -36,7 +41,8 @@
   }
   .frame{
     width: 90%;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
   }
   .copybutton{
     width: 23px;
@@ -53,7 +59,14 @@
   
   @media (max-width: 1300px) {
      .frame{
-        width: 80%;
+        /* width: 80%; */
+        width:95vw;
+        height: 40vh;
+        margin: 0 2.5vw;
+        padding: 0;
+        box-shadow: none;
+        margin-top: 40px;
+
       }
     .googlemap{
         width: 50%;
@@ -68,6 +81,7 @@
       padding:0;
       width: 100%;
       align-items: flex-start;
+      margin-top: 20%;
     }
    .contactInfo{
     width: 100%;
@@ -91,6 +105,6 @@
       justify-content: flex-start;
     }
     .mapContentTitle{
-      margin-left: 30%;
+      margin-left: calc(50vw - 100px);
     }
   }

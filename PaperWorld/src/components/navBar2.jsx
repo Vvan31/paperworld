@@ -47,7 +47,7 @@ const NavBar2 = ({ language }) => {
           </a>
         </div>
         <input type="checkbox" name="slider" id="menu-btn" checked={isMenuOpen} onChange={toggleMenu} />
-        <input type="checkbox" name="slider" id="close-btn" className="close-btn" onChange={toggleMenu} />
+        <input type="checkbox" name="slider" id="close-btn" onChange={toggleMenu} />
         {/* <div className="hamburger-menu">
           <div className="bar"></div>
           <div className="bar"></div>
