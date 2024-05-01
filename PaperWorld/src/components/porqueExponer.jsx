@@ -1,4 +1,5 @@
 import IndustryAreas from '../components/industryAreas.jsx';
+import ContactFrom from '../components/contactForm.jsx';
 import "./porqueExponer.css"
 import papel from "../assets/close-up-of-paper.jpg"
 import group from "../assets/group.jpg"
@@ -35,6 +36,7 @@ const PorqueExponer = ({ language }) => {
             <div className='industry'>
                 <IndustryAreas language={language} />
             </div>
+            <ContactFrom language={language} />
         </div>
     );
 }

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exhibitor_contacts",
+  "info": {
+    "singularName": "exhibitor-contact",
+    "pluralName": "exhibitor-contacts",
+    "displayName": "exhibitorContact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "exhibitorEmail": {
+      "type": "email"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    }
+  }
+}

@@ -314,6 +314,27 @@
          },
          "scheduleExhibition":{
             "download":"Descargar programa"
+         },
+         "contactUs":{
+            "title": "Contáctenos para registrarle como expositor",
+            "nameLabel": "Nombre",
+            "LastNameLabel": "Apellido",
+            "company": "Empresa",
+            "emailLabel": "Correo electrónico",
+            "email": "correo@institucional.com",
+            "messageLabel": "Mensaje", 
+            "message": "Datos, dudas, solicitudes, etc.",
+            "submitButton": "Enviar",
+            "error":{
+               "title": "Error en enviar el mail",
+               "message" : "Alternativamente puede enviar un mail a a.estrada@apw.enterprises y le responderemos lo antes posible.",
+               "close": "Cerrar"
+            },
+            "success":{
+               "title": "Mensaje envido exitosamente",
+               "message" : "Si no recibe una respuesta pronto, alternativamente puede enviar un mail a a.estrada@apw.enterprises y le responderemos lo antes posible.",
+               "close": "Cerrar"
+            }
          }
       },
     "eng":{
@@ -665,7 +686,28 @@
         },
         "scheduleExhibition":{
          "download":"Download" 
-         }
+         },
+         "contactUs":{
+            "title": "Contact us to register as an exhibitor",
+            "nameLabel": "Name",
+            "LastNameLabel": "Lastname",
+            "company": "Company",
+            "emailLabel": "Email",
+            "email": "Email",
+            "messageLabel": "Message", 
+            "message": "Message",
+            "submitButton": "Submit",
+            "error": {
+               "title": "Error sending email",
+               "message": "Alternatively, you can send an email to a.estrada@apw.enterprises, and we will respond as soon as possible.",
+               "close": "Close"
+           },
+           "success": {
+               "title": "Message sent successfully",
+               "message": "If you do not receive a response soon, alternatively, you can send an email to a.estrada@apw.enterprises, and we will respond as soon as possible.",
+               "close": "Close"
+           }
+      }
       }
 }
 
