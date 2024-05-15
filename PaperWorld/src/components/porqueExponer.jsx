@@ -4,6 +4,7 @@ import "./porqueExponer.css"
 import papel from "../assets/close-up-of-paper.jpg"
 import group from "../assets/group.jpg"
 import data from "../data.json"
+// eslint-disable-next-line react/prop-types
 const PorqueExponer = ({ language }) => {
     let { whyExhibitor } = data[language];
     return(

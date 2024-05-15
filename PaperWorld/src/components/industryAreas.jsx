@@ -34,6 +34,7 @@ const pictograms = {
   equipoLaboratorio: BiotechIcon
 };
 
+// eslint-disable-next-line react/prop-types
 function IndustryAreas({ language }) {
   let { whyExhibitor } = data[language];
   const getColor = (colorName) => {

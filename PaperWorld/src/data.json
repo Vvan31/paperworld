@@ -12,6 +12,8 @@
             "title": "Expositor",
             "whyExhibitor": "¿Porqué me interesa exponer en APW?",
             "howRegister": "¿Cómo registrarse como expositor?",
+            "prices": "Precios",
+            "manual": "Manual del expositor",
             "list": "Lista de expositores",
             "listMessage":"La lista de expositores será liberada al público a mediados de Julio."
          },
@@ -350,6 +352,8 @@
                "title": "Exhibitor",
                "whyExhibitor": "Why be an exhibitor in APW?",
                "howRegister": "How to register as an expositor?",
+               "prices": "Prices",
+               "manual": "Exhibitor manual",
                "list": "Exhibitors list",
                "listMessage":"The exhibitors list will be available in July"
             },
@@ -672,9 +676,9 @@
             },
             "reserve": {
                "title": "Reservations",
-               "name": "Karina Aguilar Hernandez, Group Manager",
-               "email": "karina.aguilar@abatur.com",
-               "phone": "+52 55 5868 9838 | +52 55 3474 6839",
+               "name": "Alan Estrada Piñeda",
+               "email": "a.estrada@apw.enterprises",
+               "phone": "+52 1 55 5939 4209",
                "termsConditions": {
                   "title": "Terms and Conditions",
                   "t1": "All rates include 16% VAT and 3.5% lodging tax.",

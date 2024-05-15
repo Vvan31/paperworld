@@ -5,6 +5,7 @@ import Tooltip from '@mui/material/Tooltip';
 import logo from '../assets/apwLogo.svg';
 import './navBar2.css';
 
+// eslint-disable-next-line react/prop-types
 const NavBar2 = ({ language }) => {
   const navigate = useNavigate();
   const { navBar } = data[language];
@@ -73,6 +74,8 @@ const NavBar2 = ({ language }) => {
             <ul className="drop-menu bigger">
               <li><a href="" onClick={() => handlePageChange('expositor')}>{navBar.exhibitor.whyExhibitor}</a></li>
               <li><a href="" onClick={() => handlePageChange('scheduleExhibitor')}>{navBar.visitor.program}</a></li>
+              <li><a href="" onClick={() => handlePageChange('pricesExhibitor')}>{navBar.exhibitor.prices}</a></li>
+              <li><a href="" onClick={() => handlePageChange('manualExhibitor')}>{navBar.exhibitor.manual}</a></li>
               <li disabled={true}>
                 <Tooltip title={navBar.exhibitor.listMessage} arrow>
                   <a className='list'>{navBar.exhibitor.list}</a>

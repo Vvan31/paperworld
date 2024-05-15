@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import Navbar from './components/navBar';
+// import Navbar from './components/navBar';
 import Navbar2 from './components/navBar2';
 import Home from './components/home';
 import Register from './components/register';
@@ -15,6 +15,8 @@ import Mexico from './components/mexico';
 import PorqueExponer from './components/porqueExponer';
 import Hotels from './components/hotels';
 import ScheduleExhibitor from './components/scheduleExhibitor.jsx';
+import Prices from './components/prices.jsx';
+import Manual from './components/manual.jsx';
 
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
@@ -57,7 +59,9 @@ return (
             <Route path="/expositor" element={<PorqueExponer language={language} />} />
             <Route path="/hotel" element={<Hotels language={language} />} />
             <Route path="/scheduleExhibitor" element={<ScheduleExhibitor language={language} />} />
-          </Routes>
+            <Route path="/pricesExhibitor" element={<Prices language={language} />} />
+            <Route path="/manualExhibitor" element={<Manual language={language} />} />
+         </Routes>
         </div>
         <div className="language">
           <Fab
