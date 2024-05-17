@@ -60,7 +60,7 @@ return (
             <Route path="/hotel" element={<Hotels language={language} />} />
             <Route path="/scheduleExhibitor" element={<ScheduleExhibitor language={language} />} />
             <Route path="/pricesExhibitor" element={<Prices language={language} />} />
-            <Route path="/manualExhibitor" element={<Manual language={language} />} />
+            {/* <Route path="/manualExhibitor" element={<Manual language={language} />} /> */}
          </Routes>
         </div>
         <div className="language">

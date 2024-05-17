@@ -75,7 +75,7 @@ const NavBar2 = ({ language }) => {
               <li><a href="" onClick={() => handlePageChange('expositor')}>{navBar.exhibitor.whyExhibitor}</a></li>
               <li><a href="" onClick={() => handlePageChange('scheduleExhibitor')}>{navBar.visitor.program}</a></li>
               <li><a href="" onClick={() => handlePageChange('pricesExhibitor')}>{navBar.exhibitor.prices}</a></li>
-              <li><a href="" onClick={() => handlePageChange('manualExhibitor')}>{navBar.exhibitor.manual}</a></li>
+              {/* <li><a href="" onClick={() => handlePageChange('manualExhibitor')}>{navBar.exhibitor.manual}</a></li> */}
               <li disabled={true}>
                 <Tooltip title={navBar.exhibitor.listMessage} arrow>
                   <a className='list'>{navBar.exhibitor.list}</a>
