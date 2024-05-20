@@ -43,7 +43,7 @@ const { program } = data[language];
 
         </Typography>
         <Typography variant="h6" component="div" className="paperContent">
-            8:30 - 12:30 hrs
+            8:30 - 18:30 hrs
         </Typography>
         <Typography variant="h5" component="div" className="paperContent">
         {program.exposition}
