@@ -17,7 +17,7 @@ import Hotels from './components/hotels';
 import ScheduleExhibitor from './components/scheduleExhibitor.jsx';
 import Prices from './components/prices.jsx';
 import Manual from './components/manual.jsx';
-
+import MapImage from './components/MapImage.jsx';
 import mx from './assets/mx.png';
 import usa from './assets/usa.png';
 import Fab from '@mui/material/Fab';
@@ -52,7 +52,8 @@ return (
           <Routes>
             <Route path="/" element={<Home language={language} />} />
             <Route path="/register" element={<Register language={language} />} />
-            <Route path="/map" element={<Map language={language} />} />
+            <Route path="/map" element={<MapImage language={language} />} />
+            {/* <Route path="/map" element={<Map language={language} />} />  */}
             <Route path="/schedule" element={<Schedule language={language} />} />
             <Route path="/contact" element={<Contact language={language} />} />
             <Route path="/mexico" element={<Mexico language={language} />} />
