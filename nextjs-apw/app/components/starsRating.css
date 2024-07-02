@@ -1,0 +1,27 @@
+.Stars {
+    --percent: 70%; 
+    font-size: 40px; 
+    display: inline-block;
+    font-family: Times;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #efb810 70%, transparent 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* .Stars::after {
+    content: '★★★★★';
+    /* color: #282828;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+  } */
+  

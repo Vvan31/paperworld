@@ -1,0 +1,206 @@
+.mexicoMain {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+.mini-parallax {
+    margin: auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 100% 100% 100% 100% /60% 60% 0% 0%; */
+    height: 500px;
+    width: 97%;
+    margin: 5% 0px;
+    /* width: 500px; */
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    /* transition: border-radius 0.3s ease-in-out; */
+}
+
+.titulo-parallax {
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.568));
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+}
+
+.titulo-parallax h1 {
+    font-size: 4.8rem;
+}
+.content {
+   padding: 6% 27% 0% 27% ;
+   background-color: #f2f2f2;
+   animation: fadein 1s;
+   -moz-animation: fadein 1s; /* Firefox */
+   -webkit-animation: fadein 1s; /* Safari and Chrome */
+   -o-animation: fadein 1s; /* Opera */
+   @keyframes fadein {
+       from {
+           opacity:0;
+       }
+       to {
+           opacity:1;
+       }
+   }
+}
+
+.title-content {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.content p {
+    color: #333333;
+    padding: 0px 10px 0px 10px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400px;
+    /* text-align: justify; */
+}
+
+
+
+/* Your existing CSS */
+/* Add the following CSS for the card hover effect */
+.attractions{
+    width: 80vw;
+    padding: 50px;
+    margin: 15px;
+}
+
+.attractionsTitle{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0% 10% 0 10%;
+}
+.attractionCard{
+    display: flex;
+    width: 100%;
+    gap:70px;
+    justify-content: center;
+}
+
+.atCard {
+    width: 500px;
+    min-width: 300px;
+    height: 500px;
+    /* border-radius: 4px; */
+    display: flex;
+    gap: 1rem;
+    /* padding: 1.4em; */
+    transition: flex 0.8s ease;
+    background-color: #e5e5e5; /* Fallback color */
+    background-size: cover; /* Adjust the background size */
+    background-position: center; /* Adjust the background position */
+    background-repeat: no-repeat; 
+    
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.568)); */
+
+}
+
+.hiddenContent {
+    transition: top 0.3s ease;
+   
+    display: none;
+}
+
+.hiddenContent span{
+    color: #e5e5e5;
+}
+
+.atTitleContainer:hover{
+    transition: flex 0.6s ease;
+    flex:4;
+}
+
+.atCard:hover .hiddenContent {
+    display: block;
+    transition: flex 0.6s ease;
+}
+
+.atTitleContainer{
+    width: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.568));
+}
+
+.atTitle {
+    color: #d2d2d2;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+    top: 0;
+    left: 0;
+    margin-top: 50%;
+    font-size: 1.9rem;
+    margin-top: 113%;
+}
+
+.atCard:hover .atTitle {
+    transition-duration: 2s ease;
+    transform: rotate(0deg);
+    margin-top: 0;
+}
+
+.atCard:hover .atTitleContainer{
+    padding: 5%;
+    padding-bottom: 1%;
+    width: 80%;
+    background:repeating-radial-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.733));
+}
+
+.atTitleContainer span{
+    line-height: 28px;
+    font-size: 18px;
+}
+.atTitleContainer h3{
+    font-size: 20px;
+    font-weight:700 ;
+    color: #f2f2f2;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+        padding: 3% 5% 0% 5%;
+    }
+}

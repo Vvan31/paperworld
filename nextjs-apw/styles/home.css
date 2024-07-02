@@ -1,0 +1,230 @@
+
+p{
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  .main {
+    position: relative;
+    top: 10%;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0; 
+  /*   padding-bottom:10px ; */
+  /* 
+    width: 100%;
+    background-color: #223B82;  */
+  }
+  
+  .heroContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 50px; */
+
+  /*   background-color: #223B82; */
+  }
+  
+  
+  .imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
+    /* justify-content: space-between; */
+    align-items: center;
+   /*  padding: 0px 15px 0px 15px; */
+  }
+  
+  .hero {
+    width: 49%;
+    height: 100%;
+  }
+  .logo{
+    mix-blend-mode: multiply;
+  }
+  .fachada{
+    display: block;
+  }
+  
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 60px 0px 0px 0px; */
+  }
+  .aboutContainer h1{
+    color: rgb(250, 243, 234);
+    font-size: 2.2rem;
+  }
+  .whyContainer h1{
+    color: #223B82;
+    font-size: 2.2rem;
+  }
+  .aboutContent{
+    color: rgb(235, 228, 218);
+    font-size: 1.2rem;
+    display: flex;
+    background-color: #223B82;
+    padding: 4rem 15rem 4rem 15rem;
+  }
+  .whyContent{
+    color: #223B82;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 4rem 15rem 4rem 15rem;
+  }
+  .aboutContent p{
+    color: rgb(235, 228, 218);
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .whyContent p{
+    color: #1e2f5e;
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  .aboutImage{
+    width: 25%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+  }
+  .whyImage{
+    width: 25%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+  }
+  .aboutIcon{
+    width: 135px;
+    height: 135px;
+    filter:  brightness(0) invert(1);
+  /*   margin-left: 100px;
+    margin-top: 30px; */
+  }
+  .whyIcon{
+    width: 135px;
+    height: 135px;
+  /*   margin-right: 100px;
+    margin-top: 30px; */
+  }
+  .header{
+    width: 85%;
+  }
+  @media screen and (max-width: 1200px) {
+    .imageContainer{
+      height: auto;
+      justify-content: center;
+    }
+    .hero {
+      width: 70%;
+      height: auto;
+    }
+    .fachada{
+      display: none;
+    }
+    .homeContent{
+      justify-content: center;
+      align-items: center;
+      margin: 0px; 
+    }
+    .homeContent p{
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: none;
+    }
+    .aboutContent{
+      flex-direction: row;
+      padding: 2rem 2rem 2rem 2rem;
+    } 
+    .whyContent{
+      flex-direction: row;
+      padding: 2rem 2rem 2rem 2rem;
+    }
+   
+    .header {
+      width: 70%;
+    }
+  
+    .aboutContent p{
+      text-align: justify;
+      text-justify:inter-word;
+  
+    }
+    .whyContent p{
+      text-align: justify;
+      text-justify:distribute;
+    }
+    .heroContainer{
+      margin-top: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    
+    .imageContainer{
+      height: auto;
+    }
+    .hero {
+      width: 100%;
+      height: auto;
+    }
+    .fachada{
+      display: none;
+    }
+    .homeContent{
+      justify-content: center;
+      align-items: center;
+      margin: 0px; 
+    }
+    .homeContent p{
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: none;
+    }
+    .aboutContent{
+      flex-direction: column;
+      padding: 2rem 2rem 2rem 2rem;
+    } 
+    .whyContent{
+      flex-direction: column;
+      padding: 2rem 2rem 2rem 2rem;
+    }
+   
+    .header {
+      width: 100%;
+    }
+    .aboutImage{
+      display: none;
+  
+    }
+    .whyImage{
+      display: none;
+    }
+    .aboutContent p{
+      text-align: justify;
+      text-justify:inter-word;
+  
+    }
+    .whyContent p{
+      text-align: justify;
+      text-justify:distribute;
+    }
+    .heroContainer{
+      margin-top: 50px;
+    }
+  }

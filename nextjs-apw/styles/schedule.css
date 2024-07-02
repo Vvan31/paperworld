@@ -1,0 +1,63 @@
+.schedule{
+    min-height: 82vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paperContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .paper{
+      width: 40% ;
+  }
+  .scheduleTitle{ 
+      background-color: #223B82;
+      margin-top: -10px !important;
+      color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 100%;
+      border-radius: 16px;
+  }
+  .title div{
+      width: 60%;
+  }
+  
+  .scheduleContent{
+      flex-wrap: wrap;
+      margin: 10px 10px 10px 10px; 
+      display: flex;
+      justify-content: flex-start; 
+      /* padding-top: 20px; */
+      align-items: flex-start;
+      padding:20px ;
+      flex-direction: column;
+      border-radius: 16px;
+  }
+  
+  .paperContent {
+      text-align: left !important; /* Align the text! to the left */
+      margin-bottom: 10px !important;
+      font-weight: 500 !important;
+  }
+  
+  @media (max-width: 600px) {
+      .schedule{
+          height: auto;
+          margin-top: 60px;
+      }
+      .paperContainer{
+          flex-direction: column;
+      }
+      .papers{
+          width: 80%;
+          min-height: 50vh !important;
+      }
+    }

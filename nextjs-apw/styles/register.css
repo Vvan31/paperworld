@@ -1,0 +1,64 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 35px 0px 35px;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: 1600;
+    margin-bottom: 10px;
+    margin-top: 3% !important;
+    color: #223B82;
+    /* background-color: #223c82; */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #223B82;
+}
+.maintitle{
+    font-size: 2.5rem;
+    font-weight: 1800;
+    margin-bottom: 10px;
+    margin-top: 3% !important;
+    color: #223B82;
+    /* background-color: #223c82; */
+    padding: 10px;
+    text-align: center;
+}
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20% 10px 20% !important;
+}
+.exhibitorForm{
+    margin: 10px 20% 10px 20% !important;
+}
+.btn{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background-color: #223B82 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+input {
+    background-color: transparent !important;
+    color: white !important;
+    border: none !important;
+    
+}
+@media screen and (max-width: 600px) {
+    .registerForm {
+        margin: 10px 3% 0px 3% !important;
+        padding: 0px !important;
+    }
+    .exhibitorForm {
+        margin: 10px 22px 10px 22px !important;
+    }
+}

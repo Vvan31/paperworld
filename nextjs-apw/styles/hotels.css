@@ -1,0 +1,124 @@
+.wrapperHotels {
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.subtituloWrapperHotels {
+    font-size: 20px;
+    margin-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.distance {
+    font-size: 14px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.conteinerHotel {
+    width: 100%;
+}
+
+.hotelPostcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+    height: 100%;
+}
+
+.prices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #223c824d;
+    padding: 0% 1%;
+    align-items: center;
+}
+
+.prices p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.barra {
+    height: 5px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #223c8247;
+    transition: width 0.2s ease;
+}
+
+.reservations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 1%;
+    align-items: center;
+    line-height: 1.8rem;
+    margin-bottom: 5%;
+}
+
+.reservationsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.reservationsContact {
+    flex-grow: 1;
+    margin-bottom: 5%;
+}
+
+.termsConditions {
+    flex-grow: 2;
+}
+
+@media screen and (min-width: 1560px) {
+    .prices {
+        width: 520px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #223c824d;
+        padding: 0% 1%;
+    }
+    
+    .prices p {
+        font-weight: 600;
+    }
+
+    .description p {
+        font-size: 22px;
+    }
+    
+    .reservationsContent {
+        flex-direction: row;
+    }
+
+    .conteinerHotel {
+        width: 90%;
+    }
+
+    .wrapperHotels {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .reservationsContent {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,110 @@
+
+.contactContent{
+    color: #223B82;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 4rem 15rem 4rem 15rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactInfo{
+    width: 50%;
+    min-width: 420px;
+  }
+  .emails{
+    width: 100%;
+  }
+  .emailContainer{
+    display: flex;
+    flex-direction:row ;
+    justify-content: left;
+  }
+  .mapContentTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0px 0px 25px;
+  }
+  .mapContentInformation{
+    font-size: 1.5rem;
+    margin: 0px 0px 15px 0px;
+  }
+  .mapContentParagraph{
+    font-size: 1rem;
+    margin-bottom: 3;
+    background-color: #223B82;
+    color: white;
+    padding: 10px;
+  }
+  .googlemap{
+    width: 50%;
+    min-width: 500px;
+  }
+  .frame{
+    width: 90%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  .copybutton{
+    width: 23px;
+    border: none;
+  cursor: pointer;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .copybutton img{
+    width: 23px;
+    height: auto;
+    border: none;
+  }
+  
+  @media (max-width: 1300px) {
+     .frame{
+        /* width: 80%; */
+        width:95vw;
+        height: 40vh;
+        margin: 0 2.5vw;
+        padding: 0;
+        box-shadow: none;
+        margin-top: 40px;
+
+      }
+    .googlemap{
+        width: 50%;
+        padding: auto;
+      }
+  }
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .contactContent{
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding:0;
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 20%;
+    }
+   .contactInfo{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    .emailContainer{
+      flex-wrap: wrap;
+    }
+    .emails{
+      width: 95%;
+      min-width: 300px;
+    }
+    .mapContentInformation{
+    font-size: 1rem;
+    }
+    .map{
+      width: 100%;
+      padding: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .mapContentTitle{
+      margin-left: calc(50vw - 100px);
+    }
+  }
