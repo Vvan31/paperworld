@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
+
   "dependencies": {
     "@emotion/cache": "^11.11.0",
     "@mui/icons-material": "^5.15.21",

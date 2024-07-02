@@ -5,4 +5,4 @@ status = 200
 
 [build]
   command = "npm install --force && npm run build || true"
-  publish = "out"  # Replace "out" with your actual build output directory if different
+  publish = ".next"  # Replace "out" with your actual build output directory if different
