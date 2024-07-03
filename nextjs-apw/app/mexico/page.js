@@ -9,6 +9,7 @@ import data from "../data.json";
 import Attractions from "../components/attractions.js";
 import { useLanguage } from '../../contexts/languageContext';
 
+
 const Mexico = () => {
     const { language } = useLanguage();
     const { mexico } = data[language];

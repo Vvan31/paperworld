@@ -16,6 +16,8 @@ import data from '../app/data.json';
 import { useLanguage } from '../contexts/languageContext';
 import Image from "next/image";
 
+
+
 const HomePage = () => {
   const { language } = useLanguage();
   const { home } = data[language];

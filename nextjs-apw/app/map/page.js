@@ -7,6 +7,7 @@ import { useLanguage } from '../../contexts/languageContext';
 import Image from "next/image";
 import Head from "next/head";
 
+
 const ScheduleExhibitor = () => {
     const { language } = useLanguage();
     const { scheduleExhibition } = data[language];

@@ -8,6 +8,9 @@ import data from '../data.json';
 import { useLanguage } from '../../contexts/languageContext';
 import Head from "next/head";
 import Image from 'next/image';
+
+
+  
 const Contact = () => {
     const { language } = useLanguage();
     const { contact } = data[language]; // Access the corresponding language data

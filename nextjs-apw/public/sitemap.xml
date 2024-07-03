@@ -1,9 +1,4 @@
-<!-- public/sitemap.xml -->
-
-
-<!-- Test url https://nextjsmigration-nextjsapw.netlify.app/ -->
-
-<!-- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://expo.apw.enterprises/</loc>
@@ -17,7 +12,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-       <url>
+    <url>
         <loc>https://expo.apw.enterprises/expositor</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>monthly</changefreq>
@@ -47,52 +42,5 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-</urlset> -->
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/map</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-       <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/expositor</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-       <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/hotels</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-       <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/mexico</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-       <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/pricesExhibitor</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.2</priority>
-    </url>
-       <url>
-        <loc>https://nextjsmigration--nextjsapw.netlify.app/schedule</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <!-- Add more URLs as needed -->
 </urlset>
+

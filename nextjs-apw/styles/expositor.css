@@ -4,6 +4,10 @@
     font-weight: 700;
     color: #223B82;
 }
+h3 {
+    color: #223B82; 
+    font-size: 1.5rem;
+}
 .parallax {
     position: relative;
     background-attachment: fixed;

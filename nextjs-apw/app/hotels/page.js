@@ -16,6 +16,7 @@ import doubleTree from "../../public/assets/hoteles/doubleTree.jpeg";
 import './hotels.css';
 import { useLanguage } from '../../contexts/languageContext';
 
+
 const images = {
     "hilton": hilton,
     "doubleTree": doubleTree,

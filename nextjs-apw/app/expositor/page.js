@@ -8,6 +8,7 @@ import Image from 'next/image';
 import path from 'path';
 import Head from "next/head";
 
+
 const PorqueExponer = () => {
     const { language, handleLangsuageChange } = useLanguage();
     let { whyExhibitor } = data[language];

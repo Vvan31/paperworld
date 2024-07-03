@@ -20,6 +20,8 @@ import DialogTitle from '@mui/material/DialogTitle';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme} from '@mui/material/styles';
 import { useLanguage } from '../../contexts/languageContext';
+
+
 export default function Register() {
     const { language, handleLanguageChange } = useLanguage();
     const { register } = data[language]; 
