@@ -32,8 +32,8 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>{home.title}</title>
-        <meta name="description" content={home["meta-description"]} />
+        <title>America's Paper World</title>
+        <meta name="description" content="Exposicion de primer nivel y clase mundial que reúne profesionales de la industria y maquinaria con el objetivo dfde mostrar avances tecnolǵgicos para la fabricación de celulosa y papel." />
         <meta name="keywords" content="America's Paper World, event, why choose us, what we offer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
