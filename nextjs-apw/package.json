@@ -9,9 +9,9 @@
     "lint": "next lint",
     "export": "next export"
   },
-
   "dependencies": {
     "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.4",
     "@mui/icons-material": "^5.15.21",
     "@mui/material-nextjs": "^5.15.11",
     "@react-pdf-viewer/core": "^3.12.0",
