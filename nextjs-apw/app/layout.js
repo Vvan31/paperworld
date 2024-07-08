@@ -20,7 +20,7 @@ import { LanguageProvider } from '../contexts/languageContext'; // Import the La
 export default function Layout({ children }) {
 
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <title>{metadata.title.default}</title>
         <meta name="description" content={metadata.description} />
