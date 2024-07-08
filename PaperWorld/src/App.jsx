@@ -44,7 +44,7 @@ return (
         <meta charSet="utf-8" />
         <title>America&apos;s Paper World</title>
         <meta name="description" content="A first level and world class exhibition which brings together the whole world in one place with the aim of showing technological advances and innovation on the industry and machinery for the manufacture of pulp and paper" />
-        <meta name="keywords" content="APW, America&apos;s Paper World, Paper, America&apos;s, World" />
+        <meta name="keywords" content="APW,  America&apos;s Paper World, Paper, America&apos;s Paper World, Papel, America&apos;s, World" />
       </Helmet>
         {/* <Navbar language={language} onLanguageChange={handleLanguageChange} /> */}
         <Navbar2 language={language} onLanguageChange={handleLanguageChange} />
