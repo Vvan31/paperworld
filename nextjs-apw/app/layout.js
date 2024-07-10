@@ -41,10 +41,14 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
-      {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N83W957X"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
+      <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N83W957X"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         <LanguageProvider> 
           <NavBar />
           <LanguageSwitcher />
