@@ -1,4 +1,6 @@
-
+input {
+  color: #000000;
+}
 .contactContent{
     color: #223B82;
     font-size: 1.2rem;
