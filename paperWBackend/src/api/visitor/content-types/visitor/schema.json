@@ -72,7 +72,7 @@
           "localized": true
         }
       },
-      "type": "biginteger"
+      "type": "string"
     },
     "country": {
       "pluginOptions": {
