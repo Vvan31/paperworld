@@ -66,14 +66,18 @@ const NavBar = () => {
           <li><a href="#" onClick={() => handlePageChange('map')}>{navBar.map}</a></li>
           <li><a href="#" onClick={() => handlePageChange('contact')}>{navBar.contact}</a></li>
           <li>
-            <p className="desktop-item">
+          <button  onClick={() => handleLanguageChange(language === 'esp' ? 'eng' : 'esp')}>
+
+          <Image src={language === 'esp' ? esFlag : enFlag} alt="English Flag" width={40} height={40} className="languageImage" />
+
+          </button>
+           {/*  <p className="desktop-item">
               <Image src={language === 'esp' ? esFlag : enFlag} alt="English Flag" width={40} height={40} className="languageImage" />
             </p>
             <input type="checkbox" id="showDrop3" />
-            <label htmlFor="showDrop3" className="mobile-item">
-              {/* {language === 'esp' ? 'Esp' : 'Eng'} */}
+            <p htmlFor="showDrop3" className="mobile-item">  
               <Image src={language === 'esp' ? esFlag : enFlag} alt="English Flag" width={40} height={40} className="languageImage" />
-            </label>
+            </p>
             <ul className="drop-menu drop-menu-language">
               <li>
                 <a href="#" onClick={() => handleLanguageChange(language === 'esp' ? 'eng' : 'esp')}>
@@ -81,7 +85,7 @@ const NavBar = () => {
                 </a>
               </li>
           
-            </ul>
+            </ul> */}
           </li>
         </ul>
 
