@@ -49,14 +49,27 @@
     background: #223B82;
     color: #f2f2f2;
   }
+
+  .languageImage {
+    padding-top: 27px;
+    padding-left: 10px;
+  }
+  
   .drop-menu li a{
       color: #f2f2f2;
   }
   .drop-menu li a:hover{
     color: #f2f2f2;
     background: #151b2b;
-  
   }
+
+  .drop-menu-language li a:hover{
+    color: #f2f2f2;
+    background: transparent !important;
+  }
+
+
+
   .nav-links .mobile-item{
     display: none;
   }
@@ -69,6 +82,10 @@
     opacity: 0;
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+
+  .drop-menu-language{
+    background: transparent !important;
   }
   
   .bigger{

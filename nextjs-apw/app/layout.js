@@ -51,7 +51,7 @@ export default function Layout({ children }) {
         </noscript>
         <LanguageProvider> 
           <NavBar />
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
           <main>
             <div className="mainContent">
             {children}

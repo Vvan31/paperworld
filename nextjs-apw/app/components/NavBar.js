@@ -1,5 +1,4 @@
-'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Tooltip from '@mui/material/Tooltip';
@@ -8,10 +7,11 @@ import data from '../data.json';
 import logo from '../../public/assets/apwLogo.svg';
 import './navBar2.css';
 import { useLanguage } from '../../contexts/languageContext';
+import enFlag from '../../public/assets/us_flag.png';
+import esFlag from '../../public/assets/Flag_of_Mexico.svg';
 
 const NavBar = () => {
-  const { language, handleLangsuageChange } = useLanguage();
-  // const language = 'esp';
+  const { language, handleLanguageChange } = useLanguage();
   const router = useRouter();
   const { navBar } = data[language];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,7 +65,26 @@ const NavBar = () => {
           </li>
           <li><a href="#" onClick={() => handlePageChange('map')}>{navBar.map}</a></li>
           <li><a href="#" onClick={() => handlePageChange('contact')}>{navBar.contact}</a></li>
+          <li>
+            <p className="desktop-item">
+              <Image src={language === 'esp' ? esFlag : enFlag} alt="English Flag" width={40} height={40} className="languageImage" />
+            </p>
+            <input type="checkbox" id="showDrop3" />
+            <label htmlFor="showDrop3" className="mobile-item">
+              {/* {language === 'esp' ? 'Esp' : 'Eng'} */}
+              <Image src={language === 'esp' ? esFlag : enFlag} alt="English Flag" width={40} height={40} className="languageImage" />
+            </label>
+            <ul className="drop-menu drop-menu-language">
+              <li>
+                <a href="#" onClick={() => handleLanguageChange(language === 'esp' ? 'eng' : 'esp')}>
+                <Image src={language === 'esp' ? enFlag: esFlag} alt={language === 'esp' ? 'English Flag' : 'Spanish Flag'} width={40} height={40} />
+                </a>
+              </li>
+          
+            </ul>
+          </li>
         </ul>
+
         <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
       </div>
     </nav>

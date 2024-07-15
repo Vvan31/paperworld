@@ -25,7 +25,7 @@ body {
   min-height: 95vh;
 }
 .language {
-  position: fixed !important;
+  /* position: fixed !important; */
   bottom: 25px;
   right: 20px;
   z-index: 9999;
@@ -37,7 +37,7 @@ body {
 .icon .flag{
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@ body {
   .language {
     bottom: 10px;
     right: 10px;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .icon{
     height: 10px !important;
