@@ -42,9 +42,9 @@ const NavBar = () => {
             <input type="checkbox" id="showDrop" />
             <label htmlFor="showDrop" className="mobile-item">{navBar.visitor.title}</label>
             <ul className="drop-menu">
-              <li><a href="#" onClick={() => handlePageChange('register')}>{navBar.visitor.register}</a></li>
+              {/* <li><a href="#" onClick={() => handlePageChange('register')}>{navBar.visitor.register}</a></li> */}
               <li><a href="#" onClick={() => handlePageChange('hotels')}>{navBar.visitor.hotels}</a></li>
-              <li><a href="#" onClick={() => handlePageChange('schedule')}>{navBar.visitor.program}</a></li>
+              {/* <li><a href="#" onClick={() => handlePageChange('schedule')}>{navBar.visitor.program}</a></li> */}
               <li><a href="#" onClick={() => handlePageChange('mexico')}>{navBar.visitor.mexico}</a></li>
             </ul>
           </li>
@@ -53,17 +53,18 @@ const NavBar = () => {
             <input type="checkbox" id="showDrop2" />
             <label htmlFor="showDrop2" className="mobile-item">{navBar.exhibitor.title}</label>
             <ul className="drop-menu bigger">
-              <li><a href="#" onClick={() => handlePageChange('expositor')}>{navBar.exhibitor.whyExhibitor}</a></li>
-              <li><a href="#" onClick={() => handlePageChange('scheduleExhibitor')}>{navBar.visitor.program}</a></li>
-              <li><a href="#" onClick={() => handlePageChange('pricesExhibitor')}>{navBar.exhibitor.prices}</a></li>
-              <li disabled={true}>
+              <li className='max-w-sm text-wrap'><a href="#" onClick={() => handlePageChange('expositor')} className='max-w-64 text-wrap'
+              >{navBar.exhibitor.whyExhibitor}</a></li>
+              {/* <li><a href="#" onClick={() => handlePageChange('scheduleExhibitor')}>{navBar.visitor.program}</a></li> */}
+              {/* <li><a href="#" onClick={() => handlePageChange('pricesExhibitor')}>{navBar.exhibitor.prices}</a></li> */}
+              {/* <li disabled={true}>
                 <Tooltip title={navBar.exhibitor.listMessage} arrow>
                   <a className='list'>{navBar.exhibitor.list}</a>
                 </Tooltip>
-              </li>
+              </li> */}
             </ul>
           </li>
-          <li><a href="#" onClick={() => handlePageChange('map')}>{navBar.map}</a></li>
+          {/* <li><a href="#" onClick={() => handlePageChange('map')}>{navBar.map}</a></li> */}
           <li><a href="#" onClick={() => handlePageChange('contact')}>{navBar.contact}</a></li>
           <li>
           <button  onClick={() => handleLanguageChange(language === 'esp' ? 'eng' : 'esp')}>

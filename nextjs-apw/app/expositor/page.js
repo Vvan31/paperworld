@@ -13,7 +13,7 @@ const PorqueExponer = () => {
     const { language, handleLangsuageChange } = useLanguage();
     let { whyExhibitor } = data[language];
 
-    const papelUrl = path.join("/assets/close-up-of-paper.jpg");
+    const papelUrl = path.join("/assets/close-up-of-paper2.jpg");
 
     return (
         <>
